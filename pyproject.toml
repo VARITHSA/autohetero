@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autohetero"
+version = "0.1.0"
+description = "Self-adaptive, zero-configuration CPU-GPU workload dispatch for Python applications"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.0",
+    "torchvision",  # ResNet-18 / MobileNetV2 definitions for the built-in model ops
+    "numpy",
+    "scikit-learn",
+    "psutil",
+    "nvidia-ml-py>=12",  # older versions return the driver version as bytes
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "matplotlib"]
+demo = ["streamlit"]
+
+[tool.setuptools.packages.find]
+include = ["autohetero*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]  # lets tests import the bench/ scripts
+markers = ["gpu: needs a real NVIDIA GPU; skipped when CUDA is unavailable"]
