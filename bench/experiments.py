@@ -123,6 +123,7 @@ def main(which, conditions, reps, out_dir):
     if devices.GPU is None:
         raise SystemExit("the experiments compare CPU and GPU: run them on the machine with the NVIDIA GPU")
     autohetero.enable()  # calibrates once on a new machine
+    (calibrate.folder() / "fits.json").unlink(missing_ok=True)  # every run starts unmeasured: rep 0 shows the trial
     out_dir.mkdir(parents=True, exist_ok=True)
     base = out_dir / f"{platform.node()}-{datetime.now():%Y%m%d-%H%M%S}"
     Path(f"{base}.json").write_text(json.dumps({**calibrate.machine(), "reps": reps, "conditions": conditions}, indent=2))

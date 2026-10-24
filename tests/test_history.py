@@ -47,6 +47,17 @@ def test_one_size_assumes_linear_and_noise_cannot_explode_the_slope():
     assert history.predict("noisy", "cpu", 2000) < 0.01 * (2000 / 1100) ** history.SLOPE[1] * 1.01
 
 
+def test_fits_carry_over_to_the_next_session():
+    history.record(entry(pieces=[["cpu", 1000, 0.01]]))
+    history.save_fits()
+    history.reset()  # a new session on the same machine
+    assert history.predict("f", "cpu", 4000) == pytest.approx(0.04)
+    assert history.totals() == {}  # totals are per session
+    (calibrate.folder() / "fits.json").write_text("{not json")
+    history.reset()
+    assert history.predict("f", "cpu", 4000) is None  # an unreadable file starts empty instead of crashing
+
+
 @pytest.fixture
 def predicts(monkeypatch, fake_gpu):
     def use(mode):

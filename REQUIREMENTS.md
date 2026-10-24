@@ -192,7 +192,7 @@ DESIGN.md leaves these open or contradicts itself. Each has my recommendation.
 4. **Context in Hybrid threads.** New `threading.Thread`s don't inherit `contextvars`, so without care, nested built-in ops inside Hybrid workers will dispatch again or see the wrong device. → Run each worker under `contextvars.copy_context()` with its own device set. TST-3 should also check isolation: a `force()` in one thread doesn't leak into another.
 5. **Trial for non-splittable user functions.** There is no "first chunk", so a trial means running the whole call twice, which doubles both the cost and any side effects. → Run the first call on the predicted-safe device, run the second on the other device, then fit.
 6. **Forest training data per machine.** No feature describes the machine, so a forest trained on the fixed machine's benchmark won't transfer to a user's machine, and on a new machine only ~6 sizes per op exist. Also, if all training data is idle, the utilisation features are constant and teach the model nothing. → Train the shipped forest on local calibration data plus local history at retrain time. Use the benchmark dataset for RQ1 evaluation. Either add stressed samples to the training set or leave load handling to the 1.5× check alone.
-7. **"Within 5%"** (§1) isn't tied to any RQ or metric. → Define it (gap to oracle?) or drop it.
+7. **"Within 5%"** (§1) isn't tied to any RQ or metric. → Define it (gap to oracle?) or drop it. *Settled 2026-10-25 (DESIGN §1): an RQ2 metric. AutoHetero's median time on a workload is at most 5% above the oracle's; `rq2_summary.csv` reports the share of workloads that meet it (`within_5pct_of_oracle`).*
 8. **`force("hybrid")` on a non-splittable function.** Unspecified. → Log once and run on the faster single device, since crashing is not allowed.
 9. **Return device for mixed or array-free inputs.** → The first tensor/array argument sets the return type and device. With no array arguments, run directly without dispatch.
 10. **M.Tech run-log format** (CO-3) is undefined. → Get the schema before week 9.
@@ -201,15 +201,15 @@ DESIGN.md leaves these open or contradicts itself. Each has my recommendation.
 
 ---
 
-## Status after the week-8 code (2026-10-21)
+## Status after the week-8 code (2026-10-21, updated 2026-10-25)
 
 ✅ built and tested on a CPU-only machine (GPU code paths through a fake device) · 🟡 built, and its `gpu`-marked test waits for a real NVIDIA GPU (Colab) · ⏳ built, waits for data from the fixed machine · ❌ not done (team action, or week 9)
 
-Tests: 104 pass on the dev Mac; 44 `gpu`-marked tests are skipped there and must pass on Colab (`pytest -m gpu`).
+Tests: 106 pass on the dev Mac; 44 `gpu`-marked tests are skipped there and must pass on Colab (`pytest -m gpu`).
 
 | Area | Status |
 |------|--------|
-| C-1 to C-5 | ✅ Python ≥ 3.11 (dev Mac 3.14), dependencies and extras in `pyproject.toml`, seeds fixed (inputs, model weights, forests, splits), CPU-only pytest with a fake GPU, 6 `shortcut:` comments |
+| C-1 to C-5 | ✅ Python ≥ 3.11 (dev Mac 3.14), dependencies and extras in `pyproject.toml`, seeds fixed (inputs, model weights, forests, splits), CPU-only pytest with a fake GPU, 7 `shortcut:` comments |
 | C-6 | ✅ `calibrate`, `features`, `predictor`, `monitor`, `history`, `bench/collect`, `bench/stress` hold no dispatch code. `bench/experiments.py` calls the public API, because measuring AutoHetero requires it. |
 | API-1 to API-9 | ✅ `enable`, `auto`, `force`, `report`, `retrain` (Q1); tests in `test_dispatch`, `test_executor`, `test_trials`, `test_report`. API-6 also 🟡 (a real GPU model copy). |
 | DSP-1 to DSP-4, DEV-1 to DEV-3 | ✅ including TST-2 and TST-7. Since step 24, a GPU failure during calibration (for example, GPU memory full) also falls back to the CPU instead of crashing the caller. DSP-2 also 🟡 (a real CUDA out-of-memory error). |
@@ -217,11 +217,11 @@ Tests: 104 pass on the dev Mac; 44 `gpu`-marked tests are skipped there and must
 | OPS-2 / TST-6 (weeks 1–2 exit) | 🟡 `tests/test_ops_parity.py`, 30 cases. A dry run on the Apple GPU passed all 30. |
 | CAL-1 to CAL-5 | ✅ about 27 s on the dev Mac with the Apple GPU standing in; cached per machine key; skipped with no GPU. CAL-1 also 🟡 (real time on CUDA). |
 | FEA-1, PRD-1 to PRD-8 | ✅ PRD-1 learns log(seconds per element), which is log(time) minus a known offset: beyond the largest size measured on a device, predictions grow instead of staying flat. PRD-6: user-function decisions come from fits and aren't cached, so they can't go stale. |
-| EXE-1 to EXE-5 | ✅ TST-1, TST-5, trials, slowdown switch after 2 chunks (TST-1 also 🟡 on real CUDA) |
+| EXE-1 to EXE-5 | ✅ TST-1, TST-5, trials, slowdown switch after 2 chunks (TST-1 also 🟡 on real CUDA). Since 2026-10-25, Hybrid rounds also take ≥ 5 ms (finding 1). |
 | EXE-6 | 🟡/⏳ The constants sit together at the top of `executor.py`, with `HYBRID_MARGIN` in `predictor.py` and the sample period in `monitor.py`. All are untuned and wait for the fixed-machine data. |
 | EXE-7 (week-6 exit) | 🟡 `tests/test_week6.py`. In the Apple-GPU dry run it switched after 2 chunks. |
 | MON-1, MON-2 | ✅ CPU load from other processes only, median of about 1 s. Real NVML reading 🟡. |
-| HIS-1 to HIS-3 | ✅ predicted next to actual for every call, online fits, `retrain()`, log rotation at 50 MB. Retraining automatically when idle isn't built. |
+| HIS-1 to HIS-3 | ✅ predicted next to actual for every call, online fits (saved to `fits.json` at exit and read back by the next session, since 2026-10-25), `retrain()`, log rotation at 50 MB. Retraining automatically when idle isn't built. |
 | REP-1 | ✅ |
 | BEN-1 to BEN-3 | ✅ code (`bench/collect.py`, `bench/stress.py`, `bench/experiments.py`) · ⏳ runs. `stress-ng` isn't on the dev Mac; the runner falls back to busy Python processes and records which tool it used. |
 | BEN-4 | ❌ name the fixed machine (Q12) |
@@ -229,15 +229,15 @@ Tests: 104 pass on the dev Mac; 44 `gpu`-marked tests are skipped there and must
 | EVL-1 to EVL-7 | ✅ scripts: `eval/rq1.py`, `rq2.py`, `rq3.py`, `overhead.py`, `hybrid_gain.py`, `crossover.py` · ⏳ numbers. "Replace every mock-up number in the deck" ❌ (team, after the runs). |
 | DEM-1 (week-7 exit) | ✅ `demo/app.py`; `demo/pipeline.py` adds exactly one line (tested) |
 | CO-1 to CO-4 | ❌ week 9, after submission. CO-3 needs the M.Tech run-log format (Q10). |
-| CO-5 | 🟡 Checked on 2026-10-21. Qilin is confirmed: MICRO-42 (2009), pp. 45–55, doi:10.1145/1669112.1669121. The ONNX Runtime page is confirmed at onnxruntime.ai/docs/execution-providers/. Grewe et al. is confirmed as CGO 2013, IEEE, pp. 1–10; take its DOI from IEEE Xplore. StarPU is confirmed as CCPE by Augonnet, Thibault, Namyst and Wacrenier; take the volume, year and DOI from Wiley, and don't cite the Euro-Par 2009 paper that has the same title. |
+| CO-5 | ✅ All four references in DESIGN.md now carry full citations. Qilin, Grewe et al. (doi:10.1109/CGO.2013.6494993) and StarPU (CCPE 23(2), 2011, pp. 187–198, doi:10.1002/cpe.1631) were checked against their Crossref records on 2026-10-25. The ONNX Runtime page was checked live on 2026-10-21. |
 
-**Open questions:** Q1, Q2, Q3, Q4, Q5, Q8, Q9 and Q11 are settled in code (see "Adopted" above). Q6 is settled as "train on calibration", but see finding 3 below. Q7 is still open: `rq2_summary.csv` reports `within_5pct_of_oracle` in case that is the definition. Q10 and Q12 are still open.
+**Open questions:** Q1, Q2, Q3, Q4, Q5, Q8, Q9 and Q11 are settled in code (see "Adopted" above). Q6 is settled as "train on calibration", but see finding 3 below. Q7 is settled (2026-10-25): see Q7 above. Q10 and Q12 are still open.
 
 **Findings from the dry runs (Apple GPU standing in), to settle on the fixed machine:**
-1. **Hybrid rounds are costly on short calls.** Each 25% round waits for its GPU piece, so a matmul 2048 under GPU stress took 366 ms with AutoHetero against 22 ms on the CPU. Recommendation: give Hybrid rounds the same ≥ 5 ms minimum as chunks before the final runs.
+1. **Hybrid rounds are costly on short calls.** Each 25% round waits for its GPU piece, so a matmul 2048 under GPU stress took 366 ms with AutoHetero against 22 ms on the CPU. Recommendation: give Hybrid rounds the same ≥ 5 ms minimum as chunks before the final runs. *Done 2026-10-25: a round is at least 5 ms of predicted work with both devices busy, so a short call runs in one round. The GPU piece is still slow under stress, because the forest doesn't know about load (finding 3).*
 2. **False slowdown switches at idle.** The forest predicts in steps between the ~6 calibrated sizes, so a chunk can look 1.8–1.9× slow on an idle machine. Tune `SLOWDOWN` on the real data; how often switches fire is a §13 measurement anyway.
 3. **Built-in op decisions ignore load.** The forest trains on idle calibration, so its load features are constant. Under sustained contention, short built-in calls stay on a slowed GPU; only long splittable calls are rescued, by the per-call switch. User functions adapt through their fits. Options: let built-ins use their fits too once measured, or calibrate under load as well.
-4. Per-function fits live only in memory, so every new session repeats each user function's trial.
+4. Per-function fits live only in memory, so every new session repeats each user function's trial. *Done 2026-10-25: fits are saved to `fits.json` in the machine cache at exit, so a trial runs once per machine. `bench/experiments.py` deletes the file at the start of each run so the trial still shows up in rep 0.*
 
 **End-to-end rehearsal (2026-10-21, dev Mac, Apple GPU standing in):** the whole runbook ran: calibration (20.3 s), the dataset (1155 runs), RQ2 under idle, GPU stress and CPU stress (378 runs), Hybrid gain (384 runs), and the overhead measurement. Every `eval/` script produced its figures and tables (12 files). The rehearsal found three problems in the results, now fixed and tested:
 - The RQ3 "decision miss" row wasn't a forest miss. It now times a real forest decision (4.4 ms), and the cached built-in decision is reported separately.

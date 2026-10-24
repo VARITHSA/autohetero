@@ -123,3 +123,11 @@ def test_join_rejects_outputs_it_cannot_join():
         executor._join([1, 2], 0)
     a = executor._join([(torch.ones(1), {"k": torch.zeros(1)}), (torch.ones(2), {"k": torch.zeros(2)})], 0)
     assert a[0].shape == (3,) and a[1]["k"].shape == (3,)
+
+
+def test_short_hybrid_calls_run_in_one_round(predicts):
+    predicts("hybrid", 1e-4, 1e-4)  # 20 rows: 1 ms on both devices together, below the 5 ms minimum round
+    double, pieces = recorder()
+    out = autohetero.auto(splittable=True)(double)(torch.arange(20.0))
+    torch.testing.assert_close(out, torch.arange(20.0) * 2)
+    assert sorted(pieces, key=str) == sorted([(devices.GPU, 10), (devices.CPU, 10)], key=str)  # one round, half each

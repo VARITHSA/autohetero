@@ -12,7 +12,7 @@ from .calibrate import log
 
 SLOWDOWN = 1.5  # a chunk this much slower than predicted moves the rest of the call to Hybrid
 FIRST_CHUNK = 0.1  # share of the batch per single-device chunk...
-MIN_CHUNK_SECONDS = 0.005  # ...but at least this long: shorter chunks are dominated by launch overhead
+MIN_CHUNK_SECONDS = 0.005  # ...but at least this long (Hybrid rounds too): shorter ones are dominated by launch overhead
 HYBRID_ROUND = 0.25  # share of the batch per Hybrid round; speeds are re-measured and the split redone after each
 # shortcut: all four are first guesses, to be tuned on benchmark data in week 7 (§7 asks for exactly that).
 
@@ -40,13 +40,16 @@ def run(name, part, predict, batch, mode, dim):
     first call): one piece of ~10% on the GPU, then one more on the CPU (GPU first: it works on a copy), then
     Hybrid by the two measured speeds. "cpu" / "gpu": chunks of ~10% of the batch (each >= 5 ms) on that device. From the second chunk on (the first also pays one-time costs
     such as copying a model), a chunk slower than SLOWDOWN x its own predicted time sends the rest of the call
-    to Hybrid. "hybrid": rounds split between both devices by speed, so they finish together; speeds are
-    re-measured after every round. Pieces are joined along dim in their original order.
+    to Hybrid. "hybrid": rounds of ~25% (each >= 5 ms with both devices busy) split between both devices by
+    speed, so they finish together; speeds are re-measured after every round. Pieces are joined along dim in their original order.
 
     Returns (output, info): info["pieces"] lists (device, items, seconds) in order; after a switch to Hybrid,
     info["slowdown"] is the ratio that caused it and info["chunks_before_switch"] how many chunks had run.
     """
-    round_size = max(2, math.ceil(HYBRID_ROUND * batch))
+    whole = predict(batch)
+    both = whole["cpu"] * whole["gpu"] / max(whole["cpu"] + whole["gpu"], 1e-12)  # the whole batch split by speed (§6)
+    # a round waits for its slower piece, so short rounds pay launch and sync costs several times over
+    round_size = min(batch, max(2, math.ceil(HYBRID_ROUND * batch), math.ceil(MIN_CHUNK_SECONDS * batch / max(both, 1e-12))))
     speed = {d: round_size / max(t, 1e-12) for d, t in predict(round_size).items() if d in ("cpu", "gpu")}
     pieces, ran, done, switched, chunks = [], [], 0, None, None
     if mode == "trial":
@@ -58,8 +61,8 @@ def run(name, part, predict, batch, mode, dim):
             speed[device] = n / max(seconds, 1e-12)
         done = 2 * n
     elif mode != "hybrid":
-        whole = predict(batch)[mode]  # sizes chunks only; each chunk is judged against its own prediction
-        chunk = max(math.ceil(FIRST_CHUNK * batch), math.ceil(MIN_CHUNK_SECONDS * batch / max(whole, 1e-12)))
+        # whole sizes chunks only; each chunk is judged against its own prediction
+        chunk = max(math.ceil(FIRST_CHUNK * batch), math.ceil(MIN_CHUNK_SECONDS * batch / max(whole[mode], 1e-12)))
         while done < batch:
             n = min(chunk, batch - done)
             out, seconds = _timed(part, done, done + n, mode)

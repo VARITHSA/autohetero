@@ -2,7 +2,8 @@
 
 Each call is appended to <machine cache>/history.jsonl with its predicted times next to the measured one: the
 M.Tech confidence work is calibrated on exactly that gap (§13). Memory stays bounded however long the program
-runs: only per-function totals and fit sums are kept. No dispatch code here (§13).
+runs: only per-function totals and fit sums are kept. The fits are saved to fits.json at exit and read back by
+the next session, so a user function's trial runs once per machine. No dispatch code here (§13).
 """
 import atexit
 import json
@@ -25,6 +26,7 @@ _written = 0  # bytes in the current log file
 _last = None  # the most recent record
 _totals = defaultdict(lambda: defaultdict(float))  # name -> counters for report()
 _fits = {}  # (name, device) -> decayed least-squares sums [n, sx, sy, sxx, sxy] of log time vs log elements
+_loaded = False  # whether this session has read the fits saved by earlier ones
 
 
 def record(entry):
@@ -50,6 +52,7 @@ def record(entry):
         t["predicted_calls"] += "gpu" in entry["predicted"]
         if "gpu" in entry["predicted"]:  # estimated saving vs always-GPU, from predicted times (§9)
             t["saved_vs_gpu_estimate"] += entry["predicted"]["gpu"] - entry["seconds"]
+        _load_fits()
         for device, elements, seconds in entry["pieces"]:
             s = _fits.setdefault((entry["name"], device), [0.0] * 5)
             x, y = math.log(max(elements, 1)), math.log(max(seconds, 1e-9))
@@ -60,6 +63,7 @@ def record(entry):
 def predict(name, device, elements):
     """Seconds for a call of name on device with this many input elements, from its fit; None if never run there."""
     with _lock:
+        _load_fits()
         s = _fits.get((name, device))
         if s is None:
             return None
@@ -109,15 +113,46 @@ def flush():
             _file.flush()
 
 
+def save_fits():
+    """Write the fits for the next session (at exit). Nothing is written when there are none."""
+    with _lock:
+        data = [[name, device, sums] for (name, device), sums in _fits.items()]
+    if not data:
+        return
+    # shortcut: written only at exit, so a hard crash loses the session's fits, and when two programs share a
+    # machine the last to exit wins; save after every call if either matters
+    path = calibrate.folder() / "fits.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(".tmp")
+    tmp.write_text(json.dumps(data))
+    tmp.replace(path)  # never leaves a half-written file
+
+
 def reset():
-    """Forget this session's totals and fits and close the log (between experiment runs, and in tests)."""
-    global _file, _last
+    """Forget this session's totals and fits and close the log, as if a new session started (in tests).
+
+    Fits saved by earlier sessions are read again on next use.
+    """
+    global _file, _last, _loaded
     with _lock:
         if _file is not None:
             _file.close()
-        _file, _last = None, None
+        _file, _last, _loaded = None, None, False
         _totals.clear()
         _fits.clear()
+
+
+def _load_fits():
+    """Read the fits saved by earlier sessions, once per session. Call with _lock held."""
+    global _loaded
+    if _loaded:
+        return
+    _loaded = True
+    try:
+        for name, device, sums in json.loads((calibrate.folder() / "fits.json").read_text()):
+            _fits.setdefault((name, device), sums)
+    except (OSError, ValueError, TypeError):  # none saved yet, or a file this version can't read: start empty
+        pass
 
 
 def _rotate():
@@ -140,4 +175,5 @@ def _open():
 
 
 atexit.register(flush)
+atexit.register(save_fits)
 

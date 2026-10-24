@@ -24,6 +24,8 @@ The concept document and the deck define *what* we claim; this file defines *how
 
 Every target in the concept doc and deck (≥ 90%, within 5%, 10–30% Hybrid gain, < 1 ms) is a **hypothesis**. Never hardcode, assert or test against them. Report what is measured, including targets that are missed.
 
+"Within 5%" belongs to RQ2: AutoHetero's median time on a workload is at most 5% above the oracle's (the best measured option in each run). `eval/rq2.py` reports the share of workloads that meet it, per condition.
+
 ## 2. Public API (keep exactly this surface)
 
 ```python
@@ -206,9 +208,9 @@ The M.Tech project, *Intelligent Execution Strategy Selection*, extends AutoHete
 
 ## References
 
-1. C.-K. Luk, S. Hong, H. Kim, "Qilin: Exploiting Parallelism on Heterogeneous Multiprocessors with Adaptive Mapping," MICRO, 2009.
-2. D. Grewe, Z. Wang, M. O'Boyle, "Portable Mapping of Data Parallel Programs to OpenCL for Heterogeneous Systems," CGO, 2013.
-3. C. Augonnet et al., "StarPU: A Unified Platform for Task Scheduling on Heterogeneous Multicore Architectures," CCPE, 2011.
-4. ONNX Runtime documentation, "Execution Providers."
+1. C.-K. Luk, S. Hong, H. Kim, "Qilin: Exploiting Parallelism on Heterogeneous Multiprocessors with Adaptive Mapping," Proc. MICRO-42, 2009, pp. 45–55, doi:10.1145/1669112.1669121.
+2. D. Grewe, Z. Wang, M. O'Boyle, "Portable Mapping of Data Parallel Programs to OpenCL for Heterogeneous Systems," Proc. CGO, IEEE, 2013, pp. 1–10, doi:10.1109/CGO.2013.6494993.
+3. C. Augonnet, S. Thibault, R. Namyst, P.-A. Wacrenier, "StarPU: A Unified Platform for Task Scheduling on Heterogeneous Multicore Architectures," Concurrency and Computation: Practice and Experience, vol. 23, no. 2, 2011, pp. 187–198, doi:10.1002/cpe.1631. (Not the Euro-Par 2009 paper with the same title.)
+4. ONNX Runtime documentation, "Execution Providers," https://onnxruntime.ai/docs/execution-providers/.
 
-Citations were listed from memory in the concept doc; verify before submission.
+1–3 were checked against their Crossref records on 2026-10-25, and 4 on the live page on 2026-10-21.
