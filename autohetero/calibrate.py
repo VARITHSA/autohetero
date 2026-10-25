@@ -96,6 +96,7 @@ def fits(op, size, device):
     need = MEMORY_FACTOR * sum(a.nelement() * a.element_size() for a in inputs.make(op, size, device="meta"))
     free = psutil.virtual_memory().available
     if device.type == "cuda":
+        torch.cuda.empty_cache()  # blocks cached by an earlier, bigger run are ours to reuse, yet read as used
         free = min(free, torch.cuda.mem_get_info(device)[0])
     return need <= free
 
