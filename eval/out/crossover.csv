@@ -1,0 +1,11 @@
+op,sizes_on_both,cpu_faster_up_to_elements,gpu_faster_from_elements,gpu_speedup_min,gpu_speedup_max
+blur,19,786432,786432,0.676,4.15
+resize,19,786432,196608,0.504,1.55
+sobel,19,196608,786432,0.78,7.91
+resnet18,9,,150528,1.28,19.5
+mobilenetv2,9,,150528,1.55,13.2
+filter,9,1264912,126492,0.175,1.16
+sort,9,4000,12648,0.503,37.7
+groupby,9,6324,20000,0.198,21.6
+matmul,8,131072,524288,0.119,9.34
+fft,14,134217728,,0.44,0.886

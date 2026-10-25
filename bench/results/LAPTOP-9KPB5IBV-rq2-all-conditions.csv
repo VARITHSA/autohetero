@@ -1,0 +1,1537 @@
+experiment,condition,workload,size,strategy,rep,seconds,mode,slowdown,chunks_before_switch,detect_seconds,fallback,gpu_share
+rq2,idle,blur,"(16, 3, 720, 1280)",cpu,0,0.28709689999959664,cpu,,,,False,0.0
+rq2,idle,blur,"(16, 3, 720, 1280)",gpu,0,0.4194021999974211,gpu,,,,False,1.0
+rq2,idle,blur,"(16, 3, 720, 1280)",hybrid,0,0.5985053000003973,hybrid,,,,False,0.75
+rq2,idle,blur,"(16, 3, 720, 1280)",autohetero,0,0.2224263999996765,gpu,,,,False,1.0
+rq2,idle,blur,"(16, 3, 720, 1280)",cpu,1,0.16261750000194297,cpu,,,,False,0.0
+rq2,idle,blur,"(16, 3, 720, 1280)",gpu,1,0.08183310000094934,gpu,,,,False,1.0
+rq2,idle,blur,"(16, 3, 720, 1280)",hybrid,1,0.19556029999876046,hybrid,,,,False,0.75
+rq2,idle,blur,"(16, 3, 720, 1280)",autohetero,1,0.15115809999770136,gpu,,,,False,1.0
+rq2,idle,blur,"(16, 3, 720, 1280)",cpu,2,0.16254830000252696,cpu,,,,False,0.0
+rq2,idle,blur,"(16, 3, 720, 1280)",gpu,2,0.07837590000053751,gpu,,,,False,1.0
+rq2,idle,blur,"(16, 3, 720, 1280)",hybrid,2,0.13207580000016605,hybrid,,,,False,0.75
+rq2,idle,blur,"(16, 3, 720, 1280)",autohetero,2,0.1538168000006408,gpu,,,,False,1.0
+rq2,idle,blur,"(16, 3, 720, 1280)",cpu,3,0.16617129999940516,cpu,,,,False,0.0
+rq2,idle,blur,"(16, 3, 720, 1280)",gpu,3,0.07735279999906197,gpu,,,,False,1.0
+rq2,idle,blur,"(16, 3, 720, 1280)",hybrid,3,0.17234999999709544,hybrid,,,,False,1.0
+rq2,idle,blur,"(16, 3, 720, 1280)",autohetero,3,0.14482589999897755,gpu,,,,False,1.0
+rq2,idle,blur,"(16, 3, 720, 1280)",cpu,4,0.16003139999884297,cpu,,,,False,0.0
+rq2,idle,blur,"(16, 3, 720, 1280)",gpu,4,0.07739159999982803,gpu,,,,False,1.0
+rq2,idle,blur,"(16, 3, 720, 1280)",hybrid,4,0.13422569999966072,hybrid,,,,False,0.75
+rq2,idle,blur,"(16, 3, 720, 1280)",autohetero,4,0.11549449999802164,gpu,,,,False,1.0
+rq2,idle,blur,"(16, 3, 720, 1280)",cpu,5,0.16293759999825852,cpu,,,,False,0.0
+rq2,idle,blur,"(16, 3, 720, 1280)",gpu,5,0.07746920000136015,gpu,,,,False,1.0
+rq2,idle,blur,"(16, 3, 720, 1280)",hybrid,5,0.13513980000061565,hybrid,,,,False,0.75
+rq2,idle,blur,"(16, 3, 720, 1280)",autohetero,5,0.11679869999716175,gpu,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",cpu,0,0.04660100000182865,cpu,,,,False,0.0
+rq2,idle,resize,"(16, 3, 720, 1280)",gpu,0,0.048646999999618856,gpu,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",hybrid,0,0.1044977999990806,hybrid,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",autohetero,0,0.0757285999970918,gpu,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",cpu,1,0.043174000002181856,cpu,,,,False,0.0
+rq2,idle,resize,"(16, 3, 720, 1280)",gpu,1,0.037086899999849265,gpu,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",hybrid,1,0.044248499998502666,hybrid,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",autohetero,1,0.047577699999237666,gpu,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",cpu,2,0.04264160000093398,cpu,,,,False,0.0
+rq2,idle,resize,"(16, 3, 720, 1280)",gpu,2,0.03761600000143517,gpu,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",hybrid,2,0.04455140000209212,hybrid,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",autohetero,2,0.04792950000046403,gpu,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",cpu,3,0.03789139999935287,cpu,,,,False,0.0
+rq2,idle,resize,"(16, 3, 720, 1280)",gpu,3,0.03695330000118702,gpu,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",hybrid,3,0.04454039999836823,hybrid,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",autohetero,3,0.048867600002267864,gpu,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",cpu,4,0.04079990000172984,cpu,,,,False,0.0
+rq2,idle,resize,"(16, 3, 720, 1280)",gpu,4,0.037000000000261934,gpu,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",hybrid,4,0.04490770000120392,hybrid,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",autohetero,4,0.04836499999873922,gpu,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",cpu,5,0.038843499998620246,cpu,,,,False,0.0
+rq2,idle,resize,"(16, 3, 720, 1280)",gpu,5,0.03705620000255294,gpu,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",hybrid,5,0.044831499999418156,hybrid,,,,False,1.0
+rq2,idle,resize,"(16, 3, 720, 1280)",autohetero,5,0.049343999999109656,gpu,,,,False,1.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",cpu,0,0.44322599999941303,cpu,,,,False,0.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",gpu,0,0.36550849999912316,gpu,,,,False,1.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",hybrid,0,0.1957670000010694,hybrid,,,,False,0.75
+rq2,idle,sobel,"(16, 3, 720, 1280)",autohetero,0,0.1393716000020504,gpu,,,,False,1.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",cpu,1,0.2653472999991209,cpu,,,,False,0.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",gpu,1,0.06748119999974733,gpu,,,,False,1.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",hybrid,1,0.16157259999818052,hybrid,,,,False,1.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",autohetero,1,0.1317354000020714,gpu,,,,False,1.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",cpu,2,0.2581375999980082,cpu,,,,False,0.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",gpu,2,0.06776240000181133,gpu,,,,False,1.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",hybrid,2,0.10614419999910751,hybrid,,,,False,1.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",autohetero,2,0.12186510000174167,gpu,,,,False,1.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",cpu,3,0.27489690000220435,cpu,,,,False,0.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",gpu,3,0.06795259999853442,gpu,,,,False,1.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",hybrid,3,0.13626789999761968,hybrid,,,,False,0.75
+rq2,idle,sobel,"(16, 3, 720, 1280)",autohetero,3,0.10976730000038515,gpu,,,,False,1.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",cpu,4,0.2759683000003861,cpu,,,,False,0.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",gpu,4,0.06779499999902328,gpu,,,,False,1.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",hybrid,4,0.13976539999930537,hybrid,,,,False,0.75
+rq2,idle,sobel,"(16, 3, 720, 1280)",autohetero,4,0.11524239999926067,gpu,,,,False,1.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",cpu,5,0.2689491999990423,cpu,,,,False,0.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",gpu,5,0.06763150000188034,gpu,,,,False,1.0
+rq2,idle,sobel,"(16, 3, 720, 1280)",hybrid,5,0.13817869999911636,hybrid,,,,False,0.75
+rq2,idle,sobel,"(16, 3, 720, 1280)",autohetero,5,0.11252529999910621,gpu,,,,False,1.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",cpu,0,5.747599499998614,cpu,,,,False,0.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",gpu,0,0.4892037999998138,gpu,,,,False,1.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",hybrid,0,0.34078500000032363,hybrid,,,,False,0.6875
+rq2,idle,resnet18,"(32, 3, 224, 224)",autohetero,0,0.060724999999365536,gpu,,,,False,1.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",cpu,1,0.7280446000004304,cpu,,,,False,0.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",gpu,1,0.04359000000113156,gpu,,,,False,1.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",hybrid,1,0.254604499998095,hybrid,,,,False,0.71875
+rq2,idle,resnet18,"(32, 3, 224, 224)",autohetero,1,0.04409450000093784,gpu,,,,False,1.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",cpu,2,0.6923969999988913,cpu,,,,False,0.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",gpu,2,0.056413600002997555,gpu,,,,False,1.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",hybrid,2,0.22801610000169603,hybrid,,,,False,0.71875
+rq2,idle,resnet18,"(32, 3, 224, 224)",autohetero,2,0.0572135000002163,gpu,,,,False,1.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",cpu,3,0.715757099998882,cpu,,,,False,0.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",gpu,3,0.052992200002336176,gpu,,,,False,1.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",hybrid,3,0.22822869999799877,hybrid,,,,False,0.71875
+rq2,idle,resnet18,"(32, 3, 224, 224)",autohetero,3,0.057441799999651266,gpu,,,,False,1.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",cpu,4,0.7080726000021969,cpu,,,,False,0.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",gpu,4,0.07327209999857587,gpu,,,,False,1.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",hybrid,4,0.2503281999997853,hybrid,,,,False,0.6875
+rq2,idle,resnet18,"(32, 3, 224, 224)",autohetero,4,0.06109749999814085,gpu,,,,False,1.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",cpu,5,0.7245857999987493,cpu,,,,False,0.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",gpu,5,0.0559309000018402,gpu,,,,False,1.0
+rq2,idle,resnet18,"(32, 3, 224, 224)",hybrid,5,0.23129119999794057,hybrid,,,,False,0.71875
+rq2,idle,resnet18,"(32, 3, 224, 224)",autohetero,5,0.05956079999668873,gpu,,,,False,1.0
+rq2,idle,resnet18,"(128, 3, 224, 224)",cpu,0,2.6358070999995107,cpu,,,,False,0.0
+rq2,idle,resnet18,"(128, 3, 224, 224)",gpu,0,0.4239420000012615,gpu,,,,False,1.0
+rq2,idle,resnet18,"(128, 3, 224, 224)",hybrid,0,0.5365070000007108,hybrid,,,,False,0.8515625
+rq2,idle,resnet18,"(128, 3, 224, 224)",autohetero,0,0.522850199999084,gpu,3.662047411458151,2,0.058748399998876266,False,0.890625
+rq2,idle,resnet18,"(128, 3, 224, 224)",cpu,1,2.5049919999983103,cpu,,,,False,0.0
+rq2,idle,resnet18,"(128, 3, 224, 224)",gpu,1,0.4105442000000039,gpu,,,,False,1.0
+rq2,idle,resnet18,"(128, 3, 224, 224)",hybrid,1,0.40777040000102716,hybrid,,,,False,0.8828125
+rq2,idle,resnet18,"(128, 3, 224, 224)",autohetero,1,0.4064591999995173,gpu,3.7539674401239713,2,0.04068860000188579,False,0.890625
+rq2,idle,resnet18,"(128, 3, 224, 224)",cpu,2,2.5431282999998075,cpu,,,,False,0.0
+rq2,idle,resnet18,"(128, 3, 224, 224)",gpu,2,0.2428957000010996,gpu,,,,False,1.0
+rq2,idle,resnet18,"(128, 3, 224, 224)",hybrid,2,0.4167039999992994,hybrid,,,,False,0.875
+rq2,idle,resnet18,"(128, 3, 224, 224)",autohetero,2,0.7990664999997534,gpu,3.86545089022128,2,0.03882299999895622,False,0.75
+rq2,idle,resnet18,"(128, 3, 224, 224)",cpu,3,2.599040799999784,cpu,,,,False,0.0
+rq2,idle,resnet18,"(128, 3, 224, 224)",gpu,3,0.4036998000010499,gpu,,,,False,1.0
+rq2,idle,resnet18,"(128, 3, 224, 224)",hybrid,3,0.41084959999716375,hybrid,,,,False,0.875
+rq2,idle,resnet18,"(128, 3, 224, 224)",autohetero,3,0.48857959999804734,gpu,3.66941504769228,2,0.03967760000159615,False,0.890625
+rq2,idle,resnet18,"(128, 3, 224, 224)",cpu,4,2.618001299997559,cpu,,,,False,0.0
+rq2,idle,resnet18,"(128, 3, 224, 224)",gpu,4,0.259707499997603,gpu,,,,False,1.0
+rq2,idle,resnet18,"(128, 3, 224, 224)",hybrid,4,0.4278020999990986,hybrid,,,,False,0.875
+rq2,idle,resnet18,"(128, 3, 224, 224)",autohetero,4,0.639400600000954,gpu,3.8877714028355475,2,0.03909670000211918,False,0.8046875
+rq2,idle,resnet18,"(128, 3, 224, 224)",cpu,5,2.564739199999167,cpu,,,,False,0.0
+rq2,idle,resnet18,"(128, 3, 224, 224)",gpu,5,0.31205509999927017,gpu,,,,False,1.0
+rq2,idle,resnet18,"(128, 3, 224, 224)",hybrid,5,0.4226090000011027,hybrid,,,,False,0.875
+rq2,idle,resnet18,"(128, 3, 224, 224)",autohetero,5,0.7895699000000604,gpu,4.370002001950872,2,0.04380459999811137,False,0.75
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",cpu,0,0.6009444000010262,cpu,,,,False,0.0
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",gpu,0,0.33820339999874705,gpu,,,,False,1.0
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",hybrid,0,0.5161050999995496,hybrid,,,,False,0.4375
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",autohetero,0,0.23960199999783072,hybrid,,,,False,0.6875
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",cpu,1,0.4701937999998336,cpu,,,,False,0.0
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",gpu,1,0.06027429999812739,gpu,,,,False,1.0
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",hybrid,1,0.22066590000031283,hybrid,,,,False,0.75
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",autohetero,1,0.15132689999882132,hybrid,,,,False,0.78125
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",cpu,2,0.4707123000007414,cpu,,,,False,0.0
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",gpu,2,0.05984800000078394,gpu,,,,False,1.0
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",hybrid,2,0.16294840000045951,hybrid,,,,False,0.71875
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",autohetero,2,0.16279520000171033,hybrid,,,,False,0.71875
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",cpu,3,0.4745055000021239,cpu,,,,False,0.0
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",gpu,3,0.05996420000155922,gpu,,,,False,1.0
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",hybrid,3,0.15387059999920893,hybrid,,,,False,0.75
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",autohetero,3,0.14674709999962943,hybrid,,,,False,0.78125
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",cpu,4,0.47432340000159456,cpu,,,,False,0.0
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",gpu,4,0.05349019999994198,gpu,,,,False,1.0
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",hybrid,4,0.16486019999865675,hybrid,,,,False,0.71875
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",autohetero,4,0.15142259999993257,hybrid,,,,False,0.78125
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",cpu,5,0.4786708000028739,cpu,,,,False,0.0
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",gpu,5,0.053466999997908715,gpu,,,,False,1.0
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",hybrid,5,0.19402110000009998,hybrid,,,,False,0.8125
+rq2,idle,mobilenetv2,"(32, 3, 224, 224)",autohetero,5,0.14141590000144788,hybrid,,,,False,0.78125
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",cpu,0,1.9897280000004685,cpu,,,,False,0.0
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",gpu,0,0.43806649999896763,gpu,,,,False,1.0
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",hybrid,0,0.6694588000027579,hybrid,,,,False,0.6953125
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",autohetero,0,0.5148122999999032,hybrid,,,,False,0.7890625
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",cpu,1,1.948204500000429,cpu,,,,False,0.0
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",gpu,1,0.25253299999894807,gpu,,,,False,1.0
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",hybrid,1,0.39644870000120136,hybrid,,,,False,0.8203125
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",autohetero,1,0.43736880000142264,hybrid,,,,False,0.796875
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",cpu,2,1.9697713999994448,cpu,,,,False,0.0
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",gpu,2,0.24324519999936456,gpu,,,,False,1.0
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",hybrid,2,0.3598821000014141,hybrid,,,,False,0.8203125
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",autohetero,2,0.3996402000011585,hybrid,,,,False,0.828125
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",cpu,3,1.9620216000002983,cpu,,,,False,0.0
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",gpu,3,0.2624032999992778,gpu,,,,False,1.0
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",hybrid,3,0.3410975000006147,hybrid,,,,False,0.828125
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",autohetero,3,0.3709963000001153,hybrid,,,,False,0.8125
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",cpu,4,1.9421029000004637,cpu,,,,False,0.0
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",gpu,4,0.30639789999986533,gpu,,,,False,1.0
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",hybrid,4,0.35251419999985956,hybrid,,,,False,0.8125
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",autohetero,4,0.3342314000001352,hybrid,,,,False,0.8359375
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",cpu,5,1.9548686999987694,cpu,,,,False,0.0
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",gpu,5,0.2963999999992666,gpu,,,,False,1.0
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",hybrid,5,0.3317726999994193,hybrid,,,,False,0.8359375
+rq2,idle,mobilenetv2,"(128, 3, 224, 224)",autohetero,5,0.36374810000052094,hybrid,,,,False,0.8046875
+rq2,idle,filter,1000000,cpu,0,0.006790700001147343,cpu,,,,False,0.0
+rq2,idle,filter,1000000,gpu,0,0.026486599999770988,gpu,,,,False,1.0
+rq2,idle,filter,1000000,hybrid,0,0.03595980000318377,hybrid,,,,False,0.794248
+rq2,idle,filter,1000000,autohetero,0,0.037043499996798346,gpu,,,,False,1.0
+rq2,idle,filter,1000000,cpu,1,0.006756299997505266,cpu,,,,False,0.0
+rq2,idle,filter,1000000,gpu,1,0.006624100002227351,gpu,,,,False,1.0
+rq2,idle,filter,1000000,hybrid,1,0.008878000000549946,hybrid,,,,False,0.783531
+rq2,idle,filter,1000000,autohetero,1,0.008475099999486702,gpu,,,,False,1.0
+rq2,idle,filter,1000000,cpu,2,0.006505599998490652,cpu,,,,False,0.0
+rq2,idle,filter,1000000,gpu,2,0.0066100999974878505,gpu,,,,False,1.0
+rq2,idle,filter,1000000,hybrid,2,0.008793400000286056,hybrid,,,,False,0.78766
+rq2,idle,filter,1000000,autohetero,2,0.008281200000055833,gpu,,,,False,1.0
+rq2,idle,filter,1000000,cpu,3,0.006440199998905882,cpu,,,,False,0.0
+rq2,idle,filter,1000000,gpu,3,0.006478300001617754,gpu,,,,False,1.0
+rq2,idle,filter,1000000,hybrid,3,0.007946800000354415,hybrid,,,,False,0.792269
+rq2,idle,filter,1000000,autohetero,3,0.00821899999937159,gpu,,,,False,1.0
+rq2,idle,filter,1000000,cpu,4,0.006378999998560175,cpu,,,,False,0.0
+rq2,idle,filter,1000000,gpu,4,0.0064721000017016195,gpu,,,,False,1.0
+rq2,idle,filter,1000000,hybrid,4,0.007690599999477854,hybrid,,,,False,0.797128
+rq2,idle,filter,1000000,autohetero,4,0.008193200003006496,gpu,,,,False,1.0
+rq2,idle,filter,1000000,cpu,5,0.006371300001774216,cpu,,,,False,0.0
+rq2,idle,filter,1000000,gpu,5,0.006670999999187188,gpu,,,,False,1.0
+rq2,idle,filter,1000000,hybrid,5,0.007710099998803344,hybrid,,,,False,0.794936
+rq2,idle,filter,1000000,autohetero,5,0.008578100001614075,gpu,,,,False,1.0
+rq2,idle,filter,10000000,cpu,0,0.059771799998998176,cpu,,,,False,0.0
+rq2,idle,filter,10000000,gpu,0,0.06664509999973234,gpu,,,,False,1.0
+rq2,idle,filter,10000000,hybrid,0,0.11272870000175317,hybrid,,,,False,0.5856554
+rq2,idle,filter,10000000,autohetero,0,0.10444730000017444,gpu,,,,False,1.0
+rq2,idle,filter,10000000,cpu,1,0.06014130000039586,cpu,,,,False,0.0
+rq2,idle,filter,10000000,gpu,1,0.05538259999957518,gpu,,,,False,1.0
+rq2,idle,filter,10000000,hybrid,1,0.051688499999727355,hybrid,,,,False,0.592508
+rq2,idle,filter,10000000,autohetero,1,0.07581659999777912,gpu,,,,False,1.0
+rq2,idle,filter,10000000,cpu,2,0.06049480000001495,cpu,,,,False,0.0
+rq2,idle,filter,10000000,gpu,2,0.05528309999863268,gpu,,,,False,1.0
+rq2,idle,filter,10000000,hybrid,2,0.050125100002333056,hybrid,,,,False,0.6012834
+rq2,idle,filter,10000000,autohetero,2,0.07544969999798923,gpu,,,,False,1.0
+rq2,idle,filter,10000000,cpu,3,0.058869299999059876,cpu,,,,False,0.0
+rq2,idle,filter,10000000,gpu,3,0.05531239999982063,gpu,,,,False,1.0
+rq2,idle,filter,10000000,hybrid,3,0.050019099999190075,hybrid,,,,False,0.5974587
+rq2,idle,filter,10000000,autohetero,3,0.08354490000056103,gpu,,,,False,1.0
+rq2,idle,filter,10000000,cpu,4,0.05846609999935026,cpu,,,,False,0.0
+rq2,idle,filter,10000000,gpu,4,0.05556380000052741,gpu,,,,False,1.0
+rq2,idle,filter,10000000,hybrid,4,0.050428099999408005,hybrid,,,,False,0.5944309
+rq2,idle,filter,10000000,autohetero,4,0.1675786000014341,gpu,,,,False,1.0
+rq2,idle,filter,10000000,cpu,5,0.05854980000003707,cpu,,,,False,0.0
+rq2,idle,filter,10000000,gpu,5,0.055549600001540966,gpu,,,,False,1.0
+rq2,idle,filter,10000000,hybrid,5,0.05132869999943068,hybrid,,,,False,0.5987745
+rq2,idle,filter,10000000,autohetero,5,0.08091889999923296,gpu,,,,False,1.0
+rq2,idle,sort,1000000,cpu,0,0.30290030000105617,cpu,,,,False,0.0
+rq2,idle,sort,1000000,gpu,0,0.029361000000790227,gpu,,,,False,1.0
+rq2,idle,sort,1000000,autohetero,0,0.0425848999984737,gpu,,,,False,1.0
+rq2,idle,sort,1000000,cpu,1,0.3126503999992565,cpu,,,,False,0.0
+rq2,idle,sort,1000000,gpu,1,0.01117320000048494,gpu,,,,False,1.0
+rq2,idle,sort,1000000,autohetero,1,0.04541840000092634,gpu,,,,False,1.0
+rq2,idle,sort,1000000,cpu,2,0.31722939999963273,cpu,,,,False,0.0
+rq2,idle,sort,1000000,gpu,2,0.011000900001818081,gpu,,,,False,1.0
+rq2,idle,sort,1000000,autohetero,2,0.009901800000079675,gpu,,,,False,1.0
+rq2,idle,sort,1000000,cpu,3,0.31199370000103954,cpu,,,,False,0.0
+rq2,idle,sort,1000000,gpu,3,0.0108901000021433,gpu,,,,False,1.0
+rq2,idle,sort,1000000,autohetero,3,0.009977300000173273,gpu,,,,False,1.0
+rq2,idle,sort,1000000,cpu,4,0.3042442000005394,cpu,,,,False,0.0
+rq2,idle,sort,1000000,gpu,4,0.011016200001904508,gpu,,,,False,1.0
+rq2,idle,sort,1000000,autohetero,4,0.009815100002015242,gpu,,,,False,1.0
+rq2,idle,sort,1000000,cpu,5,0.3121350999972492,cpu,,,,False,0.0
+rq2,idle,sort,1000000,gpu,5,0.016001899999537272,gpu,,,,False,1.0
+rq2,idle,sort,1000000,autohetero,5,0.014839999999821885,gpu,,,,False,1.0
+rq2,idle,sort,10000000,cpu,0,3.4245092999990447,cpu,,,,False,0.0
+rq2,idle,sort,10000000,gpu,0,0.3378407000018342,gpu,,,,False,1.0
+rq2,idle,sort,10000000,autohetero,0,0.12506490000305348,gpu,,,,False,1.0
+rq2,idle,sort,10000000,cpu,1,3.424168200002896,cpu,,,,False,0.0
+rq2,idle,sort,10000000,gpu,1,0.22059409999928903,gpu,,,,False,1.0
+rq2,idle,sort,10000000,autohetero,1,0.0966100000005099,gpu,,,,False,1.0
+rq2,idle,sort,10000000,cpu,2,3.405708499998582,cpu,,,,False,0.0
+rq2,idle,sort,10000000,gpu,2,0.3149095999979181,gpu,,,,False,1.0
+rq2,idle,sort,10000000,autohetero,2,0.09655800000109593,gpu,,,,False,1.0
+rq2,idle,sort,10000000,cpu,3,3.4160013000000617,cpu,,,,False,0.0
+rq2,idle,sort,10000000,gpu,3,0.2590230999994674,gpu,,,,False,1.0
+rq2,idle,sort,10000000,autohetero,3,0.09643790000336594,gpu,,,,False,1.0
+rq2,idle,sort,10000000,cpu,4,3.407458800000313,cpu,,,,False,0.0
+rq2,idle,sort,10000000,gpu,4,0.3290077999990899,gpu,,,,False,1.0
+rq2,idle,sort,10000000,autohetero,4,0.09649680000075023,gpu,,,,False,1.0
+rq2,idle,sort,10000000,cpu,5,3.382963500000187,cpu,,,,False,0.0
+rq2,idle,sort,10000000,gpu,5,0.3016337000008207,gpu,,,,False,1.0
+rq2,idle,sort,10000000,autohetero,5,0.09684879999986151,gpu,,,,False,1.0
+rq2,idle,groupby,1000000,cpu,0,0.10202799999751733,cpu,,,,False,0.0
+rq2,idle,groupby,1000000,gpu,0,0.08309139999983017,gpu,,,,False,1.0
+rq2,idle,groupby,1000000,autohetero,0,0.034887300000264077,gpu,,,,False,1.0
+rq2,idle,groupby,1000000,cpu,1,0.09829709999758052,cpu,,,,False,0.0
+rq2,idle,groupby,1000000,gpu,1,0.005636200003209524,gpu,,,,False,1.0
+rq2,idle,groupby,1000000,autohetero,1,0.03926030000002356,gpu,,,,False,1.0
+rq2,idle,groupby,1000000,cpu,2,0.09892719999697874,cpu,,,,False,0.0
+rq2,idle,groupby,1000000,gpu,2,0.005680099999153754,gpu,,,,False,1.0
+rq2,idle,groupby,1000000,autohetero,2,0.005658199999743374,gpu,,,,False,1.0
+rq2,idle,groupby,1000000,cpu,3,0.09884099999908358,cpu,,,,False,0.0
+rq2,idle,groupby,1000000,gpu,3,0.005726200000935933,gpu,,,,False,1.0
+rq2,idle,groupby,1000000,autohetero,3,0.005399800000304822,gpu,,,,False,1.0
+rq2,idle,groupby,1000000,cpu,4,0.09790239999711048,cpu,,,,False,0.0
+rq2,idle,groupby,1000000,gpu,4,0.005602699999144534,gpu,,,,False,1.0
+rq2,idle,groupby,1000000,autohetero,4,0.005497499998455169,gpu,,,,False,1.0
+rq2,idle,groupby,1000000,cpu,5,0.09902869999859831,cpu,,,,False,0.0
+rq2,idle,groupby,1000000,gpu,5,0.00570970000262605,gpu,,,,False,1.0
+rq2,idle,groupby,1000000,autohetero,5,0.00545580000107293,gpu,,,,False,1.0
+rq2,idle,groupby,10000000,cpu,0,1.0022611999993387,cpu,,,,False,0.0
+rq2,idle,groupby,10000000,gpu,0,0.08601249999992433,gpu,,,,False,1.0
+rq2,idle,groupby,10000000,autohetero,0,0.08491610000055516,gpu,,,,False,1.0
+rq2,idle,groupby,10000000,cpu,1,0.9954623999983596,cpu,,,,False,0.0
+rq2,idle,groupby,10000000,gpu,1,0.05580289999852539,gpu,,,,False,1.0
+rq2,idle,groupby,10000000,autohetero,1,0.054998399999021785,gpu,,,,False,1.0
+rq2,idle,groupby,10000000,cpu,2,1.0036203999989084,cpu,,,,False,0.0
+rq2,idle,groupby,10000000,gpu,2,0.054797700002382044,gpu,,,,False,1.0
+rq2,idle,groupby,10000000,autohetero,2,0.054478099998959806,gpu,,,,False,1.0
+rq2,idle,groupby,10000000,cpu,3,1.009425199998077,cpu,,,,False,0.0
+rq2,idle,groupby,10000000,gpu,3,0.05243319999863161,gpu,,,,False,1.0
+rq2,idle,groupby,10000000,autohetero,3,0.05203389999951469,gpu,,,,False,1.0
+rq2,idle,groupby,10000000,cpu,4,1.0046624000024167,cpu,,,,False,0.0
+rq2,idle,groupby,10000000,gpu,4,0.06270239999867044,gpu,,,,False,1.0
+rq2,idle,groupby,10000000,autohetero,4,0.06246169999940321,gpu,,,,False,1.0
+rq2,idle,groupby,10000000,cpu,5,0.997576099998696,cpu,,,,False,0.0
+rq2,idle,groupby,10000000,gpu,5,0.054296800000884105,gpu,,,,False,1.0
+rq2,idle,groupby,10000000,autohetero,5,0.05417020000095363,gpu,,,,False,1.0
+rq2,idle,matmul,2048,cpu,0,0.06516670000200975,cpu,,,,False,0.0
+rq2,idle,matmul,2048,gpu,0,0.022478499999124324,gpu,,,,False,1.0
+rq2,idle,matmul,2048,hybrid,0,0.09676369999942835,hybrid,,,,False,0.71630859375
+rq2,idle,matmul,2048,autohetero,0,0.03368820000105188,gpu,,,,False,1.0
+rq2,idle,matmul,2048,cpu,1,0.06553189999976894,cpu,,,,False,0.0
+rq2,idle,matmul,2048,gpu,1,0.01915749999898253,gpu,,,,False,1.0
+rq2,idle,matmul,2048,hybrid,1,0.028781199998775264,hybrid,,,,False,0.7197265625
+rq2,idle,matmul,2048,autohetero,1,0.03361890000087442,gpu,,,,False,1.0
+rq2,idle,matmul,2048,cpu,2,0.0637959999985469,cpu,,,,False,0.0
+rq2,idle,matmul,2048,gpu,2,0.01916249999703723,gpu,,,,False,1.0
+rq2,idle,matmul,2048,hybrid,2,0.02985880000051111,hybrid,,,,False,0.70166015625
+rq2,idle,matmul,2048,autohetero,2,0.033740999999281485,gpu,,,,False,1.0
+rq2,idle,matmul,2048,cpu,3,0.06550789999892004,cpu,,,,False,0.0
+rq2,idle,matmul,2048,gpu,3,0.01914319999923464,gpu,,,,False,1.0
+rq2,idle,matmul,2048,hybrid,3,0.028284500000154367,hybrid,,,,False,0.72119140625
+rq2,idle,matmul,2048,autohetero,3,0.03277499999967404,gpu,,,,False,1.0
+rq2,idle,matmul,2048,cpu,4,0.06369240000276477,cpu,,,,False,0.0
+rq2,idle,matmul,2048,gpu,4,0.016930499998125015,gpu,,,,False,1.0
+rq2,idle,matmul,2048,hybrid,4,0.0291694000006828,hybrid,,,,False,0.72119140625
+rq2,idle,matmul,2048,autohetero,4,0.031004600001324434,gpu,,,,False,1.0
+rq2,idle,matmul,2048,cpu,5,0.06457579999914742,cpu,,,,False,0.0
+rq2,idle,matmul,2048,gpu,5,0.016978199997538468,gpu,,,,False,1.0
+rq2,idle,matmul,2048,hybrid,5,0.0292632999990019,hybrid,,,,False,0.71630859375
+rq2,idle,matmul,2048,autohetero,5,0.030888599998434074,gpu,,,,False,1.0
+rq2,idle,matmul,8192,cpu,0,3.6847648000002664,cpu,,,,False,0.0
+rq2,idle,matmul,8192,gpu,0,0.6529253999979119,gpu,,,,False,1.0
+rq2,idle,matmul,8192,hybrid,0,0.8951114000010421,hybrid,,,,False,0.8377685546875
+rq2,idle,matmul,8192,autohetero,0,0.8159567000002426,gpu,,,,False,1.0
+rq2,idle,matmul,8192,cpu,1,3.629379900001368,cpu,,,,False,0.0
+rq2,idle,matmul,8192,gpu,1,0.6085807000017667,gpu,,,,False,1.0
+rq2,idle,matmul,8192,hybrid,1,0.7585433999993256,hybrid,,,,False,0.880615234375
+rq2,idle,matmul,8192,autohetero,1,0.8160277000024507,gpu,,,,False,1.0
+rq2,idle,matmul,8192,cpu,2,3.603180500002054,cpu,,,,False,0.0
+rq2,idle,matmul,8192,gpu,2,0.6056935999986308,gpu,,,,False,1.0
+rq2,idle,matmul,8192,hybrid,2,0.818476999997074,hybrid,,,,False,0.8472900390625
+rq2,idle,matmul,8192,autohetero,2,0.8755768000009994,gpu,,,,False,1.0
+rq2,idle,matmul,8192,cpu,3,3.543185500002437,cpu,,,,False,0.0
+rq2,idle,matmul,8192,gpu,3,0.5757677000001422,gpu,,,,False,1.0
+rq2,idle,matmul,8192,hybrid,3,0.8377360000013141,hybrid,,,,False,0.8468017578125
+rq2,idle,matmul,8192,autohetero,3,0.7975710999999137,gpu,,,,False,1.0
+rq2,idle,matmul,8192,cpu,4,3.6787416999977722,cpu,,,,False,0.0
+rq2,idle,matmul,8192,gpu,4,0.5359859000018332,gpu,,,,False,1.0
+rq2,idle,matmul,8192,hybrid,4,0.8249620000024152,hybrid,,,,False,0.845458984375
+rq2,idle,matmul,8192,autohetero,4,0.795867900000303,gpu,,,,False,1.0
+rq2,idle,matmul,8192,cpu,5,3.6164946999997483,cpu,,,,False,0.0
+rq2,idle,matmul,8192,gpu,5,0.5182053999997152,gpu,,,,False,1.0
+rq2,idle,matmul,8192,hybrid,5,0.8052654999992228,hybrid,,,,False,0.84716796875
+rq2,idle,matmul,8192,autohetero,5,0.8055869999989227,gpu,,,,False,1.0
+rq2,idle,fft,"(1024, 16384)",cpu,0,0.020525799998722505,cpu,,,,False,0.0
+rq2,idle,fft,"(1024, 16384)",gpu,0,0.05918699999892851,gpu,,,,False,1.0
+rq2,idle,fft,"(1024, 16384)",hybrid,0,0.1322548000025563,hybrid,,,,False,0.328125
+rq2,idle,fft,"(1024, 16384)",autohetero,0,0.10665870000229916,gpu,,,,False,1.0
+rq2,idle,fft,"(1024, 16384)",cpu,1,0.019732000000658445,cpu,,,,False,0.0
+rq2,idle,fft,"(1024, 16384)",gpu,1,0.034462399999029,gpu,,,,False,1.0
+rq2,idle,fft,"(1024, 16384)",hybrid,1,0.06752829999823007,hybrid,,,,False,0.431640625
+rq2,idle,fft,"(1024, 16384)",autohetero,1,0.05268140000043786,gpu,,,,False,1.0
+rq2,idle,fft,"(1024, 16384)",cpu,2,0.02020270000139135,cpu,,,,False,0.0
+rq2,idle,fft,"(1024, 16384)",gpu,2,0.03445279999868944,gpu,,,,False,1.0
+rq2,idle,fft,"(1024, 16384)",hybrid,2,0.1336079000029713,hybrid,,,,False,0.20703125
+rq2,idle,fft,"(1024, 16384)",autohetero,2,0.060493299999507144,hybrid,,,,False,0.2998046875
+rq2,idle,fft,"(1024, 16384)",cpu,3,0.019979099997726735,cpu,,,,False,0.0
+rq2,idle,fft,"(1024, 16384)",gpu,3,0.03423509999993257,gpu,,,,False,1.0
+rq2,idle,fft,"(1024, 16384)",hybrid,3,0.06131470000036643,hybrid,,,,False,0.2783203125
+rq2,idle,fft,"(1024, 16384)",autohetero,3,0.06311590000041178,hybrid,,,,False,0.3134765625
+rq2,idle,fft,"(1024, 16384)",cpu,4,0.020390699999552453,cpu,,,,False,0.0
+rq2,idle,fft,"(1024, 16384)",gpu,4,0.03421130000060657,gpu,,,,False,1.0
+rq2,idle,fft,"(1024, 16384)",hybrid,4,0.06235979999837582,hybrid,,,,False,0.2890625
+rq2,idle,fft,"(1024, 16384)",autohetero,4,0.06165250000049127,hybrid,,,,False,0.2939453125
+rq2,idle,fft,"(1024, 16384)",cpu,5,0.02041580000150134,cpu,,,,False,0.0
+rq2,idle,fft,"(1024, 16384)",gpu,5,0.03421209999942221,gpu,,,,False,1.0
+rq2,idle,fft,"(1024, 16384)",hybrid,5,0.05879629999981262,hybrid,,,,False,0.275390625
+rq2,idle,fft,"(1024, 16384)",autohetero,5,0.061040100001264364,hybrid,,,,False,0.298828125
+rq2,idle,fft,"(4096, 16384)",cpu,0,0.08089950000066892,cpu,,,,False,0.0
+rq2,idle,fft,"(4096, 16384)",gpu,0,0.17804230000183452,gpu,,,,False,1.0
+rq2,idle,fft,"(4096, 16384)",hybrid,0,0.21123780000198167,hybrid,,,,False,0.29736328125
+rq2,idle,fft,"(4096, 16384)",autohetero,0,0.18046440000034636,hybrid,,,,False,0.309326171875
+rq2,idle,fft,"(4096, 16384)",cpu,1,0.08055880000028992,cpu,,,,False,0.0
+rq2,idle,fft,"(4096, 16384)",gpu,1,0.1345112999988487,gpu,,,,False,1.0
+rq2,idle,fft,"(4096, 16384)",hybrid,1,0.24540200000046752,hybrid,,,,False,0.381591796875
+rq2,idle,fft,"(4096, 16384)",autohetero,1,0.2744787000010547,gpu,2.047505750679822,2,0.06662860000142246,False,0.5341796875
+rq2,idle,fft,"(4096, 16384)",cpu,2,0.07122089999757009,cpu,,,,False,0.0
+rq2,idle,fft,"(4096, 16384)",gpu,2,0.13573539999924833,gpu,,,,False,1.0
+rq2,idle,fft,"(4096, 16384)",hybrid,2,0.23612639999919338,hybrid,,,,False,0.34814453125
+rq2,idle,fft,"(4096, 16384)",autohetero,2,0.24263369999971474,gpu,1.958343816699376,3,0.06422149999707472,False,0.523193359375
+rq2,idle,fft,"(4096, 16384)",cpu,3,0.07363450000048033,cpu,,,,False,0.0
+rq2,idle,fft,"(4096, 16384)",gpu,3,0.1342532000016945,gpu,,,,False,1.0
+rq2,idle,fft,"(4096, 16384)",hybrid,3,0.1661856999999145,hybrid,,,,False,0.370361328125
+rq2,idle,fft,"(4096, 16384)",autohetero,3,0.20963479999772971,gpu,2.059452645367282,2,0.04388429999380605,False,0.432861328125
+rq2,idle,fft,"(4096, 16384)",cpu,4,0.07326209999882849,cpu,,,,False,0.0
+rq2,idle,fft,"(4096, 16384)",gpu,4,0.13492830000177491,gpu,,,,False,1.0
+rq2,idle,fft,"(4096, 16384)",hybrid,4,0.16035769999871263,hybrid,,,,False,0.405029296875
+rq2,idle,fft,"(4096, 16384)",autohetero,4,0.19016220000048634,gpu,1.7702298699369743,3,0.055584399997314904,False,0.54833984375
+rq2,idle,fft,"(4096, 16384)",cpu,5,0.07529100000101607,cpu,,,,False,0.0
+rq2,idle,fft,"(4096, 16384)",gpu,5,0.13419929999872693,gpu,,,,False,1.0
+rq2,idle,fft,"(4096, 16384)",hybrid,5,0.16062079999755952,hybrid,,,,False,0.34228515625
+rq2,idle,fft,"(4096, 16384)",autohetero,5,0.1683018000003358,hybrid,,,,False,0.342529296875
+rq2,idle,enhance,"(32, 3, 720, 1280)",cpu,0,2.1091265000031854,cpu,,,,False,0.0
+rq2,idle,enhance,"(32, 3, 720, 1280)",gpu,0,0.4791298000018287,gpu,,,,False,1.0
+rq2,idle,enhance,"(32, 3, 720, 1280)",hybrid,0,0.3089596000027086,hybrid,,,,False,0.875
+rq2,idle,enhance,"(32, 3, 720, 1280)",autohetero,0,0.2871914999996079,gpu,,,,False,1.0
+rq2,idle,enhance,"(32, 3, 720, 1280)",cpu,1,1.74622719999752,cpu,,,,False,0.0
+rq2,idle,enhance,"(32, 3, 720, 1280)",gpu,1,0.27021050000257674,gpu,,,,False,1.0
+rq2,idle,enhance,"(32, 3, 720, 1280)",hybrid,1,0.2911228000011761,hybrid,,,,False,0.875
+rq2,idle,enhance,"(32, 3, 720, 1280)",autohetero,1,0.24135839999871678,gpu,,,,False,1.0
+rq2,idle,enhance,"(32, 3, 720, 1280)",cpu,2,1.5117944000012358,cpu,,,,False,0.0
+rq2,idle,enhance,"(32, 3, 720, 1280)",gpu,2,0.18013929999870015,gpu,,,,False,1.0
+rq2,idle,enhance,"(32, 3, 720, 1280)",hybrid,2,0.3178287000009732,hybrid,,,,False,0.875
+rq2,idle,enhance,"(32, 3, 720, 1280)",autohetero,2,0.301721700001508,gpu,,,,False,1.0
+rq2,idle,enhance,"(32, 3, 720, 1280)",cpu,3,1.6711592999999993,cpu,,,,False,0.0
+rq2,idle,enhance,"(32, 3, 720, 1280)",gpu,3,0.19611319999967236,gpu,,,,False,1.0
+rq2,idle,enhance,"(32, 3, 720, 1280)",hybrid,3,0.32640919999903417,hybrid,,,,False,0.875
+rq2,idle,enhance,"(32, 3, 720, 1280)",autohetero,3,0.23371039999983623,gpu,,,,False,1.0
+rq2,idle,enhance,"(32, 3, 720, 1280)",cpu,4,1.451320800002577,cpu,,,,False,0.0
+rq2,idle,enhance,"(32, 3, 720, 1280)",gpu,4,0.18024099999820464,gpu,,,,False,1.0
+rq2,idle,enhance,"(32, 3, 720, 1280)",hybrid,4,0.3675352999998722,hybrid,,,,False,0.78125
+rq2,idle,enhance,"(32, 3, 720, 1280)",autohetero,4,0.22756049999952666,gpu,,,,False,1.0
+rq2,idle,enhance,"(32, 3, 720, 1280)",cpu,5,1.2573936999979196,cpu,,,,False,0.0
+rq2,idle,enhance,"(32, 3, 720, 1280)",gpu,5,0.18075640000097337,gpu,,,,False,1.0
+rq2,idle,enhance,"(32, 3, 720, 1280)",hybrid,5,0.3383579000001191,hybrid,,,,False,0.875
+rq2,idle,enhance,"(32, 3, 720, 1280)",autohetero,5,0.2289426999996067,gpu,,,,False,1.0
+rq2,gpu,blur,"(16, 3, 720, 1280)",cpu,0,0.17475090000152704,cpu,,,,False,0.0
+rq2,gpu,blur,"(16, 3, 720, 1280)",gpu,0,0.15164170000207378,gpu,,,,False,1.0
+rq2,gpu,blur,"(16, 3, 720, 1280)",hybrid,0,0.16549289999966277,hybrid,,,,False,0.75
+rq2,gpu,blur,"(16, 3, 720, 1280)",autohetero,0,0.21277379999810364,gpu,,,,False,1.0
+rq2,gpu,blur,"(16, 3, 720, 1280)",cpu,1,0.1780085999998846,cpu,,,,False,0.0
+rq2,gpu,blur,"(16, 3, 720, 1280)",gpu,1,0.13375129999985802,gpu,,,,False,1.0
+rq2,gpu,blur,"(16, 3, 720, 1280)",hybrid,1,0.24686780000047293,hybrid,,,,False,0.8125
+rq2,gpu,blur,"(16, 3, 720, 1280)",autohetero,1,0.22430439999880036,gpu,1.5316636294576977,4,0.08255179999832762,False,0.875
+rq2,gpu,blur,"(16, 3, 720, 1280)",cpu,2,0.17656500000157394,cpu,,,,False,0.0
+rq2,gpu,blur,"(16, 3, 720, 1280)",gpu,2,0.1337950000015553,gpu,,,,False,1.0
+rq2,gpu,blur,"(16, 3, 720, 1280)",hybrid,2,0.19485250000070664,hybrid,,,,False,0.8125
+rq2,gpu,blur,"(16, 3, 720, 1280)",autohetero,2,0.17389270000057877,gpu,1.6652538777690211,6,0.11944050000602147,False,0.9375
+rq2,gpu,blur,"(16, 3, 720, 1280)",cpu,3,0.16633480000018608,cpu,,,,False,0.0
+rq2,gpu,blur,"(16, 3, 720, 1280)",gpu,3,0.1339170000028389,gpu,,,,False,1.0
+rq2,gpu,blur,"(16, 3, 720, 1280)",hybrid,3,0.2563601000001654,hybrid,,,,False,0.75
+rq2,gpu,blur,"(16, 3, 720, 1280)",autohetero,3,0.29777069999909145,gpu,1.7359950130896522,6,0.11650379999628058,False,0.9375
+rq2,gpu,blur,"(16, 3, 720, 1280)",cpu,4,0.17562879999968573,cpu,,,,False,0.0
+rq2,gpu,blur,"(16, 3, 720, 1280)",gpu,4,0.13467550000132178,gpu,,,,False,1.0
+rq2,gpu,blur,"(16, 3, 720, 1280)",hybrid,4,0.2150608000010834,hybrid,,,,False,0.8125
+rq2,gpu,blur,"(16, 3, 720, 1280)",autohetero,4,0.1867232000004151,gpu,1.7556095886404441,7,0.13830670000243117,False,1.0
+rq2,gpu,blur,"(16, 3, 720, 1280)",cpu,5,0.17676189999838243,cpu,,,,False,0.0
+rq2,gpu,blur,"(16, 3, 720, 1280)",gpu,5,0.1350099000010232,gpu,,,,False,1.0
+rq2,gpu,blur,"(16, 3, 720, 1280)",hybrid,5,0.18942280000192113,hybrid,,,,False,0.6875
+rq2,gpu,blur,"(16, 3, 720, 1280)",autohetero,5,0.1822284000008949,gpu,1.719336634108926,6,0.11560250000184169,False,0.9375
+rq2,gpu,resize,"(16, 3, 720, 1280)",cpu,0,0.06555579999985639,cpu,,,,False,0.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",gpu,0,0.05743109999821172,gpu,,,,False,1.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",hybrid,0,0.1339719999996305,hybrid,,,,False,1.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",autohetero,0,0.08730880000075558,gpu,,,,False,1.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",cpu,1,0.04293529999995371,cpu,,,,False,0.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",gpu,1,0.04465409999829717,gpu,,,,False,1.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",hybrid,1,0.05100599999786937,hybrid,,,,False,1.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",autohetero,1,0.05014909999954398,gpu,,,,False,1.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",cpu,2,0.038768100002926076,cpu,,,,False,0.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",gpu,2,0.04448729999785428,gpu,,,,False,1.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",hybrid,2,0.05002049999893643,hybrid,,,,False,1.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",autohetero,2,0.05355530000088038,gpu,,,,False,1.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",cpu,3,0.046880999998393236,cpu,,,,False,0.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",gpu,3,0.04428850000113016,gpu,,,,False,1.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",hybrid,3,0.05065440000180388,hybrid,,,,False,1.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",autohetero,3,0.05205999999816413,gpu,,,,False,1.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",cpu,4,0.04344630000196048,cpu,,,,False,0.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",gpu,4,0.0447652000002563,gpu,,,,False,1.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",hybrid,4,0.051652000001922715,hybrid,,,,False,1.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",autohetero,4,0.05251009999847156,gpu,,,,False,1.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",cpu,5,0.044141999998828396,cpu,,,,False,0.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",gpu,5,0.044611600002099294,gpu,,,,False,1.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",hybrid,5,0.05150760000105947,hybrid,,,,False,1.0
+rq2,gpu,resize,"(16, 3, 720, 1280)",autohetero,5,0.0510482999998203,gpu,,,,False,1.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",cpu,0,0.2822518000029959,cpu,,,,False,0.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",gpu,0,0.12188270000115153,gpu,,,,False,1.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",hybrid,0,0.20271100000172737,hybrid,,,,False,1.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",autohetero,0,0.1616479000003892,gpu,,,,False,1.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",cpu,1,0.2647149000003992,cpu,,,,False,0.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",gpu,1,0.09936500000185333,gpu,,,,False,1.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",hybrid,1,0.12956449999910546,hybrid,,,,False,1.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",autohetero,1,0.2038189999984752,gpu,2.608887381749479,3,0.07114290000026813,False,0.75
+rq2,gpu,sobel,"(16, 3, 720, 1280)",cpu,2,0.2568033000025025,cpu,,,,False,0.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",gpu,2,0.10028790000069421,gpu,,,,False,1.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",hybrid,2,0.1632108000012522,hybrid,,,,False,1.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",autohetero,2,0.1654510999978811,gpu,2.1074049589149593,7,0.12821550000444404,False,1.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",cpu,3,0.2601863999989291,cpu,,,,False,0.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",gpu,3,0.09954019999713637,gpu,,,,False,1.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",hybrid,3,0.1579269000030763,hybrid,,,,False,1.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",autohetero,3,0.18752559999848017,gpu,1.8288198497856634,6,0.11541080000461079,False,0.9375
+rq2,gpu,sobel,"(16, 3, 720, 1280)",cpu,4,0.26214420000178507,cpu,,,,False,0.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",gpu,4,0.09955279999849154,gpu,,,,False,1.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",hybrid,4,0.1570358999997552,hybrid,,,,False,1.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",autohetero,4,0.17452440000124625,gpu,1.877304643068376,2,0.04496580000341055,False,0.75
+rq2,gpu,sobel,"(16, 3, 720, 1280)",cpu,5,0.26235559999986435,cpu,,,,False,0.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",gpu,5,0.09998709999854327,gpu,,,,False,1.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",hybrid,5,0.16287200000078883,hybrid,,,,False,1.0
+rq2,gpu,sobel,"(16, 3, 720, 1280)",autohetero,5,0.15916049999941606,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",cpu,0,0.7558470000003581,cpu,,,,False,0.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",gpu,0,0.11909820000073523,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",hybrid,0,0.14833659999931115,hybrid,,,,False,0.84375
+rq2,gpu,resnet18,"(32, 3, 224, 224)",autohetero,0,0.11579250000067987,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",cpu,1,0.7390754000007291,cpu,,,,False,0.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",gpu,1,0.11191770000004908,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",hybrid,1,0.13684680000005756,hybrid,,,,False,0.84375
+rq2,gpu,resnet18,"(32, 3, 224, 224)",autohetero,1,0.11675210000248626,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",cpu,2,0.7348056999981054,cpu,,,,False,0.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",gpu,2,0.11278770000353688,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",hybrid,2,0.13668289999986882,hybrid,,,,False,0.84375
+rq2,gpu,resnet18,"(32, 3, 224, 224)",autohetero,2,0.11597400000027847,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",cpu,3,0.7401315999995859,cpu,,,,False,0.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",gpu,3,0.11317609999969136,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",hybrid,3,0.1373825000009674,hybrid,,,,False,0.84375
+rq2,gpu,resnet18,"(32, 3, 224, 224)",autohetero,3,0.11579619999974966,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",cpu,4,0.7249575999994704,cpu,,,,False,0.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",gpu,4,0.1124868000006245,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",hybrid,4,0.13479070000175852,hybrid,,,,False,0.84375
+rq2,gpu,resnet18,"(32, 3, 224, 224)",autohetero,4,0.1163760999988881,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",cpu,5,0.7341242999973474,cpu,,,,False,0.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",gpu,5,0.11275440000099479,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(32, 3, 224, 224)",hybrid,5,0.13468179999836138,hybrid,,,,False,0.84375
+rq2,gpu,resnet18,"(32, 3, 224, 224)",autohetero,5,0.11504550000245217,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(128, 3, 224, 224)",cpu,0,2.6964301000007254,cpu,,,,False,0.0
+rq2,gpu,resnet18,"(128, 3, 224, 224)",gpu,0,0.425852100001066,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(128, 3, 224, 224)",hybrid,0,0.4697193000029074,hybrid,,,,False,0.8671875
+rq2,gpu,resnet18,"(128, 3, 224, 224)",autohetero,0,0.831884600000194,gpu,11.122914362498515,2,0.12388629999986733,False,0.78125
+rq2,gpu,resnet18,"(128, 3, 224, 224)",cpu,1,2.7263343000013265,cpu,,,,False,0.0
+rq2,gpu,resnet18,"(128, 3, 224, 224)",gpu,1,0.4051806999996188,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(128, 3, 224, 224)",hybrid,1,0.44704249999995227,hybrid,,,,False,0.8671875
+rq2,gpu,resnet18,"(128, 3, 224, 224)",autohetero,1,0.8008277000008093,gpu,11.223106824960364,2,0.12285130000236677,False,0.78125
+rq2,gpu,resnet18,"(128, 3, 224, 224)",cpu,2,2.6314685999968788,cpu,,,,False,0.0
+rq2,gpu,resnet18,"(128, 3, 224, 224)",gpu,2,0.42110369999863906,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(128, 3, 224, 224)",hybrid,2,0.44371030000183964,hybrid,,,,False,0.8671875
+rq2,gpu,resnet18,"(128, 3, 224, 224)",autohetero,2,0.8291457000013907,gpu,11.263748846282633,2,0.12461180000173044,False,0.765625
+rq2,gpu,resnet18,"(128, 3, 224, 224)",cpu,3,2.6871234999998705,cpu,,,,False,0.0
+rq2,gpu,resnet18,"(128, 3, 224, 224)",gpu,3,0.42087829999945825,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(128, 3, 224, 224)",hybrid,3,0.4447875000005297,hybrid,,,,False,0.8671875
+rq2,gpu,resnet18,"(128, 3, 224, 224)",autohetero,3,0.8307968999979494,gpu,11.272889146853643,2,0.12449840000044787,False,0.7734375
+rq2,gpu,resnet18,"(128, 3, 224, 224)",cpu,4,2.6935608000021602,cpu,,,,False,0.0
+rq2,gpu,resnet18,"(128, 3, 224, 224)",gpu,4,0.42676510000092094,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(128, 3, 224, 224)",hybrid,4,0.4546250000021246,hybrid,,,,False,0.8671875
+rq2,gpu,resnet18,"(128, 3, 224, 224)",autohetero,4,0.8512319000001298,gpu,11.504461882183312,2,0.12822989999767742,False,0.765625
+rq2,gpu,resnet18,"(128, 3, 224, 224)",cpu,5,2.650601099998312,cpu,,,,False,0.0
+rq2,gpu,resnet18,"(128, 3, 224, 224)",gpu,5,0.45268490000307793,gpu,,,,False,1.0
+rq2,gpu,resnet18,"(128, 3, 224, 224)",hybrid,5,0.44743170000219834,hybrid,,,,False,0.8671875
+rq2,gpu,resnet18,"(128, 3, 224, 224)",autohetero,5,0.8441807000017434,gpu,11.780240434245995,2,0.12856740000279387,False,0.765625
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",cpu,0,0.4943796999978076,cpu,,,,False,0.0
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",gpu,0,0.12937410000085947,gpu,,,,False,1.0
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",hybrid,0,0.16029820000039763,hybrid,,,,False,0.875
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",autohetero,0,0.12726269999984652,hybrid,,,,False,0.875
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",cpu,1,0.47008009999990463,cpu,,,,False,0.0
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",gpu,1,0.1240613999980269,gpu,,,,False,1.0
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",hybrid,1,0.12506700000085402,hybrid,,,,False,0.875
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",autohetero,1,0.12039979999826755,hybrid,,,,False,0.875
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",cpu,2,0.47439680000024964,cpu,,,,False,0.0
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",gpu,2,0.12418329999854905,gpu,,,,False,1.0
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",hybrid,2,0.13681630000064615,hybrid,,,,False,0.875
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",autohetero,2,0.12708740000016405,hybrid,,,,False,0.875
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",cpu,3,0.47602679999909014,cpu,,,,False,0.0
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",gpu,3,0.12452240000129677,gpu,,,,False,1.0
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",hybrid,3,0.18482270000095014,hybrid,,,,False,0.875
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",autohetero,3,0.12719649999780813,hybrid,,,,False,0.875
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",cpu,4,0.47396070000104373,cpu,,,,False,0.0
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",gpu,4,0.12382739999884507,gpu,,,,False,1.0
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",hybrid,4,0.1328018999993219,hybrid,,,,False,0.875
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",autohetero,4,0.1223664999997709,hybrid,,,,False,0.875
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",cpu,5,0.47766279999996186,cpu,,,,False,0.0
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",gpu,5,0.12659910000002128,gpu,,,,False,1.0
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",hybrid,5,0.13066810000236728,hybrid,,,,False,0.875
+rq2,gpu,mobilenetv2,"(32, 3, 224, 224)",autohetero,5,0.12338350000209175,hybrid,,,,False,0.875
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",cpu,0,1.9767643999985012,cpu,,,,False,0.0
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",gpu,0,0.513886900000216,gpu,,,,False,1.0
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",hybrid,0,0.45688829999926384,hybrid,,,,False,0.7890625
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",autohetero,0,0.45598600000084843,hybrid,,,,False,0.796875
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",cpu,1,1.9741181999997934,cpu,,,,False,0.0
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",gpu,1,0.4815186000014364,gpu,,,,False,1.0
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",hybrid,1,0.41959160000260454,hybrid,,,,False,0.7890625
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",autohetero,1,0.41907979999814415,hybrid,,,,False,0.7890625
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",cpu,2,1.9470531999977538,cpu,,,,False,0.0
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",gpu,2,0.5046479000011459,gpu,,,,False,1.0
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",hybrid,2,0.4285127000002831,hybrid,,,,False,0.7890625
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",autohetero,2,0.41272459999891,hybrid,,,,False,0.7890625
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",cpu,3,1.9401291000031051,cpu,,,,False,0.0
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",gpu,3,0.505796299999929,gpu,,,,False,1.0
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",hybrid,3,0.41995909999968717,hybrid,,,,False,0.7890625
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",autohetero,3,0.41702819999773055,hybrid,,,,False,0.7890625
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",cpu,4,1.9568379999982426,cpu,,,,False,0.0
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",gpu,4,0.504311400000006,gpu,,,,False,1.0
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",hybrid,4,0.43124470000111614,hybrid,,,,False,0.7890625
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",autohetero,4,0.4227214000020467,hybrid,,,,False,0.7890625
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",cpu,5,1.9334118000006129,cpu,,,,False,0.0
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",gpu,5,0.5049379999982193,gpu,,,,False,1.0
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",hybrid,5,0.4341080999984115,hybrid,,,,False,0.7890625
+rq2,gpu,mobilenetv2,"(128, 3, 224, 224)",autohetero,5,0.41953880000073696,hybrid,,,,False,0.7890625
+rq2,gpu,filter,1000000,cpu,0,0.006705299998429837,cpu,,,,False,0.0
+rq2,gpu,filter,1000000,gpu,0,0.014451999999437248,gpu,,,,False,1.0
+rq2,gpu,filter,1000000,hybrid,0,0.045562799998151604,hybrid,,,,False,0.784535
+rq2,gpu,filter,1000000,autohetero,0,0.049530399999639485,gpu,,,,False,1.0
+rq2,gpu,filter,1000000,cpu,1,0.006804799999372335,cpu,,,,False,0.0
+rq2,gpu,filter,1000000,gpu,1,0.011709499998687534,gpu,,,,False,1.0
+rq2,gpu,filter,1000000,hybrid,1,0.01340409999829717,hybrid,,,,False,0.782757
+rq2,gpu,filter,1000000,autohetero,1,0.015336000000388594,gpu,,,,False,1.0
+rq2,gpu,filter,1000000,cpu,2,0.006696200001897523,cpu,,,,False,0.0
+rq2,gpu,filter,1000000,gpu,2,0.011843000000226311,gpu,,,,False,1.0
+rq2,gpu,filter,1000000,hybrid,2,0.01352250000127242,hybrid,,,,False,0.783517
+rq2,gpu,filter,1000000,autohetero,2,0.01542400000107591,gpu,,,,False,1.0
+rq2,gpu,filter,1000000,cpu,3,0.006586999999854015,cpu,,,,False,0.0
+rq2,gpu,filter,1000000,gpu,3,0.011689599999954225,gpu,,,,False,1.0
+rq2,gpu,filter,1000000,hybrid,3,0.012821899999835296,hybrid,,,,False,0.784799
+rq2,gpu,filter,1000000,autohetero,3,0.015510600002016872,gpu,,,,False,1.0
+rq2,gpu,filter,1000000,cpu,4,0.006674500000372063,cpu,,,,False,0.0
+rq2,gpu,filter,1000000,gpu,4,0.011486200000945246,gpu,,,,False,1.0
+rq2,gpu,filter,1000000,hybrid,4,0.012629200002265861,hybrid,,,,False,0.783869
+rq2,gpu,filter,1000000,autohetero,4,0.015555999998468906,gpu,,,,False,1.0
+rq2,gpu,filter,1000000,cpu,5,0.006666900000709575,cpu,,,,False,0.0
+rq2,gpu,filter,1000000,gpu,5,0.011991400002443697,gpu,,,,False,1.0
+rq2,gpu,filter,1000000,hybrid,5,0.013100200001645135,hybrid,,,,False,0.800151
+rq2,gpu,filter,1000000,autohetero,5,0.01543640000090818,gpu,,,,False,1.0
+rq2,gpu,filter,10000000,cpu,0,0.058910899999318644,cpu,,,,False,0.0
+rq2,gpu,filter,10000000,gpu,0,0.1173452000002726,gpu,,,,False,1.0
+rq2,gpu,filter,10000000,hybrid,0,0.13806839999961085,hybrid,,,,False,0.4892428
+rq2,gpu,filter,10000000,autohetero,0,0.08860660000209464,gpu,1.7723293286181074,2,0.02462980000200332,False,0.6218037
+rq2,gpu,filter,10000000,cpu,1,0.05935959999987972,cpu,,,,False,0.0
+rq2,gpu,filter,10000000,gpu,1,0.10518290000254638,gpu,,,,False,1.0
+rq2,gpu,filter,10000000,hybrid,1,0.07473810000010417,hybrid,,,,False,0.5008301
+rq2,gpu,filter,10000000,autohetero,1,0.08458900000186986,gpu,1.6665798917869121,2,0.02410279999821796,False,0.6121961
+rq2,gpu,filter,10000000,cpu,2,0.06284130000130972,cpu,,,,False,0.0
+rq2,gpu,filter,10000000,gpu,2,0.10245869999926072,gpu,,,,False,1.0
+rq2,gpu,filter,10000000,hybrid,2,0.07299069999862695,hybrid,,,,False,0.4946852
+rq2,gpu,filter,10000000,autohetero,2,0.08711100000073202,gpu,1.7406449700713105,2,0.02409750000151689,False,0.5932469
+rq2,gpu,filter,10000000,cpu,3,0.057330699997692136,cpu,,,,False,0.0
+rq2,gpu,filter,10000000,gpu,3,0.10490500000014435,gpu,,,,False,1.0
+rq2,gpu,filter,10000000,hybrid,3,0.07503359999827808,hybrid,,,,False,0.5010898
+rq2,gpu,filter,10000000,autohetero,3,0.08853340000132448,gpu,1.74817578696906,2,0.024276599997392623,False,0.6124043
+rq2,gpu,filter,10000000,cpu,4,0.06264000000010128,cpu,,,,False,0.0
+rq2,gpu,filter,10000000,gpu,4,0.10187010000299779,gpu,,,,False,1.0
+rq2,gpu,filter,10000000,hybrid,4,0.07403479999993579,hybrid,,,,False,0.5113044
+rq2,gpu,filter,10000000,autohetero,4,0.09090289999949164,gpu,1.8053435041984724,2,0.024825399999826914,False,0.6078476
+rq2,gpu,filter,10000000,cpu,5,0.061889299999165814,cpu,,,,False,0.0
+rq2,gpu,filter,10000000,gpu,5,0.10474210000029416,gpu,,,,False,1.0
+rq2,gpu,filter,10000000,hybrid,5,0.07552639999994426,hybrid,,,,False,0.4818997
+rq2,gpu,filter,10000000,autohetero,5,0.08634739999979502,gpu,1.7062865217526655,2,0.02418510000279639,False,0.6047324
+rq2,gpu,sort,1000000,cpu,0,0.32544720000078087,cpu,,,,False,0.0
+rq2,gpu,sort,1000000,gpu,0,0.023662999999942258,gpu,,,,False,1.0
+rq2,gpu,sort,1000000,autohetero,0,0.04950330000065151,gpu,,,,False,1.0
+rq2,gpu,sort,1000000,cpu,1,0.32530659999974887,cpu,,,,False,0.0
+rq2,gpu,sort,1000000,gpu,1,0.0220608000017819,gpu,,,,False,1.0
+rq2,gpu,sort,1000000,autohetero,1,0.047974599998269696,gpu,,,,False,1.0
+rq2,gpu,sort,1000000,cpu,2,0.30531300000075134,cpu,,,,False,0.0
+rq2,gpu,sort,1000000,gpu,2,0.022439299998950446,gpu,,,,False,1.0
+rq2,gpu,sort,1000000,autohetero,2,0.02123070000016014,gpu,,,,False,1.0
+rq2,gpu,sort,1000000,cpu,3,0.31282289999944624,cpu,,,,False,0.0
+rq2,gpu,sort,1000000,gpu,3,0.022095399999670917,gpu,,,,False,1.0
+rq2,gpu,sort,1000000,autohetero,3,0.021147400002519134,gpu,,,,False,1.0
+rq2,gpu,sort,1000000,cpu,4,0.32134859999860055,cpu,,,,False,0.0
+rq2,gpu,sort,1000000,gpu,4,0.022031100001186132,gpu,,,,False,1.0
+rq2,gpu,sort,1000000,autohetero,4,0.021164400000998285,gpu,,,,False,1.0
+rq2,gpu,sort,1000000,cpu,5,0.30666370000108145,cpu,,,,False,0.0
+rq2,gpu,sort,1000000,gpu,5,0.021844400002009934,gpu,,,,False,1.0
+rq2,gpu,sort,1000000,autohetero,5,0.021150500000658212,gpu,,,,False,1.0
+rq2,gpu,sort,10000000,cpu,0,3.418427500000689,cpu,,,,False,0.0
+rq2,gpu,sort,10000000,gpu,0,0.21904970000105095,gpu,,,,False,1.0
+rq2,gpu,sort,10000000,autohetero,0,0.23010839999915333,gpu,,,,False,1.0
+rq2,gpu,sort,10000000,cpu,1,3.4965340000017022,cpu,,,,False,0.0
+rq2,gpu,sort,10000000,gpu,1,0.20331179999993765,gpu,,,,False,1.0
+rq2,gpu,sort,10000000,autohetero,1,0.2031225999999151,gpu,,,,False,1.0
+rq2,gpu,sort,10000000,cpu,2,3.4165085999993607,cpu,,,,False,0.0
+rq2,gpu,sort,10000000,gpu,2,0.20309469999847352,gpu,,,,False,1.0
+rq2,gpu,sort,10000000,autohetero,2,0.20341370000096504,gpu,,,,False,1.0
+rq2,gpu,sort,10000000,cpu,3,3.4294348000003083,cpu,,,,False,0.0
+rq2,gpu,sort,10000000,gpu,3,0.20537189999959082,gpu,,,,False,1.0
+rq2,gpu,sort,10000000,autohetero,3,0.2041663999989396,gpu,,,,False,1.0
+rq2,gpu,sort,10000000,cpu,4,3.4243191000023216,cpu,,,,False,0.0
+rq2,gpu,sort,10000000,gpu,4,0.20359060000191675,gpu,,,,False,1.0
+rq2,gpu,sort,10000000,autohetero,4,0.2032277999969665,gpu,,,,False,1.0
+rq2,gpu,sort,10000000,cpu,5,3.4734755999998015,cpu,,,,False,0.0
+rq2,gpu,sort,10000000,gpu,5,0.20344230000046082,gpu,,,,False,1.0
+rq2,gpu,sort,10000000,autohetero,5,0.20347300000139512,gpu,,,,False,1.0
+rq2,gpu,groupby,1000000,cpu,0,0.10777519999828655,cpu,,,,False,0.0
+rq2,gpu,groupby,1000000,gpu,0,0.013758599998254795,gpu,,,,False,1.0
+rq2,gpu,groupby,1000000,autohetero,0,0.041188099999999395,gpu,,,,False,1.0
+rq2,gpu,groupby,1000000,cpu,1,0.10090330000093672,cpu,,,,False,0.0
+rq2,gpu,groupby,1000000,gpu,1,0.011263699998380616,gpu,,,,False,1.0
+rq2,gpu,groupby,1000000,autohetero,1,0.011009400001057656,gpu,,,,False,1.0
+rq2,gpu,groupby,1000000,cpu,2,0.09844729999895208,cpu,,,,False,0.0
+rq2,gpu,groupby,1000000,gpu,2,0.01125990000218735,gpu,,,,False,1.0
+rq2,gpu,groupby,1000000,autohetero,2,0.011067500003264286,gpu,,,,False,1.0
+rq2,gpu,groupby,1000000,cpu,3,0.09768460000123014,cpu,,,,False,0.0
+rq2,gpu,groupby,1000000,gpu,3,0.011528099999850383,gpu,,,,False,1.0
+rq2,gpu,groupby,1000000,autohetero,3,0.011142499999550637,gpu,,,,False,1.0
+rq2,gpu,groupby,1000000,cpu,4,0.10163060000195401,cpu,,,,False,0.0
+rq2,gpu,groupby,1000000,gpu,4,0.011382699998648604,gpu,,,,False,1.0
+rq2,gpu,groupby,1000000,autohetero,4,0.011049000000639353,gpu,,,,False,1.0
+rq2,gpu,groupby,1000000,cpu,5,0.09868659999847296,cpu,,,,False,0.0
+rq2,gpu,groupby,1000000,gpu,5,0.01107380000030389,gpu,,,,False,1.0
+rq2,gpu,groupby,1000000,autohetero,5,0.01098219999767025,gpu,,,,False,1.0
+rq2,gpu,groupby,10000000,cpu,0,1.0058523000006971,cpu,,,,False,0.0
+rq2,gpu,groupby,10000000,gpu,0,0.1273691999995208,gpu,,,,False,1.0
+rq2,gpu,groupby,10000000,autohetero,0,0.13486299999931362,gpu,,,,False,1.0
+rq2,gpu,groupby,10000000,cpu,1,1.0149755999991612,cpu,,,,False,0.0
+rq2,gpu,groupby,10000000,gpu,1,0.10416560000157915,gpu,,,,False,1.0
+rq2,gpu,groupby,10000000,autohetero,1,0.10281970000141882,gpu,,,,False,1.0
+rq2,gpu,groupby,10000000,cpu,2,1.0293663999982527,cpu,,,,False,0.0
+rq2,gpu,groupby,10000000,gpu,2,0.10426209999786806,gpu,,,,False,1.0
+rq2,gpu,groupby,10000000,autohetero,2,0.1022458999977971,gpu,,,,False,1.0
+rq2,gpu,groupby,10000000,cpu,3,1.01028839999708,cpu,,,,False,0.0
+rq2,gpu,groupby,10000000,gpu,3,0.10432650000075228,gpu,,,,False,1.0
+rq2,gpu,groupby,10000000,autohetero,3,0.10282860000006622,gpu,,,,False,1.0
+rq2,gpu,groupby,10000000,cpu,4,1.0075207999980194,cpu,,,,False,0.0
+rq2,gpu,groupby,10000000,gpu,4,0.10439359999872977,gpu,,,,False,1.0
+rq2,gpu,groupby,10000000,autohetero,4,0.10271450000072946,gpu,,,,False,1.0
+rq2,gpu,groupby,10000000,cpu,5,1.0017592999975022,cpu,,,,False,0.0
+rq2,gpu,groupby,10000000,gpu,5,0.10446739999679266,gpu,,,,False,1.0
+rq2,gpu,groupby,10000000,autohetero,5,0.10397139999986393,gpu,,,,False,1.0
+rq2,gpu,matmul,2048,cpu,0,0.07054639999842038,cpu,,,,False,0.0
+rq2,gpu,matmul,2048,gpu,0,0.031226899998728186,gpu,,,,False,1.0
+rq2,gpu,matmul,2048,hybrid,0,0.10583330000008573,hybrid,,,,False,0.7783203125
+rq2,gpu,matmul,2048,autohetero,0,0.0428369000001112,gpu,,,,False,1.0
+rq2,gpu,matmul,2048,cpu,1,0.06571679999979096,cpu,,,,False,0.0
+rq2,gpu,matmul,2048,gpu,1,0.02667709999877843,gpu,,,,False,1.0
+rq2,gpu,matmul,2048,hybrid,1,0.03560989999823505,hybrid,,,,False,0.77685546875
+rq2,gpu,matmul,2048,autohetero,1,0.042267199998605065,gpu,,,,False,1.0
+rq2,gpu,matmul,2048,cpu,2,0.06823709999662242,cpu,,,,False,0.0
+rq2,gpu,matmul,2048,gpu,2,0.02682700000150362,gpu,,,,False,1.0
+rq2,gpu,matmul,2048,hybrid,2,0.09924210000099265,hybrid,,,,False,0.755859375
+rq2,gpu,matmul,2048,autohetero,2,0.03956999999718391,gpu,,,,False,1.0
+rq2,gpu,matmul,2048,cpu,3,0.06841699999858974,cpu,,,,False,0.0
+rq2,gpu,matmul,2048,gpu,3,0.027154700001119636,gpu,,,,False,1.0
+rq2,gpu,matmul,2048,hybrid,3,0.03620220000084373,hybrid,,,,False,0.75732421875
+rq2,gpu,matmul,2048,autohetero,3,0.03899900000033085,gpu,,,,False,1.0
+rq2,gpu,matmul,2048,cpu,4,0.06823979999899166,cpu,,,,False,0.0
+rq2,gpu,matmul,2048,gpu,4,0.026658599999791477,gpu,,,,False,1.0
+rq2,gpu,matmul,2048,hybrid,4,0.036271600001782645,hybrid,,,,False,0.76318359375
+rq2,gpu,matmul,2048,autohetero,4,0.04461809999702382,gpu,,,,False,1.0
+rq2,gpu,matmul,2048,cpu,5,0.06910290000087116,cpu,,,,False,0.0
+rq2,gpu,matmul,2048,gpu,5,0.03117740000016056,gpu,,,,False,1.0
+rq2,gpu,matmul,2048,hybrid,5,0.03943269999945187,hybrid,,,,False,0.74560546875
+rq2,gpu,matmul,2048,autohetero,5,0.04083869999885792,gpu,,,,False,1.0
+rq2,gpu,fft,"(1024, 16384)",cpu,0,0.019606000001658686,cpu,,,,False,0.0
+rq2,gpu,fft,"(1024, 16384)",gpu,0,0.05558059999748366,gpu,,,,False,1.0
+rq2,gpu,fft,"(1024, 16384)",hybrid,0,0.14551070000015898,hybrid,,,,False,0.3134765625
+rq2,gpu,fft,"(1024, 16384)",autohetero,0,0.14697610000075656,gpu,,,,False,1.0
+rq2,gpu,fft,"(1024, 16384)",cpu,1,0.020157999999355525,cpu,,,,False,0.0
+rq2,gpu,fft,"(1024, 16384)",gpu,1,0.04215860000113025,gpu,,,,False,1.0
+rq2,gpu,fft,"(1024, 16384)",hybrid,1,0.07520479999948293,hybrid,,,,False,0.40625
+rq2,gpu,fft,"(1024, 16384)",autohetero,1,0.08281329999954323,gpu,2.6107400579470883,7,0.05288259999360889,False,0.9970703125
+rq2,gpu,fft,"(1024, 16384)",cpu,2,0.020347399997262983,cpu,,,,False,0.0
+rq2,gpu,fft,"(1024, 16384)",gpu,2,0.040701599999010796,gpu,,,,False,1.0
+rq2,gpu,fft,"(1024, 16384)",hybrid,2,0.06580689999827882,hybrid,,,,False,0.470703125
+rq2,gpu,fft,"(1024, 16384)",autohetero,2,0.07039150000127847,gpu,1.7264698556325881,6,0.041759099996852456,False,0.962890625
+rq2,gpu,fft,"(1024, 16384)",cpu,3,0.02033819999996922,cpu,,,,False,0.0
+rq2,gpu,fft,"(1024, 16384)",gpu,3,0.041846399999485584,gpu,,,,False,1.0
+rq2,gpu,fft,"(1024, 16384)",hybrid,3,0.06820369999695686,hybrid,,,,False,0.455078125
+rq2,gpu,fft,"(1024, 16384)",autohetero,3,0.08643619999929797,gpu,2.178432487833868,5,0.03677650000463473,False,0.8916015625
+rq2,gpu,fft,"(1024, 16384)",cpu,4,0.02049089999854914,cpu,,,,False,0.0
+rq2,gpu,fft,"(1024, 16384)",gpu,4,0.042018099997221725,gpu,,,,False,1.0
+rq2,gpu,fft,"(1024, 16384)",hybrid,4,0.07013130000268575,hybrid,,,,False,0.419921875
+rq2,gpu,fft,"(1024, 16384)",autohetero,4,0.08583369999905699,gpu,2.5028759051030227,5,0.038081200003944105,False,0.8876953125
+rq2,gpu,fft,"(1024, 16384)",cpu,5,0.020034899996971944,cpu,,,,False,0.0
+rq2,gpu,fft,"(1024, 16384)",gpu,5,0.04070200000205659,gpu,,,,False,1.0
+rq2,gpu,fft,"(1024, 16384)",hybrid,5,0.05641530000139028,hybrid,,,,False,0.4892578125
+rq2,gpu,fft,"(1024, 16384)",autohetero,5,0.12087150000297697,gpu,2.5159561369302814,3,0.025934999997843988,False,0.6669921875
+rq2,gpu,fft,"(4096, 16384)",cpu,0,0.07587739999871701,cpu,,,,False,0.0
+rq2,gpu,fft,"(4096, 16384)",gpu,0,0.21051570000054198,gpu,,,,False,1.0
+rq2,gpu,fft,"(4096, 16384)",hybrid,0,0.22650989999965532,hybrid,,,,False,0.3623046875
+rq2,gpu,fft,"(4096, 16384)",autohetero,0,0.24342649999744026,gpu,2.26936935745072,2,0.06667409999863594,False,0.50390625
+rq2,gpu,fft,"(4096, 16384)",cpu,1,0.07409720000214293,cpu,,,,False,0.0
+rq2,gpu,fft,"(4096, 16384)",gpu,1,0.16132479999942007,gpu,,,,False,1.0
+rq2,gpu,fft,"(4096, 16384)",hybrid,1,0.19059800000104588,hybrid,,,,False,0.385009765625
+rq2,gpu,fft,"(4096, 16384)",autohetero,1,0.23108209999918472,gpu,2.1108189615083193,2,0.05455340000480646,False,0.5166015625
+rq2,gpu,fft,"(4096, 16384)",cpu,2,0.07609059999958845,cpu,,,,False,0.0
+rq2,gpu,fft,"(4096, 16384)",gpu,2,0.16095879999920726,gpu,,,,False,1.0
+rq2,gpu,fft,"(4096, 16384)",hybrid,2,0.1867247000009229,hybrid,,,,False,0.398193359375
+rq2,gpu,fft,"(4096, 16384)",autohetero,2,0.24166089999926044,gpu,2.3197140543017087,2,0.056435200000123587,False,0.51416015625
+rq2,gpu,fft,"(4096, 16384)",cpu,3,0.07677010000043083,cpu,,,,False,0.0
+rq2,gpu,fft,"(4096, 16384)",gpu,3,0.16203930000119726,gpu,,,,False,1.0
+rq2,gpu,fft,"(4096, 16384)",hybrid,3,0.18002570000317064,hybrid,,,,False,0.427734375
+rq2,gpu,fft,"(4096, 16384)",autohetero,3,0.24131760000091163,gpu,1.7523063190394679,2,0.052758399997401284,False,0.5048828125
+rq2,gpu,fft,"(4096, 16384)",cpu,4,0.0795261000021128,cpu,,,,False,0.0
+rq2,gpu,fft,"(4096, 16384)",gpu,4,0.16280100000221864,gpu,,,,False,1.0
+rq2,gpu,fft,"(4096, 16384)",hybrid,4,0.18632870000146795,hybrid,,,,False,0.407958984375
+rq2,gpu,fft,"(4096, 16384)",autohetero,4,0.21188320000146632,gpu,2.047083196113915,2,0.04670450000412529,False,0.547607421875
+rq2,gpu,fft,"(4096, 16384)",cpu,5,0.0922586999986379,cpu,,,,False,0.0
+rq2,gpu,fft,"(4096, 16384)",gpu,5,0.16149980000045616,gpu,,,,False,1.0
+rq2,gpu,fft,"(4096, 16384)",hybrid,5,0.17627050000010058,hybrid,,,,False,0.43603515625
+rq2,gpu,fft,"(4096, 16384)",autohetero,5,0.23093389999849023,gpu,2.092497427608473,2,0.05409920000238344,False,0.5146484375
+rq2,gpu,enhance,"(32, 3, 720, 1280)",cpu,0,2.348922200002562,cpu,,,,False,0.0
+rq2,gpu,enhance,"(32, 3, 720, 1280)",gpu,0,0.4758770000007644,gpu,,,,False,1.0
+rq2,gpu,enhance,"(32, 3, 720, 1280)",hybrid,0,0.49509409999882337,hybrid,,,,False,0.71875
+rq2,gpu,enhance,"(32, 3, 720, 1280)",autohetero,0,0.47231190000093193,hybrid,,,,False,0.71875
+rq2,gpu,enhance,"(32, 3, 720, 1280)",cpu,1,1.6335766999982297,cpu,,,,False,0.0
+rq2,gpu,enhance,"(32, 3, 720, 1280)",gpu,1,0.4079974999986007,gpu,,,,False,1.0
+rq2,gpu,enhance,"(32, 3, 720, 1280)",hybrid,1,0.4885419999991427,hybrid,,,,False,0.65625
+rq2,gpu,enhance,"(32, 3, 720, 1280)",autohetero,1,0.46566470000107074,hybrid,,,,False,0.65625
+rq2,gpu,enhance,"(32, 3, 720, 1280)",cpu,2,1.223751400000765,cpu,,,,False,0.0
+rq2,gpu,enhance,"(32, 3, 720, 1280)",gpu,2,0.40830579999965266,gpu,,,,False,1.0
+rq2,gpu,enhance,"(32, 3, 720, 1280)",hybrid,2,0.480752700001176,hybrid,,,,False,0.65625
+rq2,gpu,enhance,"(32, 3, 720, 1280)",autohetero,2,0.46779980000064825,hybrid,,,,False,0.65625
+rq2,gpu,enhance,"(32, 3, 720, 1280)",cpu,3,1.2462962000026891,cpu,,,,False,0.0
+rq2,gpu,enhance,"(32, 3, 720, 1280)",gpu,3,0.40909930000270833,gpu,,,,False,1.0
+rq2,gpu,enhance,"(32, 3, 720, 1280)",hybrid,3,0.5001197999990836,hybrid,,,,False,0.65625
+rq2,gpu,enhance,"(32, 3, 720, 1280)",autohetero,3,0.47287640000286046,hybrid,,,,False,0.65625
+rq2,gpu,enhance,"(32, 3, 720, 1280)",cpu,4,1.3354282999971474,cpu,,,,False,0.0
+rq2,gpu,enhance,"(32, 3, 720, 1280)",gpu,4,0.4090144000001601,gpu,,,,False,1.0
+rq2,gpu,enhance,"(32, 3, 720, 1280)",hybrid,4,0.5016376999992644,hybrid,,,,False,0.65625
+rq2,gpu,enhance,"(32, 3, 720, 1280)",autohetero,4,0.4799167999990459,hybrid,,,,False,0.65625
+rq2,gpu,enhance,"(32, 3, 720, 1280)",cpu,5,1.4176243000001705,cpu,,,,False,0.0
+rq2,gpu,enhance,"(32, 3, 720, 1280)",gpu,5,0.4135275999979058,gpu,,,,False,1.0
+rq2,gpu,enhance,"(32, 3, 720, 1280)",hybrid,5,0.49573659999805386,hybrid,,,,False,0.65625
+rq2,gpu,enhance,"(32, 3, 720, 1280)",autohetero,5,0.47750640000231215,hybrid,,,,False,0.65625
+rq2,cpu,blur,"(16, 3, 720, 1280)",cpu,0,0.30330770000000484,cpu,,,,False,0.0
+rq2,cpu,blur,"(16, 3, 720, 1280)",gpu,0,0.17088919999878271,gpu,,,,False,1.0
+rq2,cpu,blur,"(16, 3, 720, 1280)",hybrid,0,0.9340999999985797,hybrid,,,,False,0.875
+rq2,cpu,blur,"(16, 3, 720, 1280)",autohetero,0,0.8505790999988676,hybrid,,,,False,0.875
+rq2,cpu,blur,"(16, 3, 720, 1280)",cpu,1,0.6663583000008657,cpu,,,,False,0.0
+rq2,cpu,blur,"(16, 3, 720, 1280)",gpu,1,0.27618860000075074,gpu,,,,False,1.0
+rq2,cpu,blur,"(16, 3, 720, 1280)",hybrid,1,0.9497506999978214,hybrid,,,,False,0.9375
+rq2,cpu,blur,"(16, 3, 720, 1280)",autohetero,1,0.5355037000008451,hybrid,,,,False,0.9375
+rq2,cpu,blur,"(16, 3, 720, 1280)",cpu,2,0.4308119000015722,cpu,,,,False,0.0
+rq2,cpu,blur,"(16, 3, 720, 1280)",gpu,2,0.09590920000118786,gpu,,,,False,1.0
+rq2,cpu,blur,"(16, 3, 720, 1280)",hybrid,2,0.7424949999985984,hybrid,,,,False,0.9375
+rq2,cpu,blur,"(16, 3, 720, 1280)",autohetero,2,0.7942274999986694,hybrid,,,,False,0.9375
+rq2,cpu,blur,"(16, 3, 720, 1280)",cpu,3,0.6271742999997514,cpu,,,,False,0.0
+rq2,cpu,blur,"(16, 3, 720, 1280)",gpu,3,0.20209950000207755,gpu,,,,False,1.0
+rq2,cpu,blur,"(16, 3, 720, 1280)",hybrid,3,0.5808692999999039,hybrid,,,,False,0.9375
+rq2,cpu,blur,"(16, 3, 720, 1280)",autohetero,3,0.7403193999998621,hybrid,,,,False,0.9375
+rq2,cpu,blur,"(16, 3, 720, 1280)",cpu,4,0.5716138999996474,cpu,,,,False,0.0
+rq2,cpu,blur,"(16, 3, 720, 1280)",gpu,4,0.1522082000010414,gpu,,,,False,1.0
+rq2,cpu,blur,"(16, 3, 720, 1280)",hybrid,4,0.5492970000013884,hybrid,,,,False,0.9375
+rq2,cpu,blur,"(16, 3, 720, 1280)",autohetero,4,0.631025699996826,hybrid,,,,False,0.9375
+rq2,cpu,blur,"(16, 3, 720, 1280)",cpu,5,0.5243719999998575,cpu,,,,False,0.0
+rq2,cpu,blur,"(16, 3, 720, 1280)",gpu,5,0.13205150000067079,gpu,,,,False,1.0
+rq2,cpu,blur,"(16, 3, 720, 1280)",hybrid,5,0.6771286999974109,hybrid,,,,False,0.9375
+rq2,cpu,blur,"(16, 3, 720, 1280)",autohetero,5,0.82918939999945,gpu,2.7918859826655402,3,0.0707388999981049,False,0.9375
+rq2,cpu,resize,"(16, 3, 720, 1280)",cpu,0,0.10475140000198735,cpu,,,,False,0.0
+rq2,cpu,resize,"(16, 3, 720, 1280)",gpu,0,0.23443570000017644,gpu,,,,False,1.0
+rq2,cpu,resize,"(16, 3, 720, 1280)",hybrid,0,0.4010058999992907,hybrid,,,,False,0.9375
+rq2,cpu,resize,"(16, 3, 720, 1280)",autohetero,0,0.4528594000003068,gpu,1.5332673916247217,6,0.06974949999494129,False,0.9375
+rq2,cpu,resize,"(16, 3, 720, 1280)",cpu,1,0.12636589999965508,cpu,,,,False,0.0
+rq2,cpu,resize,"(16, 3, 720, 1280)",gpu,1,0.1413618000005954,gpu,,,,False,1.0
+rq2,cpu,resize,"(16, 3, 720, 1280)",hybrid,1,0.25171689999842783,hybrid,,,,False,1.0
+rq2,cpu,resize,"(16, 3, 720, 1280)",autohetero,1,0.4959348000011232,gpu,,,,False,1.0
+rq2,cpu,resize,"(16, 3, 720, 1280)",cpu,2,0.12948869999672752,cpu,,,,False,0.0
+rq2,cpu,resize,"(16, 3, 720, 1280)",gpu,2,0.0838408999989042,gpu,,,,False,1.0
+rq2,cpu,resize,"(16, 3, 720, 1280)",hybrid,2,0.4712697000031767,hybrid,,,,False,0.8125
+rq2,cpu,resize,"(16, 3, 720, 1280)",autohetero,2,0.45475860000078683,gpu,2.842371275565553,3,0.0482040999995661,False,0.8125
+rq2,cpu,resize,"(16, 3, 720, 1280)",cpu,3,0.11917340000218246,cpu,,,,False,0.0
+rq2,cpu,resize,"(16, 3, 720, 1280)",gpu,3,0.08311289999983273,gpu,,,,False,1.0
+rq2,cpu,resize,"(16, 3, 720, 1280)",hybrid,3,0.35570019999795477,hybrid,,,,False,0.9375
+rq2,cpu,resize,"(16, 3, 720, 1280)",autohetero,3,0.36374979999891366,gpu,,,,False,1.0
+rq2,cpu,resize,"(16, 3, 720, 1280)",cpu,4,0.12062270000024,cpu,,,,False,0.0
+rq2,cpu,resize,"(16, 3, 720, 1280)",gpu,4,0.07906830000138143,gpu,,,,False,1.0
+rq2,cpu,resize,"(16, 3, 720, 1280)",hybrid,4,0.37117680000301334,hybrid,,,,False,0.9375
+rq2,cpu,resize,"(16, 3, 720, 1280)",autohetero,4,0.40034279999963474,gpu,,,,False,1.0
+rq2,cpu,resize,"(16, 3, 720, 1280)",cpu,5,0.14639989999704994,cpu,,,,False,0.0
+rq2,cpu,resize,"(16, 3, 720, 1280)",gpu,5,0.038927900000999216,gpu,,,,False,1.0
+rq2,cpu,resize,"(16, 3, 720, 1280)",hybrid,5,0.2917624999972759,hybrid,,,,False,0.9375
+rq2,cpu,resize,"(16, 3, 720, 1280)",autohetero,5,0.41906980000203475,gpu,,,,False,1.0
+rq2,cpu,sobel,"(16, 3, 720, 1280)",cpu,0,0.5556255000010424,cpu,,,,False,0.0
+rq2,cpu,sobel,"(16, 3, 720, 1280)",gpu,0,0.5713360000008834,gpu,,,,False,1.0
+rq2,cpu,sobel,"(16, 3, 720, 1280)",hybrid,0,0.7303394000009575,hybrid,,,,False,0.9375
+rq2,cpu,sobel,"(16, 3, 720, 1280)",autohetero,0,0.5954152000012982,gpu,1.8902518363225598,2,0.043392299998231465,False,0.9375
+rq2,cpu,sobel,"(16, 3, 720, 1280)",cpu,1,0.35935109999991255,cpu,,,,False,0.0
+rq2,cpu,sobel,"(16, 3, 720, 1280)",gpu,1,0.07207379999817931,gpu,,,,False,1.0
+rq2,cpu,sobel,"(16, 3, 720, 1280)",hybrid,1,0.42051790000186884,hybrid,,,,False,0.9375
+rq2,cpu,sobel,"(16, 3, 720, 1280)",autohetero,1,0.603715999997803,gpu,3.165546494270758,3,0.06456560000151512,False,0.9375
+rq2,cpu,sobel,"(16, 3, 720, 1280)",cpu,2,0.3952858999982709,cpu,,,,False,0.0
+rq2,cpu,sobel,"(16, 3, 720, 1280)",gpu,2,0.07674749999932828,gpu,,,,False,1.0
+rq2,cpu,sobel,"(16, 3, 720, 1280)",hybrid,2,0.592772199997853,hybrid,,,,False,0.9375
+rq2,cpu,sobel,"(16, 3, 720, 1280)",autohetero,2,0.397591700002522,gpu,,,,False,1.0
+rq2,cpu,sobel,"(16, 3, 720, 1280)",cpu,3,0.3785822999998345,cpu,,,,False,0.0
+rq2,cpu,sobel,"(16, 3, 720, 1280)",gpu,3,0.07204949999868404,gpu,,,,False,1.0
+rq2,cpu,sobel,"(16, 3, 720, 1280)",hybrid,3,0.27830700000049546,hybrid,,,,False,1.0
+rq2,cpu,sobel,"(16, 3, 720, 1280)",autohetero,3,0.5717394000021159,gpu,1.869156129428869,2,0.03575920000002952,False,0.9375
+rq2,cpu,sobel,"(16, 3, 720, 1280)",cpu,4,0.3790877999999793,cpu,,,,False,0.0
+rq2,cpu,sobel,"(16, 3, 720, 1280)",gpu,4,0.07017489999998361,gpu,,,,False,1.0
+rq2,cpu,sobel,"(16, 3, 720, 1280)",hybrid,4,0.787364299998444,hybrid,,,,False,0.875
+rq2,cpu,sobel,"(16, 3, 720, 1280)",autohetero,4,0.4822156000009272,gpu,1.5498779406196486,3,0.04016540000520763,False,0.9375
+rq2,cpu,sobel,"(16, 3, 720, 1280)",cpu,5,0.42161709999709274,cpu,,,,False,0.0
+rq2,cpu,sobel,"(16, 3, 720, 1280)",gpu,5,0.06867000000056578,gpu,,,,False,1.0
+rq2,cpu,sobel,"(16, 3, 720, 1280)",hybrid,5,0.5219233999996504,hybrid,,,,False,0.9375
+rq2,cpu,sobel,"(16, 3, 720, 1280)",autohetero,5,0.4729053000010026,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",cpu,0,6.360365199998341,cpu,,,,False,0.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",gpu,0,0.5051271000011184,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",hybrid,0,5.5632052999972075,hybrid,,,,False,0.71875
+rq2,cpu,resnet18,"(32, 3, 224, 224)",autohetero,0,0.543960099999822,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",cpu,1,5.227576500001305,cpu,,,,False,0.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",gpu,1,0.31985749999876134,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",hybrid,1,4.735970899997483,hybrid,,,,False,0.71875
+rq2,cpu,resnet18,"(32, 3, 224, 224)",autohetero,1,0.36161949999950593,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",cpu,2,5.7825198999998975,cpu,,,,False,0.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",gpu,2,0.41532680000091204,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",hybrid,2,5.058516999997664,hybrid,,,,False,0.71875
+rq2,cpu,resnet18,"(32, 3, 224, 224)",autohetero,2,0.3523534000014479,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",cpu,3,5.305241300000489,cpu,,,,False,0.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",gpu,3,0.20295350000014878,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",hybrid,3,5.254696099997091,hybrid,,,,False,0.71875
+rq2,cpu,resnet18,"(32, 3, 224, 224)",autohetero,3,0.38960360000055516,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",cpu,4,5.788457800001197,cpu,,,,False,0.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",gpu,4,0.4239914999998291,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",hybrid,4,5.142701900000247,hybrid,,,,False,0.71875
+rq2,cpu,resnet18,"(32, 3, 224, 224)",autohetero,4,0.19753119999950286,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",cpu,5,4.794510399999126,cpu,,,,False,0.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",gpu,5,0.3898717999982182,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(32, 3, 224, 224)",hybrid,5,4.482492499999353,hybrid,,,,False,0.71875
+rq2,cpu,resnet18,"(32, 3, 224, 224)",autohetero,5,0.3867642999975942,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(128, 3, 224, 224)",cpu,0,8.137701799998467,cpu,,,,False,0.0
+rq2,cpu,resnet18,"(128, 3, 224, 224)",gpu,0,0.4097055000020191,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(128, 3, 224, 224)",hybrid,0,7.807625499997812,hybrid,,,,False,0.9140625
+rq2,cpu,resnet18,"(128, 3, 224, 224)",autohetero,0,8.934789899998577,gpu,23.08543827822284,2,0.26010909999968135,False,0.7265625
+rq2,cpu,resnet18,"(128, 3, 224, 224)",cpu,1,9.203185000002122,cpu,,,,False,0.0
+rq2,cpu,resnet18,"(128, 3, 224, 224)",gpu,1,0.5263653000001796,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(128, 3, 224, 224)",hybrid,1,9.392696599999908,hybrid,,,,False,0.9140625
+rq2,cpu,resnet18,"(128, 3, 224, 224)",autohetero,1,8.965422400000534,gpu,5.279147282978799,2,0.05585120000250754,False,0.8046875
+rq2,cpu,resnet18,"(128, 3, 224, 224)",cpu,2,8.402711899998394,cpu,,,,False,0.0
+rq2,cpu,resnet18,"(128, 3, 224, 224)",gpu,2,0.347536699999182,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(128, 3, 224, 224)",hybrid,2,9.327874200000224,hybrid,,,,False,0.9140625
+rq2,cpu,resnet18,"(128, 3, 224, 224)",autohetero,2,5.617136400000163,gpu,5.28915908825044,2,0.05588559999887366,False,0.8125
+rq2,cpu,resnet18,"(128, 3, 224, 224)",cpu,3,8.104693500001304,cpu,,,,False,0.0
+rq2,cpu,resnet18,"(128, 3, 224, 224)",gpu,3,0.3432732000001124,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(128, 3, 224, 224)",hybrid,3,9.592142200002854,hybrid,,,,False,0.9140625
+rq2,cpu,resnet18,"(128, 3, 224, 224)",autohetero,3,8.156183899998723,gpu,5.281730974416561,2,0.05579840000063996,False,0.8046875
+rq2,cpu,resnet18,"(128, 3, 224, 224)",cpu,4,8.083739200003038,cpu,,,,False,0.0
+rq2,cpu,resnet18,"(128, 3, 224, 224)",gpu,4,0.36653129999831435,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(128, 3, 224, 224)",hybrid,4,9.929379099998187,hybrid,,,,False,0.9140625
+rq2,cpu,resnet18,"(128, 3, 224, 224)",autohetero,4,10.75272380000024,gpu,7.520955871207919,2,0.06756379999933415,False,0.7890625
+rq2,cpu,resnet18,"(128, 3, 224, 224)",cpu,5,6.546545600001991,cpu,,,,False,0.0
+rq2,cpu,resnet18,"(128, 3, 224, 224)",gpu,5,0.45381579999957466,gpu,,,,False,1.0
+rq2,cpu,resnet18,"(128, 3, 224, 224)",hybrid,5,8.719076599998516,hybrid,,,,False,0.9140625
+rq2,cpu,resnet18,"(128, 3, 224, 224)",autohetero,5,9.659902700001112,gpu,24.192417234152042,2,0.3644719000039913,False,0.7421875
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",cpu,0,13.154145900000003,cpu,,,,False,0.0
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",gpu,0,0.4789616999987629,gpu,,,,False,1.0
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",hybrid,0,11.09281479999845,hybrid,,,,False,0.90625
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",autohetero,0,9.601789800002734,hybrid,,,,False,0.90625
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",cpu,1,11.777258899997832,cpu,,,,False,0.0
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",gpu,1,0.22548720000122557,gpu,,,,False,1.0
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",hybrid,1,11.39150200000222,hybrid,,,,False,0.90625
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",autohetero,1,12.224605999999767,hybrid,,,,False,0.90625
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",cpu,2,5.588395300001139,cpu,,,,False,0.0
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",gpu,2,0.47905119999995804,gpu,,,,False,1.0
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",hybrid,2,9.806003199999395,hybrid,,,,False,0.90625
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",autohetero,2,10.688341900000523,hybrid,,,,False,0.90625
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",cpu,3,11.577883899997687,cpu,,,,False,0.0
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",gpu,3,0.2201346999972884,gpu,,,,False,1.0
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",hybrid,3,11.997992199998407,hybrid,,,,False,0.90625
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",autohetero,3,11.839684700000362,hybrid,,,,False,0.90625
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",cpu,4,9.846662200001447,cpu,,,,False,0.0
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",gpu,4,0.38131260000227485,gpu,,,,False,1.0
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",hybrid,4,11.452128799999628,hybrid,,,,False,0.90625
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",autohetero,4,11.258875700001227,hybrid,,,,False,0.90625
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",cpu,5,12.838731200001348,cpu,,,,False,0.0
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",gpu,5,0.3953240000009828,gpu,,,,False,1.0
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",hybrid,5,13.389813800000411,hybrid,,,,False,0.90625
+rq2,cpu,mobilenetv2,"(32, 3, 224, 224)",autohetero,5,9.201831300000777,hybrid,,,,False,0.90625
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",cpu,0,15.003815600000962,cpu,,,,False,0.0
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",gpu,0,0.49609659999987343,gpu,,,,False,1.0
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",hybrid,0,11.465663399998448,hybrid,,,,False,0.890625
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",autohetero,0,16.99971160000132,hybrid,,,,False,0.8828125
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",cpu,1,10.631656399997155,cpu,,,,False,0.0
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",gpu,1,0.5702577000010933,gpu,,,,False,1.0
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",hybrid,1,20.98027860000002,hybrid,,,,False,0.8828125
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",autohetero,1,17.206774600002973,hybrid,,,,False,0.8828125
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",cpu,2,12.627057099998638,cpu,,,,False,0.0
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",gpu,2,0.4711147999987588,gpu,,,,False,1.0
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",hybrid,2,6.570179799997277,hybrid,,,,False,0.890625
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",autohetero,2,10.875943299997743,hybrid,,,,False,0.890625
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",cpu,3,14.124643199997081,cpu,,,,False,0.0
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",gpu,3,0.5297511999997369,gpu,,,,False,1.0
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",hybrid,3,10.76152120000188,hybrid,,,,False,0.890625
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",autohetero,3,10.194387100000313,hybrid,,,,False,0.890625
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",cpu,4,13.089874599998438,cpu,,,,False,0.0
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",gpu,4,0.45134459999826504,gpu,,,,False,1.0
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",hybrid,4,11.961807399999088,hybrid,,,,False,0.890625
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",autohetero,4,8.985400999998092,hybrid,,,,False,0.890625
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",cpu,5,10.73473649999869,cpu,,,,False,0.0
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",gpu,5,0.4851778000011109,gpu,,,,False,1.0
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",hybrid,5,11.843267299998843,hybrid,,,,False,0.890625
+rq2,cpu,mobilenetv2,"(128, 3, 224, 224)",autohetero,5,11.459872699997504,hybrid,,,,False,0.890625
+rq2,cpu,filter,1000000,cpu,0,0.10202250000293134,cpu,,,,False,0.0
+rq2,cpu,filter,1000000,gpu,0,0.028667700000369223,gpu,,,,False,1.0
+rq2,cpu,filter,1000000,hybrid,0,0.20770149999952991,hybrid,,,,False,0.544164
+rq2,cpu,filter,1000000,autohetero,0,0.09553809999852092,gpu,,,,False,1.0
+rq2,cpu,filter,1000000,cpu,1,0.10250710000036634,cpu,,,,False,0.0
+rq2,cpu,filter,1000000,gpu,1,0.006625500001973705,gpu,,,,False,1.0
+rq2,cpu,filter,1000000,hybrid,1,0.13641549999738345,hybrid,,,,False,0.544164
+rq2,cpu,filter,1000000,autohetero,1,0.05945620000056806,gpu,,,,False,1.0
+rq2,cpu,filter,1000000,cpu,2,0.10221660000024713,cpu,,,,False,0.0
+rq2,cpu,filter,1000000,gpu,2,0.006647400001384085,gpu,,,,False,1.0
+rq2,cpu,filter,1000000,hybrid,2,0.2274630000028992,hybrid,,,,False,0.544164
+rq2,cpu,filter,1000000,autohetero,2,0.07523220000075526,gpu,,,,False,1.0
+rq2,cpu,filter,1000000,cpu,3,0.1645734999983688,cpu,,,,False,0.0
+rq2,cpu,filter,1000000,gpu,3,0.00668980000045849,gpu,,,,False,1.0
+rq2,cpu,filter,1000000,hybrid,3,0.21216719999938505,hybrid,,,,False,0.544164
+rq2,cpu,filter,1000000,autohetero,3,0.0978495000017574,gpu,,,,False,1.0
+rq2,cpu,filter,1000000,cpu,4,0.16048829999999725,cpu,,,,False,0.0
+rq2,cpu,filter,1000000,gpu,4,0.009194899997964967,gpu,,,,False,1.0
+rq2,cpu,filter,1000000,hybrid,4,0.19533400000000256,hybrid,,,,False,0.544164
+rq2,cpu,filter,1000000,autohetero,4,0.10125329999937094,gpu,,,,False,1.0
+rq2,cpu,filter,1000000,cpu,5,0.1721741999972437,cpu,,,,False,0.0
+rq2,cpu,filter,1000000,gpu,5,0.011416199999075616,gpu,,,,False,1.0
+rq2,cpu,filter,1000000,hybrid,5,0.23802499999874271,hybrid,,,,False,0.544164
+rq2,cpu,filter,1000000,autohetero,5,0.08759579999968992,gpu,,,,False,1.0
+rq2,cpu,filter,10000000,cpu,0,0.2185871000001498,cpu,,,,False,0.0
+rq2,cpu,filter,10000000,gpu,0,0.3224312000020291,gpu,,,,False,1.0
+rq2,cpu,filter,10000000,hybrid,0,0.9586906999975326,hybrid,,,,False,0.8503398
+rq2,cpu,filter,10000000,autohetero,0,0.5941950000014913,hybrid,,,,False,0.798536
+rq2,cpu,filter,10000000,cpu,1,0.21384000000034575,cpu,,,,False,0.0
+rq2,cpu,filter,10000000,gpu,1,0.20286119999946095,gpu,,,,False,1.0
+rq2,cpu,filter,10000000,hybrid,1,0.6662727000002633,hybrid,,,,False,0.9348058
+rq2,cpu,filter,10000000,autohetero,1,0.48530679999748827,gpu,,,,False,1.0
+rq2,cpu,filter,10000000,cpu,2,0.18330710000009276,cpu,,,,False,0.0
+rq2,cpu,filter,10000000,gpu,2,0.16897679999965476,gpu,,,,False,1.0
+rq2,cpu,filter,10000000,hybrid,2,0.6464803000017127,hybrid,,,,False,0.869451
+rq2,cpu,filter,10000000,autohetero,2,0.6136857000019518,hybrid,,,,False,0.8314697
+rq2,cpu,filter,10000000,cpu,3,0.20173350000186474,cpu,,,,False,0.0
+rq2,cpu,filter,10000000,gpu,3,0.15133479999713018,gpu,,,,False,1.0
+rq2,cpu,filter,10000000,hybrid,3,0.5134036999988894,hybrid,,,,False,0.8404751
+rq2,cpu,filter,10000000,autohetero,3,0.5439467999967746,hybrid,,,,False,0.8650213
+rq2,cpu,filter,10000000,cpu,4,0.18882380000286503,cpu,,,,False,0.0
+rq2,cpu,filter,10000000,gpu,4,0.0581858999976248,gpu,,,,False,1.0
+rq2,cpu,filter,10000000,hybrid,4,0.5262546999983897,hybrid,,,,False,0.8635498
+rq2,cpu,filter,10000000,autohetero,4,0.5234683000016958,hybrid,,,,False,0.8664948
+rq2,cpu,filter,10000000,cpu,5,0.1994355999995605,cpu,,,,False,0.0
+rq2,cpu,filter,10000000,gpu,5,0.06530500000008033,gpu,,,,False,1.0
+rq2,cpu,filter,10000000,hybrid,5,0.6838941999994859,hybrid,,,,False,0.8618977
+rq2,cpu,filter,10000000,autohetero,5,0.8200624999990396,hybrid,,,,False,0.8310508
+rq2,cpu,sort,1000000,cpu,0,0.525867799999105,cpu,,,,False,0.0
+rq2,cpu,sort,1000000,gpu,0,0.03766090000135591,gpu,,,,False,1.0
+rq2,cpu,sort,1000000,autohetero,0,0.07008950000090408,gpu,,,,False,1.0
+rq2,cpu,sort,1000000,cpu,1,0.5818474000006972,cpu,,,,False,0.0
+rq2,cpu,sort,1000000,gpu,1,0.06101940000007744,gpu,,,,False,1.0
+rq2,cpu,sort,1000000,autohetero,1,0.07576909999988857,gpu,,,,False,1.0
+rq2,cpu,sort,1000000,cpu,2,0.664147999999841,cpu,,,,False,0.0
+rq2,cpu,sort,1000000,gpu,2,0.06256370000119205,gpu,,,,False,1.0
+rq2,cpu,sort,1000000,autohetero,2,0.07230749999871477,gpu,,,,False,1.0
+rq2,cpu,sort,1000000,cpu,3,0.6621086999984982,cpu,,,,False,0.0
+rq2,cpu,sort,1000000,gpu,3,0.06566360000215354,gpu,,,,False,1.0
+rq2,cpu,sort,1000000,autohetero,3,0.06511219999811146,gpu,,,,False,1.0
+rq2,cpu,sort,1000000,cpu,4,0.6650496000002022,cpu,,,,False,0.0
+rq2,cpu,sort,1000000,gpu,4,0.06647059999886551,gpu,,,,False,1.0
+rq2,cpu,sort,1000000,autohetero,4,0.06602840000050492,gpu,,,,False,1.0
+rq2,cpu,sort,1000000,cpu,5,0.512169300000096,cpu,,,,False,0.0
+rq2,cpu,sort,1000000,gpu,5,0.075866600000154,gpu,,,,False,1.0
+rq2,cpu,sort,1000000,autohetero,5,0.06588530000226456,gpu,,,,False,1.0
+rq2,cpu,sort,10000000,cpu,0,4.8382046000006085,cpu,,,,False,0.0
+rq2,cpu,sort,10000000,gpu,0,0.3892173000022012,gpu,,,,False,1.0
+rq2,cpu,sort,10000000,autohetero,0,0.175498399999924,gpu,,,,False,1.0
+rq2,cpu,sort,10000000,cpu,1,5.201659599999402,cpu,,,,False,0.0
+rq2,cpu,sort,10000000,gpu,1,0.4406748000001244,gpu,,,,False,1.0
+rq2,cpu,sort,10000000,autohetero,1,0.10659469999882276,gpu,,,,False,1.0
+rq2,cpu,sort,10000000,cpu,2,5.049014399999578,cpu,,,,False,0.0
+rq2,cpu,sort,10000000,gpu,2,0.5170775999977195,gpu,,,,False,1.0
+rq2,cpu,sort,10000000,autohetero,2,0.09697550000055344,gpu,,,,False,1.0
+rq2,cpu,sort,10000000,cpu,3,4.742470400000457,cpu,,,,False,0.0
+rq2,cpu,sort,10000000,gpu,3,0.35417619999861927,gpu,,,,False,1.0
+rq2,cpu,sort,10000000,autohetero,3,0.10731060000034631,gpu,,,,False,1.0
+rq2,cpu,sort,10000000,cpu,4,4.800043800001731,cpu,,,,False,0.0
+rq2,cpu,sort,10000000,gpu,4,0.38126439999905415,gpu,,,,False,1.0
+rq2,cpu,sort,10000000,autohetero,4,0.09680500000104075,gpu,,,,False,1.0
+rq2,cpu,sort,10000000,cpu,5,4.94366219999938,cpu,,,,False,0.0
+rq2,cpu,sort,10000000,gpu,5,0.5356313999982376,gpu,,,,False,1.0
+rq2,cpu,sort,10000000,autohetero,5,0.1105119999992894,gpu,,,,False,1.0
+rq2,cpu,groupby,1000000,cpu,0,0.2707150999995065,cpu,,,,False,0.0
+rq2,cpu,groupby,1000000,gpu,0,0.01862299999993411,gpu,,,,False,1.0
+rq2,cpu,groupby,1000000,autohetero,0,0.0448952000006102,gpu,,,,False,1.0
+rq2,cpu,groupby,1000000,cpu,1,0.26764669999829493,cpu,,,,False,0.0
+rq2,cpu,groupby,1000000,gpu,1,0.005824799998663366,gpu,,,,False,1.0
+rq2,cpu,groupby,1000000,autohetero,1,0.005475899997691158,gpu,,,,False,1.0
+rq2,cpu,groupby,1000000,cpu,2,0.21661179999864544,cpu,,,,False,0.0
+rq2,cpu,groupby,1000000,gpu,2,0.00580439999976079,gpu,,,,False,1.0
+rq2,cpu,groupby,1000000,autohetero,2,0.005618499999400228,gpu,,,,False,1.0
+rq2,cpu,groupby,1000000,cpu,3,0.2658972999997786,cpu,,,,False,0.0
+rq2,cpu,groupby,1000000,gpu,3,0.005804699998407159,gpu,,,,False,1.0
+rq2,cpu,groupby,1000000,autohetero,3,0.0055432999979529995,gpu,,,,False,1.0
+rq2,cpu,groupby,1000000,cpu,4,0.249081699999806,cpu,,,,False,0.0
+rq2,cpu,groupby,1000000,gpu,4,0.005833799998072209,gpu,,,,False,1.0
+rq2,cpu,groupby,1000000,autohetero,4,0.005586999999650288,gpu,,,,False,1.0
+rq2,cpu,groupby,1000000,cpu,5,0.2619094000001496,cpu,,,,False,0.0
+rq2,cpu,groupby,1000000,gpu,5,0.007040899999992689,gpu,,,,False,1.0
+rq2,cpu,groupby,1000000,autohetero,5,0.006739799999195384,gpu,,,,False,1.0
+rq2,cpu,groupby,10000000,cpu,0,1.3613614000023517,cpu,,,,False,0.0
+rq2,cpu,groupby,10000000,gpu,0,0.37996129999737605,gpu,,,,False,1.0
+rq2,cpu,groupby,10000000,autohetero,0,0.09463709999909042,gpu,,,,False,1.0
+rq2,cpu,groupby,10000000,cpu,1,1.5187123999967298,cpu,,,,False,0.0
+rq2,cpu,groupby,10000000,gpu,1,0.04912060000060592,gpu,,,,False,1.0
+rq2,cpu,groupby,10000000,autohetero,1,0.04991169999993872,gpu,,,,False,1.0
+rq2,cpu,groupby,10000000,cpu,2,1.3714312000010977,cpu,,,,False,0.0
+rq2,cpu,groupby,10000000,gpu,2,0.05652120000013383,gpu,,,,False,1.0
+rq2,cpu,groupby,10000000,autohetero,2,0.056288399999175454,gpu,,,,False,1.0
+rq2,cpu,groupby,10000000,cpu,3,1.4301274999997986,cpu,,,,False,0.0
+rq2,cpu,groupby,10000000,gpu,3,0.23527499999909196,gpu,,,,False,1.0
+rq2,cpu,groupby,10000000,autohetero,3,0.04619109999839566,gpu,,,,False,1.0
+rq2,cpu,groupby,10000000,cpu,4,1.3015601999977662,cpu,,,,False,0.0
+rq2,cpu,groupby,10000000,gpu,4,0.04636380000010831,gpu,,,,False,1.0
+rq2,cpu,groupby,10000000,autohetero,4,0.046281100003398024,gpu,,,,False,1.0
+rq2,cpu,groupby,10000000,cpu,5,1.3817457999975886,cpu,,,,False,0.0
+rq2,cpu,groupby,10000000,gpu,5,0.052937100001145154,gpu,,,,False,1.0
+rq2,cpu,groupby,10000000,autohetero,5,0.05268710000018473,gpu,,,,False,1.0
+rq2,cpu,matmul,2048,cpu,0,0.10012170000118203,cpu,,,,False,0.0
+rq2,cpu,matmul,2048,gpu,0,0.020135499999014428,gpu,,,,False,1.0
+rq2,cpu,matmul,2048,hybrid,0,0.5949612999975216,hybrid,,,,False,0.80029296875
+rq2,cpu,matmul,2048,autohetero,0,0.3395233000010194,gpu,,,,False,1.0
+rq2,cpu,matmul,2048,cpu,1,0.17375729999912437,cpu,,,,False,0.0
+rq2,cpu,matmul,2048,gpu,1,0.02737840000190772,gpu,,,,False,1.0
+rq2,cpu,matmul,2048,hybrid,1,0.5459042000002228,hybrid,,,,False,0.67333984375
+rq2,cpu,matmul,2048,autohetero,1,0.45443470000100206,gpu,1.876025822060946,2,0.03418729999611969,False,0.83984375
+rq2,cpu,matmul,2048,cpu,2,0.1453845000032743,cpu,,,,False,0.0
+rq2,cpu,matmul,2048,gpu,2,0.046760199998971075,gpu,,,,False,1.0
+rq2,cpu,matmul,2048,hybrid,2,0.3657223000009253,hybrid,,,,False,0.80322265625
+rq2,cpu,matmul,2048,autohetero,2,0.5146359000027587,gpu,2.475114846373509,2,0.1738812000003236,False,0.8203125
+rq2,cpu,matmul,2048,cpu,3,0.14121719999820925,cpu,,,,False,0.0
+rq2,cpu,matmul,2048,gpu,3,0.06004640000173822,gpu,,,,False,1.0
+rq2,cpu,matmul,2048,hybrid,3,0.43853779999699327,hybrid,,,,False,0.66015625
+rq2,cpu,matmul,2048,autohetero,3,0.28475559999787947,gpu,3.1600907147219335,2,0.06034840000211261,False,0.80419921875
+rq2,cpu,matmul,2048,cpu,4,0.1432466000005661,cpu,,,,False,0.0
+rq2,cpu,matmul,2048,gpu,4,0.06767190000027767,gpu,,,,False,1.0
+rq2,cpu,matmul,2048,hybrid,4,0.20734389999779523,hybrid,,,,False,0.71923828125
+rq2,cpu,matmul,2048,autohetero,4,0.25467700000081095,gpu,2.94857250314421,2,0.05779649999749381,False,0.80859375
+rq2,cpu,matmul,2048,cpu,5,0.17025310000099125,cpu,,,,False,0.0
+rq2,cpu,matmul,2048,gpu,5,0.05897259999983362,gpu,,,,False,1.0
+rq2,cpu,matmul,2048,hybrid,5,0.29392969999753404,hybrid,,,,False,0.7470703125
+rq2,cpu,matmul,2048,autohetero,5,0.32870680000269203,gpu,2.79965147329242,2,0.05681969999932335,False,0.88232421875
+rq2,cpu,fft,"(1024, 16384)",cpu,0,0.10758130000249366,cpu,,,,False,0.0
+rq2,cpu,fft,"(1024, 16384)",gpu,0,0.20803700000033132,gpu,,,,False,1.0
+rq2,cpu,fft,"(1024, 16384)",hybrid,0,0.5984294000008958,hybrid,,,,False,0.8193359375
+rq2,cpu,fft,"(1024, 16384)",autohetero,0,0.40102549999937764,hybrid,,,,False,0.6533203125
+rq2,cpu,fft,"(1024, 16384)",cpu,1,0.0708468000011635,cpu,,,,False,0.0
+rq2,cpu,fft,"(1024, 16384)",gpu,1,0.08210270000199671,gpu,,,,False,1.0
+rq2,cpu,fft,"(1024, 16384)",hybrid,1,0.37707619999855524,hybrid,,,,False,0.6689453125
+rq2,cpu,fft,"(1024, 16384)",autohetero,1,0.4540015999991738,hybrid,,,,False,0.73046875
+rq2,cpu,fft,"(1024, 16384)",cpu,2,0.0804162999993423,cpu,,,,False,0.0
+rq2,cpu,fft,"(1024, 16384)",gpu,2,0.08213959999920917,gpu,,,,False,1.0
+rq2,cpu,fft,"(1024, 16384)",hybrid,2,0.46029600000110804,hybrid,,,,False,0.6689453125
+rq2,cpu,fft,"(1024, 16384)",autohetero,2,0.45811070000127074,hybrid,,,,False,0.7080078125
+rq2,cpu,fft,"(1024, 16384)",cpu,3,0.07675549999839859,cpu,,,,False,0.0
+rq2,cpu,fft,"(1024, 16384)",gpu,3,0.08206190000055358,gpu,,,,False,1.0
+rq2,cpu,fft,"(1024, 16384)",hybrid,3,0.3678996999988158,hybrid,,,,False,0.669921875
+rq2,cpu,fft,"(1024, 16384)",autohetero,3,0.4615363000011712,hybrid,,,,False,0.70703125
+rq2,cpu,fft,"(1024, 16384)",cpu,4,0.09654260000024806,cpu,,,,False,0.0
+rq2,cpu,fft,"(1024, 16384)",gpu,4,0.08206140000038431,gpu,,,,False,1.0
+rq2,cpu,fft,"(1024, 16384)",hybrid,4,0.5313065000009374,hybrid,,,,False,0.736328125
+rq2,cpu,fft,"(1024, 16384)",autohetero,4,0.562617899999168,hybrid,,,,False,0.7626953125
+rq2,cpu,fft,"(1024, 16384)",cpu,5,0.09729969999898458,cpu,,,,False,0.0
+rq2,cpu,fft,"(1024, 16384)",gpu,5,0.035263899997517,gpu,,,,False,1.0
+rq2,cpu,fft,"(1024, 16384)",hybrid,5,0.609473500000604,hybrid,,,,False,0.75390625
+rq2,cpu,fft,"(1024, 16384)",autohetero,5,0.5022099999987404,hybrid,,,,False,0.7509765625
+rq2,cpu,fft,"(4096, 16384)",cpu,0,0.16989900000044145,cpu,,,,False,0.0
+rq2,cpu,fft,"(4096, 16384)",gpu,0,0.374566299997241,gpu,,,,False,1.0
+rq2,cpu,fft,"(4096, 16384)",hybrid,0,0.6613694000006944,hybrid,,,,False,0.6787109375
+rq2,cpu,fft,"(4096, 16384)",autohetero,0,0.6429814000002807,gpu,2.76261719181283,2,0.05022600000302191,False,0.773681640625
+rq2,cpu,fft,"(4096, 16384)",cpu,1,0.15356659999815747,cpu,,,,False,0.0
+rq2,cpu,fft,"(4096, 16384)",gpu,1,0.1339363000006415,gpu,,,,False,1.0
+rq2,cpu,fft,"(4096, 16384)",hybrid,1,0.5612746000006155,hybrid,,,,False,0.82080078125
+rq2,cpu,fft,"(4096, 16384)",autohetero,1,0.8451819000001706,hybrid,,,,False,0.783447265625
+rq2,cpu,fft,"(4096, 16384)",cpu,2,0.18102390000058222,cpu,,,,False,0.0
+rq2,cpu,fft,"(4096, 16384)",gpu,2,0.13417370000024675,gpu,,,,False,1.0
+rq2,cpu,fft,"(4096, 16384)",hybrid,2,0.6641406999988249,hybrid,,,,False,0.79833984375
+rq2,cpu,fft,"(4096, 16384)",autohetero,2,0.7310484000008728,hybrid,,,,False,0.811279296875
+rq2,cpu,fft,"(4096, 16384)",cpu,3,0.18339230000128737,cpu,,,,False,0.0
+rq2,cpu,fft,"(4096, 16384)",gpu,3,0.13400519999777316,gpu,,,,False,1.0
+rq2,cpu,fft,"(4096, 16384)",hybrid,3,0.740741400000843,hybrid,,,,False,0.69775390625
+rq2,cpu,fft,"(4096, 16384)",autohetero,3,0.5729520000022603,hybrid,,,,False,0.724609375
+rq2,cpu,fft,"(4096, 16384)",cpu,4,0.13821079999979702,cpu,,,,False,0.0
+rq2,cpu,fft,"(4096, 16384)",gpu,4,0.1341532999977062,gpu,,,,False,1.0
+rq2,cpu,fft,"(4096, 16384)",hybrid,4,0.6351438999990933,hybrid,,,,False,0.7529296875
+rq2,cpu,fft,"(4096, 16384)",autohetero,4,0.8974280000002182,hybrid,,,,False,0.812255859375
+rq2,cpu,fft,"(4096, 16384)",cpu,5,0.2038963999984844,cpu,,,,False,0.0
+rq2,cpu,fft,"(4096, 16384)",gpu,5,0.1343842999995104,gpu,,,,False,1.0
+rq2,cpu,fft,"(4096, 16384)",hybrid,5,0.856569200001104,hybrid,,,,False,0.799560546875
+rq2,cpu,fft,"(4096, 16384)",autohetero,5,0.8678265000016836,hybrid,,,,False,0.657470703125
+rq2,battery,blur,"(16, 3, 720, 1280)",cpu,0,0.32110610000017914,cpu,,,,False,0.0
+rq2,battery,blur,"(16, 3, 720, 1280)",gpu,0,0.32353279999733786,gpu,,,,False,1.0
+rq2,battery,blur,"(16, 3, 720, 1280)",hybrid,0,0.6873584999993909,hybrid,,,,False,0.9375
+rq2,battery,blur,"(16, 3, 720, 1280)",autohetero,0,0.26430050000271876,gpu,,,,False,1.0
+rq2,battery,blur,"(16, 3, 720, 1280)",cpu,1,0.16801370000030147,cpu,,,,False,0.0
+rq2,battery,blur,"(16, 3, 720, 1280)",gpu,1,0.08486360000097193,gpu,,,,False,1.0
+rq2,battery,blur,"(16, 3, 720, 1280)",hybrid,1,0.1408808999985922,hybrid,,,,False,0.75
+rq2,battery,blur,"(16, 3, 720, 1280)",autohetero,1,0.140634700001101,hybrid,,,,False,0.75
+rq2,battery,blur,"(16, 3, 720, 1280)",cpu,2,0.17037169999821344,cpu,,,,False,0.0
+rq2,battery,blur,"(16, 3, 720, 1280)",gpu,2,0.08024140000270563,gpu,,,,False,1.0
+rq2,battery,blur,"(16, 3, 720, 1280)",hybrid,2,0.1414675999985775,hybrid,,,,False,0.75
+rq2,battery,blur,"(16, 3, 720, 1280)",autohetero,2,0.15012319999732426,hybrid,,,,False,0.75
+rq2,battery,blur,"(16, 3, 720, 1280)",cpu,3,0.17396080000253278,cpu,,,,False,0.0
+rq2,battery,blur,"(16, 3, 720, 1280)",gpu,3,0.07915919999868493,gpu,,,,False,1.0
+rq2,battery,blur,"(16, 3, 720, 1280)",hybrid,3,0.22107079999841517,hybrid,,,,False,0.75
+rq2,battery,blur,"(16, 3, 720, 1280)",autohetero,3,0.20663640000202577,gpu,,,,False,1.0
+rq2,battery,blur,"(16, 3, 720, 1280)",cpu,4,0.17282820000036736,cpu,,,,False,0.0
+rq2,battery,blur,"(16, 3, 720, 1280)",gpu,4,0.07901869999841438,gpu,,,,False,1.0
+rq2,battery,blur,"(16, 3, 720, 1280)",hybrid,4,0.14388639999742736,hybrid,,,,False,0.75
+rq2,battery,blur,"(16, 3, 720, 1280)",autohetero,4,0.16869990000122925,gpu,,,,False,1.0
+rq2,battery,blur,"(16, 3, 720, 1280)",cpu,5,0.17282750000231317,cpu,,,,False,0.0
+rq2,battery,blur,"(16, 3, 720, 1280)",gpu,5,0.07858670000132406,gpu,,,,False,1.0
+rq2,battery,blur,"(16, 3, 720, 1280)",hybrid,5,0.19172809999872698,hybrid,,,,False,1.0
+rq2,battery,blur,"(16, 3, 720, 1280)",autohetero,5,0.15952959999776795,gpu,,,,False,1.0
+rq2,battery,resize,"(16, 3, 720, 1280)",cpu,0,0.0489508000027854,cpu,,,,False,0.0
+rq2,battery,resize,"(16, 3, 720, 1280)",gpu,0,0.04846990000078222,gpu,,,,False,1.0
+rq2,battery,resize,"(16, 3, 720, 1280)",hybrid,0,0.1325049000006402,hybrid,,,,False,1.0
+rq2,battery,resize,"(16, 3, 720, 1280)",autohetero,0,0.09082760000092094,gpu,,,,False,1.0
+rq2,battery,resize,"(16, 3, 720, 1280)",cpu,1,0.04726899999877787,cpu,,,,False,0.0
+rq2,battery,resize,"(16, 3, 720, 1280)",gpu,1,0.03783040000053006,gpu,,,,False,1.0
+rq2,battery,resize,"(16, 3, 720, 1280)",hybrid,1,0.04765910000060103,hybrid,,,,False,1.0
+rq2,battery,resize,"(16, 3, 720, 1280)",autohetero,1,0.05271360000187997,gpu,,,,False,1.0
+rq2,battery,resize,"(16, 3, 720, 1280)",cpu,2,0.04962560000058147,cpu,,,,False,0.0
+rq2,battery,resize,"(16, 3, 720, 1280)",gpu,2,0.03854499999943073,gpu,,,,False,1.0
+rq2,battery,resize,"(16, 3, 720, 1280)",hybrid,2,0.04723480000029667,hybrid,,,,False,1.0
+rq2,battery,resize,"(16, 3, 720, 1280)",autohetero,2,0.052218500000890344,gpu,,,,False,1.0
+rq2,battery,resize,"(16, 3, 720, 1280)",cpu,3,0.048821399999724235,cpu,,,,False,0.0
+rq2,battery,resize,"(16, 3, 720, 1280)",gpu,3,0.03779899999790359,gpu,,,,False,1.0
+rq2,battery,resize,"(16, 3, 720, 1280)",hybrid,3,0.04839739999806625,hybrid,,,,False,1.0
+rq2,battery,resize,"(16, 3, 720, 1280)",autohetero,3,0.05453950000082841,gpu,,,,False,1.0
+rq2,battery,resize,"(16, 3, 720, 1280)",cpu,4,0.04813869999998133,cpu,,,,False,0.0
+rq2,battery,resize,"(16, 3, 720, 1280)",gpu,4,0.039153499998064945,gpu,,,,False,1.0
+rq2,battery,resize,"(16, 3, 720, 1280)",hybrid,4,0.0505689000019629,hybrid,,,,False,1.0
+rq2,battery,resize,"(16, 3, 720, 1280)",autohetero,4,0.055671300000540214,gpu,,,,False,1.0
+rq2,battery,resize,"(16, 3, 720, 1280)",cpu,5,0.04703180000069551,cpu,,,,False,0.0
+rq2,battery,resize,"(16, 3, 720, 1280)",gpu,5,0.03830839999864111,gpu,,,,False,1.0
+rq2,battery,resize,"(16, 3, 720, 1280)",hybrid,5,0.12511699999959092,hybrid,,,,False,0.5625
+rq2,battery,resize,"(16, 3, 720, 1280)",autohetero,5,0.09725199999957113,gpu,,,,False,1.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",cpu,0,0.47994570000082604,cpu,,,,False,0.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",gpu,0,0.31934589999946184,gpu,,,,False,1.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",hybrid,0,0.22111130000121193,hybrid,,,,False,0.75
+rq2,battery,sobel,"(16, 3, 720, 1280)",autohetero,0,0.15754960000049323,gpu,,,,False,1.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",cpu,1,0.2818802000001597,cpu,,,,False,0.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",gpu,1,0.06957599999805097,gpu,,,,False,1.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",hybrid,1,0.14126269999906071,hybrid,,,,False,0.75
+rq2,battery,sobel,"(16, 3, 720, 1280)",autohetero,1,0.11838880000141216,gpu,,,,False,1.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",cpu,2,0.2759869000001345,cpu,,,,False,0.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",gpu,2,0.0711449000009452,gpu,,,,False,1.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",hybrid,2,0.1857635999986087,hybrid,,,,False,1.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",autohetero,2,0.15858709999884013,gpu,,,,False,1.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",cpu,3,0.2740419000001566,cpu,,,,False,0.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",gpu,3,0.06954389999737032,gpu,,,,False,1.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",hybrid,3,0.34232150000025285,hybrid,,,,False,0.75
+rq2,battery,sobel,"(16, 3, 720, 1280)",autohetero,3,1.0234235000025365,gpu,2.522579213145453,2,0.08038870000018505,False,0.8125
+rq2,battery,sobel,"(16, 3, 720, 1280)",cpu,4,0.28710579999824404,cpu,,,,False,0.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",gpu,4,0.07182820000161882,gpu,,,,False,1.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",hybrid,4,0.20116309999866644,hybrid,,,,False,1.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",autohetero,4,0.2138511999983166,gpu,1.6242990906207635,5,0.0743784000078449,False,0.875
+rq2,battery,sobel,"(16, 3, 720, 1280)",cpu,5,0.2696213999988686,cpu,,,,False,0.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",gpu,5,0.07294559999718331,gpu,,,,False,1.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",hybrid,5,0.15019140000003972,hybrid,,,,False,1.0
+rq2,battery,sobel,"(16, 3, 720, 1280)",autohetero,5,0.12170980000155396,gpu,,,,False,1.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",cpu,0,6.902839399997902,cpu,,,,False,0.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",gpu,0,0.5484883000026457,gpu,,,,False,1.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",hybrid,0,0.35690499999691383,hybrid,,,,False,0.71875
+rq2,battery,resnet18,"(32, 3, 224, 224)",autohetero,0,0.18003129999851808,gpu,,,,False,1.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",cpu,1,0.8183839000012085,cpu,,,,False,0.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",gpu,1,0.046268999998574145,gpu,,,,False,1.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",hybrid,1,0.24727999999959138,hybrid,,,,False,0.875
+rq2,battery,resnet18,"(32, 3, 224, 224)",autohetero,1,0.0627055000004475,gpu,,,,False,1.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",cpu,2,0.8170678999995289,cpu,,,,False,0.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",gpu,2,0.07269690000248374,gpu,,,,False,1.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",hybrid,2,0.2508408000030613,hybrid,,,,False,0.71875
+rq2,battery,resnet18,"(32, 3, 224, 224)",autohetero,2,0.07765529999960563,gpu,,,,False,1.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",cpu,3,0.8098128999990877,cpu,,,,False,0.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",gpu,3,0.18555989999731537,gpu,,,,False,1.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",hybrid,3,0.20452239999940502,hybrid,,,,False,0.875
+rq2,battery,resnet18,"(32, 3, 224, 224)",autohetero,3,0.08050949999960721,gpu,,,,False,1.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",cpu,4,0.7815287000012177,cpu,,,,False,0.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",gpu,4,0.04684070000075735,gpu,,,,False,1.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",hybrid,4,0.21471219999875757,hybrid,,,,False,0.875
+rq2,battery,resnet18,"(32, 3, 224, 224)",autohetero,4,0.05000600000130362,gpu,,,,False,1.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",cpu,5,0.8066366000020935,cpu,,,,False,0.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",gpu,5,0.062496700000338024,gpu,,,,False,1.0
+rq2,battery,resnet18,"(32, 3, 224, 224)",hybrid,5,0.2581798000028357,hybrid,,,,False,0.71875
+rq2,battery,resnet18,"(32, 3, 224, 224)",autohetero,5,0.06303780000234838,gpu,,,,False,1.0
+rq2,battery,resnet18,"(128, 3, 224, 224)",cpu,0,3.043051499997091,cpu,,,,False,0.0
+rq2,battery,resnet18,"(128, 3, 224, 224)",gpu,0,0.45258360000298126,gpu,,,,False,1.0
+rq2,battery,resnet18,"(128, 3, 224, 224)",hybrid,0,0.8874107999981788,hybrid,,,,False,0.8671875
+rq2,battery,resnet18,"(128, 3, 224, 224)",autohetero,0,1.3608430999993288,hybrid,,,,False,0.8515625
+rq2,battery,resnet18,"(128, 3, 224, 224)",cpu,1,2.9144075000003795,cpu,,,,False,0.0
+rq2,battery,resnet18,"(128, 3, 224, 224)",gpu,1,0.3945357000011427,gpu,,,,False,1.0
+rq2,battery,resnet18,"(128, 3, 224, 224)",hybrid,1,1.3729844000008598,hybrid,,,,False,0.8828125
+rq2,battery,resnet18,"(128, 3, 224, 224)",autohetero,1,0.7034931000016513,gpu,5.156022070055489,2,0.055334500000753906,False,0.8828125
+rq2,battery,resnet18,"(128, 3, 224, 224)",cpu,2,2.859961599999224,cpu,,,,False,0.0
+rq2,battery,resnet18,"(128, 3, 224, 224)",gpu,2,0.43635700000231736,gpu,,,,False,1.0
+rq2,battery,resnet18,"(128, 3, 224, 224)",hybrid,2,0.449804400002904,hybrid,,,,False,0.890625
+rq2,battery,resnet18,"(128, 3, 224, 224)",autohetero,2,0.6906454999989364,gpu,4.821423093442064,2,0.04665770000065095,False,0.8359375
+rq2,battery,resnet18,"(128, 3, 224, 224)",cpu,3,2.885226000002149,cpu,,,,False,0.0
+rq2,battery,resnet18,"(128, 3, 224, 224)",gpu,3,0.3420436000014888,gpu,,,,False,1.0
+rq2,battery,resnet18,"(128, 3, 224, 224)",hybrid,3,0.44420460000037565,hybrid,,,,False,0.890625
+rq2,battery,resnet18,"(128, 3, 224, 224)",autohetero,3,0.6809395999989647,gpu,4.353211461747091,2,0.07613549999587121,False,0.8671875
+rq2,battery,resnet18,"(128, 3, 224, 224)",cpu,4,2.897420699999202,cpu,,,,False,0.0
+rq2,battery,resnet18,"(128, 3, 224, 224)",gpu,4,0.4294752999994671,gpu,,,,False,1.0
+rq2,battery,resnet18,"(128, 3, 224, 224)",hybrid,4,1.0917475000023842,hybrid,,,,False,0.890625
+rq2,battery,resnet18,"(128, 3, 224, 224)",autohetero,4,1.1933757000006153,hybrid,,,,False,0.8046875
+rq2,battery,resnet18,"(128, 3, 224, 224)",cpu,5,2.8975873999988835,cpu,,,,False,0.0
+rq2,battery,resnet18,"(128, 3, 224, 224)",gpu,5,0.42219829999885405,gpu,,,,False,1.0
+rq2,battery,resnet18,"(128, 3, 224, 224)",hybrid,5,0.4628685999996378,hybrid,,,,False,0.890625
+rq2,battery,resnet18,"(128, 3, 224, 224)",autohetero,5,0.44040120000136085,hybrid,,,,False,0.890625
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",cpu,0,0.6639252999993914,cpu,,,,False,0.0
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",gpu,0,0.270979000000807,gpu,,,,False,1.0
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",hybrid,0,0.6164229000023624,hybrid,,,,False,0.46875
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",autohetero,0,0.29430040000079316,hybrid,,,,False,0.6875
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",cpu,1,0.5000143999968714,cpu,,,,False,0.0
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",gpu,1,0.0615920999989612,gpu,,,,False,1.0
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",hybrid,1,0.1897409000011976,hybrid,,,,False,0.71875
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",autohetero,1,0.27111839999997756,hybrid,,,,False,0.75
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",cpu,2,0.5382858999983,cpu,,,,False,0.0
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",gpu,2,0.059133599999768194,gpu,,,,False,1.0
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",hybrid,2,0.21642340000107652,hybrid,,,,False,0.875
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",autohetero,2,0.1558149999982561,hybrid,,,,False,0.875
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",cpu,3,0.5169810000006692,cpu,,,,False,0.0
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",gpu,3,0.06914799999867682,gpu,,,,False,1.0
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",hybrid,3,0.15232669999750215,hybrid,,,,False,0.875
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",autohetero,3,0.1573753000011493,hybrid,,,,False,0.875
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",cpu,4,0.501914399999805,cpu,,,,False,0.0
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",gpu,4,0.056170399999246,gpu,,,,False,1.0
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",hybrid,4,0.1615903999991133,hybrid,,,,False,0.875
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",autohetero,4,0.16276199999992969,hybrid,,,,False,0.875
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",cpu,5,0.5210191999976814,cpu,,,,False,0.0
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",gpu,5,0.05606410000109463,gpu,,,,False,1.0
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",hybrid,5,0.2591695000010077,hybrid,,,,False,0.75
+rq2,battery,mobilenetv2,"(32, 3, 224, 224)",autohetero,5,0.1890365999970527,hybrid,,,,False,0.75
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",cpu,0,2.1954348999970534,cpu,,,,False,0.0
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",gpu,0,0.44805120000091847,gpu,,,,False,1.0
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",hybrid,0,1.0044219000010344,hybrid,,,,False,0.609375
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",autohetero,0,1.4583400000010442,hybrid,,,,False,0.8515625
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",cpu,1,2.1352447000026586,cpu,,,,False,0.0
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",gpu,1,0.3870822999997472,gpu,,,,False,1.0
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",hybrid,1,0.6507959000009578,hybrid,,,,False,0.78125
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",autohetero,1,0.4556350000020757,hybrid,,,,False,0.796875
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",cpu,2,2.0565297000030114,cpu,,,,False,0.0
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",gpu,2,0.26226929999756976,gpu,,,,False,1.0
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",hybrid,2,0.4406486000007135,hybrid,,,,False,0.8046875
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",autohetero,2,0.4440115999968839,hybrid,,,,False,0.796875
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",cpu,3,2.0556794999974954,cpu,,,,False,0.0
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",gpu,3,0.3016007999976864,gpu,,,,False,1.0
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",hybrid,3,0.4303111000008357,hybrid,,,,False,0.828125
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",autohetero,3,0.3073206000008213,hybrid,,,,False,0.8984375
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",cpu,4,2.071513300001243,cpu,,,,False,0.0
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",gpu,4,0.27866480000011506,gpu,,,,False,1.0
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",hybrid,4,1.1959366999981285,hybrid,,,,False,0.8046875
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",autohetero,4,0.7668131999998877,hybrid,,,,False,0.8203125
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",cpu,5,2.0793025999992096,cpu,,,,False,0.0
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",gpu,5,0.2595924000015657,gpu,,,,False,1.0
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",hybrid,5,0.4534650999994483,hybrid,,,,False,0.796875
+rq2,battery,mobilenetv2,"(128, 3, 224, 224)",autohetero,5,0.36228510000000824,hybrid,,,,False,0.8828125
+rq2,battery,filter,1000000,cpu,0,0.007343400000536349,cpu,,,,False,0.0
+rq2,battery,filter,1000000,gpu,0,0.03943489999801386,gpu,,,,False,1.0
+rq2,battery,filter,1000000,hybrid,0,0.05263339999874006,hybrid,,,,False,0.733085
+rq2,battery,filter,1000000,autohetero,0,0.04341260000001057,gpu,,,,False,1.0
+rq2,battery,filter,1000000,cpu,1,0.0077235999997355975,cpu,,,,False,0.0
+rq2,battery,filter,1000000,gpu,1,0.008822100000543287,gpu,,,,False,1.0
+rq2,battery,filter,1000000,hybrid,1,0.011163200000737561,hybrid,,,,False,0.751731
+rq2,battery,filter,1000000,autohetero,1,0.07439999999769498,gpu,,,,False,1.0
+rq2,battery,filter,1000000,cpu,2,0.007373600001301384,cpu,,,,False,0.0
+rq2,battery,filter,1000000,gpu,2,0.007451200002833502,gpu,,,,False,1.0
+rq2,battery,filter,1000000,hybrid,2,0.010753099999419646,hybrid,,,,False,0.738672
+rq2,battery,filter,1000000,autohetero,2,0.009347400002297945,gpu,,,,False,1.0
+rq2,battery,filter,1000000,cpu,3,0.007193800000095507,cpu,,,,False,0.0
+rq2,battery,filter,1000000,gpu,3,0.007444699996995041,gpu,,,,False,1.0
+rq2,battery,filter,1000000,hybrid,3,0.010078300001623575,hybrid,,,,False,0.750932
+rq2,battery,filter,1000000,autohetero,3,0.010953799999697367,gpu,,,,False,1.0
+rq2,battery,filter,1000000,cpu,4,0.007944599998154445,cpu,,,,False,0.0
+rq2,battery,filter,1000000,gpu,4,0.007624900001246715,gpu,,,,False,1.0
+rq2,battery,filter,1000000,hybrid,4,0.010652099997969344,hybrid,,,,False,0.736447
+rq2,battery,filter,1000000,autohetero,4,0.0103555999994569,gpu,,,,False,1.0
+rq2,battery,filter,1000000,cpu,5,0.006998499997280305,cpu,,,,False,0.0
+rq2,battery,filter,1000000,gpu,5,0.008239800001319963,gpu,,,,False,1.0
+rq2,battery,filter,1000000,hybrid,5,0.011135000000649597,hybrid,,,,False,0.735532
+rq2,battery,filter,1000000,autohetero,5,0.00950849999935599,gpu,,,,False,1.0
+rq2,battery,filter,10000000,cpu,0,0.07053449999875738,cpu,,,,False,0.0
+rq2,battery,filter,10000000,gpu,0,0.07558299999800511,gpu,,,,False,1.0
+rq2,battery,filter,10000000,hybrid,0,0.1380040000003646,hybrid,,,,False,0.5524967
+rq2,battery,filter,10000000,autohetero,0,0.05727130000013858,hybrid,,,,False,0.5677491
+rq2,battery,filter,10000000,cpu,1,0.06439379999937955,cpu,,,,False,0.0
+rq2,battery,filter,10000000,gpu,1,0.060623700002906844,gpu,,,,False,1.0
+rq2,battery,filter,10000000,hybrid,1,0.056229500001791166,hybrid,,,,False,0.5417791
+rq2,battery,filter,10000000,autohetero,1,0.05321989999720245,hybrid,,,,False,0.5541136
+rq2,battery,filter,10000000,cpu,2,0.07040950000009616,cpu,,,,False,0.0
+rq2,battery,filter,10000000,gpu,2,0.0574068999994779,gpu,,,,False,1.0
+rq2,battery,filter,10000000,hybrid,2,0.05584570000064559,hybrid,,,,False,0.6017631
+rq2,battery,filter,10000000,autohetero,2,0.05429250000088359,hybrid,,,,False,0.5490193
+rq2,battery,filter,10000000,cpu,3,0.0673410999988846,cpu,,,,False,0.0
+rq2,battery,filter,10000000,gpu,3,0.0563949000024877,gpu,,,,False,1.0
+rq2,battery,filter,10000000,hybrid,3,0.13118129999929806,hybrid,,,,False,0.6118071
+rq2,battery,filter,10000000,autohetero,3,0.12227329999950598,gpu,,,,False,1.0
+rq2,battery,filter,10000000,cpu,4,0.062087499998597195,cpu,,,,False,0.0
+rq2,battery,filter,10000000,gpu,4,0.056222600000182865,gpu,,,,False,1.0
+rq2,battery,filter,10000000,hybrid,4,0.057567600000766106,hybrid,,,,False,0.6112405
+rq2,battery,filter,10000000,autohetero,4,0.09794300000066869,gpu,,,,False,1.0
+rq2,battery,filter,10000000,cpu,5,0.06203780000214465,cpu,,,,False,0.0
+rq2,battery,filter,10000000,gpu,5,0.05663220000133151,gpu,,,,False,1.0
+rq2,battery,filter,10000000,hybrid,5,0.13484559999778867,hybrid,,,,False,0.6728673
+rq2,battery,filter,10000000,autohetero,5,0.0985553999998956,gpu,,,,False,1.0
+rq2,battery,sort,1000000,cpu,0,0.35924529999829247,cpu,,,,False,0.0
+rq2,battery,sort,1000000,gpu,0,0.04123949999848264,gpu,,,,False,1.0
+rq2,battery,sort,1000000,autohetero,0,0.050740300001052674,gpu,,,,False,1.0
+rq2,battery,sort,1000000,cpu,1,0.3670237000005727,cpu,,,,False,0.0
+rq2,battery,sort,1000000,gpu,1,0.013557300000684336,gpu,,,,False,1.0
+rq2,battery,sort,1000000,autohetero,1,0.05416459999833023,gpu,,,,False,1.0
+rq2,battery,sort,1000000,cpu,2,0.35845100000005914,cpu,,,,False,0.0
+rq2,battery,sort,1000000,gpu,2,0.01464269999996759,gpu,,,,False,1.0
+rq2,battery,sort,1000000,autohetero,2,0.049082900000939844,gpu,,,,False,1.0
+rq2,battery,sort,1000000,cpu,3,0.35752879999927245,cpu,,,,False,0.0
+rq2,battery,sort,1000000,gpu,3,0.024480700001731748,gpu,,,,False,1.0
+rq2,battery,sort,1000000,autohetero,3,0.03167759999996633,gpu,,,,False,1.0
+rq2,battery,sort,1000000,cpu,4,0.3958425000018906,cpu,,,,False,0.0
+rq2,battery,sort,1000000,gpu,4,0.033322600000246894,gpu,,,,False,1.0
+rq2,battery,sort,1000000,autohetero,4,0.03207259999908274,gpu,,,,False,1.0
+rq2,battery,sort,1000000,cpu,5,0.3749117999977898,cpu,,,,False,0.0
+rq2,battery,sort,1000000,gpu,5,0.03498079999917536,gpu,,,,False,1.0
+rq2,battery,sort,1000000,autohetero,5,0.032848399998329114,gpu,,,,False,1.0
+rq2,battery,sort,10000000,cpu,0,4.145954799998435,cpu,,,,False,0.0
+rq2,battery,sort,10000000,gpu,0,0.4230922000024293,gpu,,,,False,1.0
+rq2,battery,sort,10000000,autohetero,0,0.1351420999999391,gpu,,,,False,1.0
+rq2,battery,sort,10000000,cpu,1,4.089458599999489,cpu,,,,False,0.0
+rq2,battery,sort,10000000,gpu,1,0.3599399999984598,gpu,,,,False,1.0
+rq2,battery,sort,10000000,autohetero,1,0.13449409999884665,gpu,,,,False,1.0
+rq2,battery,sort,10000000,cpu,2,3.933989900000597,cpu,,,,False,0.0
+rq2,battery,sort,10000000,gpu,2,0.34275070000148844,gpu,,,,False,1.0
+rq2,battery,sort,10000000,autohetero,2,0.09883199999967474,gpu,,,,False,1.0
+rq2,battery,sort,10000000,cpu,3,4.012745200001518,cpu,,,,False,0.0
+rq2,battery,sort,10000000,gpu,3,0.30066359999909764,gpu,,,,False,1.0
+rq2,battery,sort,10000000,autohetero,3,0.10115060000316589,gpu,,,,False,1.0
+rq2,battery,sort,10000000,cpu,4,3.876428499999747,cpu,,,,False,0.0
+rq2,battery,sort,10000000,gpu,4,0.331805699999677,gpu,,,,False,1.0
+rq2,battery,sort,10000000,autohetero,4,0.11046979999809992,gpu,,,,False,1.0
+rq2,battery,sort,10000000,cpu,5,3.9847197999988566,cpu,,,,False,0.0
+rq2,battery,sort,10000000,gpu,5,0.3645866000006208,gpu,,,,False,1.0
+rq2,battery,sort,10000000,autohetero,5,0.09955469999840716,gpu,,,,False,1.0
+rq2,battery,groupby,1000000,cpu,0,0.11453979999714647,cpu,,,,False,0.0
+rq2,battery,groupby,1000000,gpu,0,0.09542389999842271,gpu,,,,False,1.0
+rq2,battery,groupby,1000000,autohetero,0,0.044744899998477194,gpu,,,,False,1.0
+rq2,battery,groupby,1000000,cpu,1,0.11520419999942533,cpu,,,,False,0.0
+rq2,battery,groupby,1000000,gpu,1,0.006234500000573462,gpu,,,,False,1.0
+rq2,battery,groupby,1000000,autohetero,1,0.005865500002983026,gpu,,,,False,1.0
+rq2,battery,groupby,1000000,cpu,2,0.11449269999866374,cpu,,,,False,0.0
+rq2,battery,groupby,1000000,gpu,2,0.006288399999903049,gpu,,,,False,1.0
+rq2,battery,groupby,1000000,autohetero,2,0.0059664000000339,gpu,,,,False,1.0
+rq2,battery,groupby,1000000,cpu,3,0.11571019999973942,cpu,,,,False,0.0
+rq2,battery,groupby,1000000,gpu,3,0.00650129999849014,gpu,,,,False,1.0
+rq2,battery,groupby,1000000,autohetero,3,0.0059106000007886905,gpu,,,,False,1.0
+rq2,battery,groupby,1000000,cpu,4,0.11299199999848497,cpu,,,,False,0.0
+rq2,battery,groupby,1000000,gpu,4,0.006358800001180498,gpu,,,,False,1.0
+rq2,battery,groupby,1000000,autohetero,4,0.006060399999114452,gpu,,,,False,1.0
+rq2,battery,groupby,1000000,cpu,5,0.11616629999844008,cpu,,,,False,0.0
+rq2,battery,groupby,1000000,gpu,5,0.006342199998471187,gpu,,,,False,1.0
+rq2,battery,groupby,1000000,autohetero,5,0.006105000000388827,gpu,,,,False,1.0
+rq2,battery,groupby,10000000,cpu,0,1.1418518999998923,cpu,,,,False,0.0
+rq2,battery,groupby,10000000,gpu,0,0.22859810000227299,gpu,,,,False,1.0
+rq2,battery,groupby,10000000,autohetero,0,0.08038149999993038,gpu,,,,False,1.0
+rq2,battery,groupby,10000000,cpu,1,1.1359845000006317,cpu,,,,False,0.0
+rq2,battery,groupby,10000000,gpu,1,0.04961369999728049,gpu,,,,False,1.0
+rq2,battery,groupby,10000000,autohetero,1,0.04878119999921182,gpu,,,,False,1.0
+rq2,battery,groupby,10000000,cpu,2,1.1331801999986055,cpu,,,,False,0.0
+rq2,battery,groupby,10000000,gpu,2,0.05063009999867063,gpu,,,,False,1.0
+rq2,battery,groupby,10000000,autohetero,2,0.05045189999873401,gpu,,,,False,1.0
+rq2,battery,groupby,10000000,cpu,3,1.1527688999995007,cpu,,,,False,0.0
+rq2,battery,groupby,10000000,gpu,3,0.04863100000147824,gpu,,,,False,1.0
+rq2,battery,groupby,10000000,autohetero,3,0.048301599999831524,gpu,,,,False,1.0
+rq2,battery,groupby,10000000,cpu,4,1.2165201999996498,cpu,,,,False,0.0
+rq2,battery,groupby,10000000,gpu,4,0.05295530000148574,gpu,,,,False,1.0
+rq2,battery,groupby,10000000,autohetero,4,0.05485150000095018,gpu,,,,False,1.0
+rq2,battery,groupby,10000000,cpu,5,1.1156856999987212,cpu,,,,False,0.0
+rq2,battery,groupby,10000000,gpu,5,0.0497706999994989,gpu,,,,False,1.0
+rq2,battery,groupby,10000000,autohetero,5,0.04941300000064075,gpu,,,,False,1.0
+rq2,battery,matmul,2048,cpu,0,0.08083540000006906,cpu,,,,False,0.0
+rq2,battery,matmul,2048,gpu,0,0.017760099999577506,gpu,,,,False,1.0
+rq2,battery,matmul,2048,hybrid,0,0.10727899999983492,hybrid,,,,False,0.7431640625
+rq2,battery,matmul,2048,autohetero,0,0.03419489999942016,gpu,,,,False,1.0
+rq2,battery,matmul,2048,cpu,1,0.08094709999932093,cpu,,,,False,0.0
+rq2,battery,matmul,2048,gpu,1,0.014698700000735698,gpu,,,,False,1.0
+rq2,battery,matmul,2048,hybrid,1,0.029012400002102368,hybrid,,,,False,0.73291015625
+rq2,battery,matmul,2048,autohetero,1,0.030396899997867877,gpu,,,,False,1.0
+rq2,battery,matmul,2048,cpu,2,0.08178590000170516,cpu,,,,False,0.0
+rq2,battery,matmul,2048,gpu,2,0.014432099997065961,gpu,,,,False,1.0
+rq2,battery,matmul,2048,hybrid,2,0.02996279999933904,hybrid,,,,False,0.7548828125
+rq2,battery,matmul,2048,autohetero,2,0.03078989999994519,gpu,,,,False,1.0
+rq2,battery,matmul,2048,cpu,3,0.0718825999974797,cpu,,,,False,0.0
+rq2,battery,matmul,2048,gpu,3,0.014507099996990291,gpu,,,,False,1.0
+rq2,battery,matmul,2048,hybrid,3,0.028407899997546338,hybrid,,,,False,0.75244140625
+rq2,battery,matmul,2048,autohetero,3,0.02860849999706261,gpu,,,,False,1.0
+rq2,battery,matmul,2048,cpu,4,0.06919360000028973,cpu,,,,False,0.0
+rq2,battery,matmul,2048,gpu,4,0.014564699999027653,gpu,,,,False,1.0
+rq2,battery,matmul,2048,hybrid,4,0.03368159999808995,hybrid,,,,False,0.75634765625
+rq2,battery,matmul,2048,autohetero,4,0.03374650000114343,gpu,,,,False,1.0
+rq2,battery,matmul,2048,cpu,5,0.07263349999993807,cpu,,,,False,0.0
+rq2,battery,matmul,2048,gpu,5,0.014363999998749932,gpu,,,,False,1.0
+rq2,battery,matmul,2048,hybrid,5,0.10104040000078385,hybrid,,,,False,0.7529296875
+rq2,battery,matmul,2048,autohetero,5,0.02952240000013262,gpu,,,,False,1.0
+rq2,battery,fft,"(1024, 16384)",cpu,0,0.02021709999826271,cpu,,,,False,0.0
+rq2,battery,fft,"(1024, 16384)",gpu,0,0.07322129999738536,gpu,,,,False,1.0
+rq2,battery,fft,"(1024, 16384)",hybrid,0,0.16609559999778867,hybrid,,,,False,0.2646484375
+rq2,battery,fft,"(1024, 16384)",autohetero,0,0.1162332999992941,gpu,,,,False,1.0
+rq2,battery,fft,"(1024, 16384)",cpu,1,0.021120899997185916,cpu,,,,False,0.0
+rq2,battery,fft,"(1024, 16384)",gpu,1,0.03902379999999539,gpu,,,,False,1.0
+rq2,battery,fft,"(1024, 16384)",hybrid,1,0.07052970000222558,hybrid,,,,False,0.37890625
+rq2,battery,fft,"(1024, 16384)",autohetero,1,0.0798581999988528,gpu,2.8615295580987765,6,0.04282680000324035,False,0.9296875
+rq2,battery,fft,"(1024, 16384)",cpu,2,0.02161820000037551,cpu,,,,False,0.0
+rq2,battery,fft,"(1024, 16384)",gpu,2,0.03548949999822071,gpu,,,,False,1.0
+rq2,battery,fft,"(1024, 16384)",hybrid,2,0.07785940000030678,hybrid,,,,False,0.36328125
+rq2,battery,fft,"(1024, 16384)",autohetero,2,0.09232310000152211,gpu,1.9812776593355708,2,0.015163599997322308,False,0.5
+rq2,battery,fft,"(1024, 16384)",cpu,3,0.021687300002668053,cpu,,,,False,0.0
+rq2,battery,fft,"(1024, 16384)",gpu,3,0.03570159999799216,gpu,,,,False,1.0
+rq2,battery,fft,"(1024, 16384)",hybrid,3,0.07965849999891361,hybrid,,,,False,0.3486328125
+rq2,battery,fft,"(1024, 16384)",autohetero,3,0.07362250000005588,gpu,1.7993581764728483,6,0.038328000006004004,False,0.9453125
+rq2,battery,fft,"(1024, 16384)",cpu,4,0.02136820000305306,cpu,,,,False,0.0
+rq2,battery,fft,"(1024, 16384)",gpu,4,0.03560799999831943,gpu,,,,False,1.0
+rq2,battery,fft,"(1024, 16384)",hybrid,4,0.07512820000192733,hybrid,,,,False,0.37109375
+rq2,battery,fft,"(1024, 16384)",autohetero,4,0.05747219999830122,gpu,,,,False,1.0
+rq2,battery,fft,"(1024, 16384)",cpu,5,0.021721899996919092,cpu,,,,False,0.0
+rq2,battery,fft,"(1024, 16384)",gpu,5,0.03550539999923785,gpu,,,,False,1.0
+rq2,battery,fft,"(1024, 16384)",hybrid,5,0.16505820000020321,hybrid,,,,False,0.345703125
+rq2,battery,fft,"(1024, 16384)",autohetero,5,0.1370811999986472,gpu,1.6667218802484933,5,0.051650099998369114,False,0.9599609375
+rq2,battery,fft,"(4096, 16384)",cpu,0,0.10189719999834779,cpu,,,,False,0.0
+rq2,battery,fft,"(4096, 16384)",gpu,0,0.2042351999989478,gpu,,,,False,1.0
+rq2,battery,fft,"(4096, 16384)",hybrid,0,0.2591013999990537,hybrid,,,,False,0.324462890625
+rq2,battery,fft,"(4096, 16384)",autohetero,0,0.20175709999966784,hybrid,,,,False,0.314453125
+rq2,battery,fft,"(4096, 16384)",cpu,1,0.0827590999979293,cpu,,,,False,0.0
+rq2,battery,fft,"(4096, 16384)",gpu,1,0.13595649999842863,gpu,,,,False,1.0
+rq2,battery,fft,"(4096, 16384)",hybrid,1,0.2662639999980456,hybrid,,,,False,0.3076171875
+rq2,battery,fft,"(4096, 16384)",autohetero,1,0.24744020000071032,gpu,1.788069160567005,2,0.05020650000005844,False,0.478759765625
+rq2,battery,fft,"(4096, 16384)",cpu,2,0.07769380000172532,cpu,,,,False,0.0
+rq2,battery,fft,"(4096, 16384)",gpu,2,0.13588659999732045,gpu,,,,False,1.0
+rq2,battery,fft,"(4096, 16384)",hybrid,2,0.17902329999924405,hybrid,,,,False,0.366455078125
+rq2,battery,fft,"(4096, 16384)",autohetero,2,0.23372939999899245,gpu,1.6280685248728066,2,0.0378415999985009,False,0.48388671875
+rq2,battery,fft,"(4096, 16384)",cpu,3,0.07665869999982533,cpu,,,,False,0.0
+rq2,battery,fft,"(4096, 16384)",gpu,3,0.1358567999996012,gpu,,,,False,1.0
+rq2,battery,fft,"(4096, 16384)",hybrid,3,0.1888108999992255,hybrid,,,,False,0.361572265625
+rq2,battery,fft,"(4096, 16384)",autohetero,3,0.2284719999988738,gpu,1.8034816155413593,2,0.04061820000060834,False,0.471923828125
+rq2,battery,fft,"(4096, 16384)",cpu,4,0.07344770000054268,cpu,,,,False,0.0
+rq2,battery,fft,"(4096, 16384)",gpu,4,0.1357973000012862,gpu,,,,False,1.0
+rq2,battery,fft,"(4096, 16384)",hybrid,4,0.24704319999727886,hybrid,,,,False,0.365966796875
+rq2,battery,fft,"(4096, 16384)",autohetero,4,0.32879139999931795,gpu,2.325992121526162,2,0.05984750000061467,False,0.505615234375
+rq2,battery,fft,"(4096, 16384)",cpu,5,0.0796492000008584,cpu,,,,False,0.0
+rq2,battery,fft,"(4096, 16384)",gpu,5,0.14022800000020652,gpu,,,,False,1.0
+rq2,battery,fft,"(4096, 16384)",hybrid,5,0.24964040000122623,hybrid,,,,False,0.388916015625
+rq2,battery,fft,"(4096, 16384)",autohetero,5,0.23252689999935683,gpu,2.190496914339231,2,0.04614199999923585,False,0.42724609375
+rq2,battery,enhance,"(32, 3, 720, 1280)",cpu,0,2.660361300000659,cpu,,,,False,0.0
+rq2,battery,enhance,"(32, 3, 720, 1280)",gpu,0,0.4850464000010106,gpu,,,,False,1.0
+rq2,battery,enhance,"(32, 3, 720, 1280)",hybrid,0,0.29677479999736534,hybrid,,,,False,0.875
+rq2,battery,enhance,"(32, 3, 720, 1280)",autohetero,0,0.2998598999984097,gpu,1.7638922416870533,6,0.19636480000190204,False,0.96875
+rq2,battery,enhance,"(32, 3, 720, 1280)",cpu,1,1.7909450999977707,cpu,,,,False,0.0
+rq2,battery,enhance,"(32, 3, 720, 1280)",gpu,1,0.3012354000020423,gpu,,,,False,1.0
+rq2,battery,enhance,"(32, 3, 720, 1280)",hybrid,1,0.2976435999989917,hybrid,,,,False,0.875
+rq2,battery,enhance,"(32, 3, 720, 1280)",autohetero,1,0.2986693999991985,gpu,1.526734408305649,7,0.2021580999971775,False,0.96875
+rq2,battery,enhance,"(32, 3, 720, 1280)",cpu,2,1.66450260000056,cpu,,,,False,0.0
+rq2,battery,enhance,"(32, 3, 720, 1280)",gpu,2,0.21441780000168364,gpu,,,,False,1.0
+rq2,battery,enhance,"(32, 3, 720, 1280)",hybrid,2,0.6013579000027676,hybrid,,,,False,0.84375
+rq2,battery,enhance,"(32, 3, 720, 1280)",autohetero,2,1.2797546999972838,gpu,4.404528684531199,2,0.2704029000014998,False,0.71875
+rq2,battery,enhance,"(32, 3, 720, 1280)",cpu,3,1.6674875999997312,cpu,,,,False,0.0
+rq2,battery,enhance,"(32, 3, 720, 1280)",gpu,3,0.3866979000013089,gpu,,,,False,1.0
+rq2,battery,enhance,"(32, 3, 720, 1280)",hybrid,3,0.3462577999998757,hybrid,,,,False,0.875
+rq2,battery,enhance,"(32, 3, 720, 1280)",autohetero,3,0.26270949999889126,gpu,,,,False,1.0
+rq2,battery,enhance,"(32, 3, 720, 1280)",cpu,4,1.5013676999988093,cpu,,,,False,0.0
+rq2,battery,enhance,"(32, 3, 720, 1280)",gpu,4,0.20371610000074725,gpu,,,,False,1.0
+rq2,battery,enhance,"(32, 3, 720, 1280)",hybrid,4,0.8445131999978912,hybrid,,,,False,0.84375
+rq2,battery,enhance,"(32, 3, 720, 1280)",autohetero,4,0.8487878000014462,gpu,2.1079042434087856,2,0.18603579999762587,False,0.75
+rq2,battery,enhance,"(32, 3, 720, 1280)",cpu,5,1.6698576000017056,cpu,,,,False,0.0
+rq2,battery,enhance,"(32, 3, 720, 1280)",gpu,5,0.3434008000003814,gpu,,,,False,1.0
+rq2,battery,enhance,"(32, 3, 720, 1280)",hybrid,5,0.4044209999992745,hybrid,,,,False,0.75
+rq2,battery,enhance,"(32, 3, 720, 1280)",autohetero,5,0.26421130000017,gpu,,,,False,1.0

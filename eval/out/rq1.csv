@@ -1,0 +1,9 @@
+evaluation,model,accuracy,regret,time_error,sizes,accuracy_std
+holdout 80/20,forest,0.88,0.0005383,0.1723,25,
+holdout 80/20,tree,0.84,0.00174,0.1698,25,
+5-fold,forest,0.9113,0.04323,0.1915,124,0.05205
+5-fold,tree,0.8873,0.01647,0.1209,124,0.05166
+leave-one-op-out,forest,0.6883,0.1583,0.8661,124,0.2262
+leave-one-op-out,tree,0.7439,0.3618,0.8835,124,0.2472
+calibration -> benchmark,forest,0.8065,0.06369,0.6338,124,
+calibration -> benchmark,tree,0.7581,0.8893,0.3624,124,

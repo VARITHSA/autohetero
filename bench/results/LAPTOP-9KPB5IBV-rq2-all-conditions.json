@@ -1,0 +1,18 @@
+{
+  "cpu": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "driver": "617.14",
+  "torch": "2.11.0+cu128",
+  "reps": 5,
+  "conditions": [
+    "idle",
+    "gpu",
+    "cpu",
+    "battery"
+  ],
+  "sources": [
+    "LAPTOP-9KPB5IBV-20261026-003745.csv",
+    "LAPTOP-9KPB5IBV-20261026-014830.csv"
+  ],
+  "note": "battery run: on battery throughout (100% -> 91%); user switched Energy saver on, but Windows' PowerManager.EnergySaverStatus read Off before and after the run"
+}

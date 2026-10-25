@@ -1,0 +1,9 @@
+op,gain_from_batch,max_gain,max_gain_batch
+blur,none,-0.2226,256
+fft,none,-0.0997,8192
+filter,10000000,0.01012,10000000
+matmul,none,-0.1672,512
+mobilenetv2,none,0.1944,2
+resize,256,0.1097,256
+resnet18,none,-0.6443,256
+sobel,none,-0.765,16

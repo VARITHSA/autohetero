@@ -1,0 +1,5 @@
+condition,workloads,speedup_vs_gpu_geomean,speedup_vs_cpu_geomean,gap_to_oracle_geomean,within_5pct_of_oracle,switch_rate,detect_ms_median,autohetero_cv_median
+idle,18,0.7608,3.328,0.4089,0.2778,0.1,49.79,0.09079
+gpu,17,0.8273,2.265,0.4204,0.4118,0.3412,73.69,0.02422
+cpu,16,0.2475,1.853,3.057,0.3125,0.1875,55.89,0.1607
+battery,17,0.712,3.022,0.4994,0.2941,0.2,55.33,0.3102
