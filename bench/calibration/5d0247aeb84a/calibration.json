@@ -1,0 +1,15 @@
+{
+  "machine": {
+    "cpu": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "driver": "617.14",
+    "torch": "2.11.0+cu128"
+  },
+  "h2d_bytes_per_s": 6382931385.478721,
+  "d2h_bytes_per_s": 3390021418.3832912,
+  "launch_seconds": 6.475000009231735e-05,
+  "thread_seconds": 0.0007036000006337417,
+  "concat_bytes_per_s": 8176728520.942388,
+  "timings": "C:\\Users\\Srivathsa\\.cache\\autohetero\\5d0247aeb84a\\timings.csv",
+  "seconds": 32.6
+}
