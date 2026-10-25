@@ -82,3 +82,10 @@ def test_an_op_with_no_size_that_fits_is_skipped_not_a_crash(monkeypatch):
     rows = []
     assert calibrate._sweep("matmul", {"cpu": devices.CPU}, time.perf_counter() + 1, rows) == {"cpu": 0}
     assert rows == []
+
+
+def test_gpu_memory_cached_by_an_earlier_run_counts_as_free(monkeypatch):
+    released = []
+    monkeypatch.setattr(torch.cuda, "empty_cache", lambda: released.append(True))
+    monkeypatch.setattr(torch.cuda, "mem_get_info", lambda device: (2**30 if released else 0, 2**32))
+    assert calibrate.fits("filter", 1000, torch.device("cuda"))

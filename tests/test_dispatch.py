@@ -178,6 +178,7 @@ def test_a_gpu_failure_while_calibrating_never_reaches_the_caller(monkeypatch, f
     monkeypatch.setattr(predictor, "_model", None)
     monkeypatch.setattr(predictor, "_cache", {})
     monkeypatch.setattr(dispatch, "_said", set())
+    monkeypatch.setattr(dispatch, "_enabled", dispatch._enabled)  # enable() below: undo it afterwards
     autohetero.enable()
     assert devices.GPU is None  # (monkeypatch restores it after the test)
     assert autohetero.auto(lambda x: x + 1)(torch.zeros(2)).tolist() == [1.0, 1.0]
