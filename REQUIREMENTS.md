@@ -205,7 +205,7 @@ DESIGN.md leaves these open or contradicts itself. Each has my recommendation.
 
 ✅ built and tested on a CPU-only machine (GPU code paths through a fake device) · 🟡 built, and its `gpu`-marked test waits for a real NVIDIA GPU (Colab) · ⏳ built, waits for data from the fixed machine · ❌ not done (team action, or week 9)
 
-Tests: 106 pass on the dev Mac; 44 `gpu`-marked tests are skipped there and must pass on Colab (`pytest -m gpu`).
+Tests: 107 pass on the dev Mac; 44 `gpu`-marked tests are skipped there and must pass on Colab (`pytest -m gpu`).
 
 | Area | Status |
 |------|--------|
@@ -223,15 +223,16 @@ Tests: 106 pass on the dev Mac; 44 `gpu`-marked tests are skipped there and must
 | MON-1, MON-2 | ✅ CPU load from other processes only, median of about 1 s. Real NVML reading 🟡. |
 | HIS-1 to HIS-3 | ✅ predicted next to actual for every call, online fits (saved to `fits.json` at exit and read back by the next session, since 2026-10-25), `retrain()`, log rotation at 50 MB. Retraining automatically when idle isn't built. |
 | REP-1 | ✅ |
-| BEN-1 to BEN-3 | ✅ code (`bench/collect.py`, `bench/stress.py`, `bench/experiments.py`) · ⏳ runs. `stress-ng` isn't on the dev Mac; the runner falls back to busy Python processes and records which tool it used. |
-| BEN-4 | ❌ name the fixed machine (Q12) |
+| BEN-1 to BEN-3 | ✅ code (`bench/collect.py`, `bench/stress.py`, `bench/experiments.py`) · ⏳ runs. `stress-ng` isn't on the dev Mac; the runner falls back to busy Python processes and records which tool it used. Since 2026-10-25, RQ2 skips a workload that doesn't fit in free GPU memory under its condition, as `collect.py` and Hybrid gain already did: on a small GPU, its forced GPU-only runs would fall back to the CPU and record CPU time as GPU-only. |
+| BEN-4 | ⏳ Fixed machine named on 2026-10-25: a laptop with a Ryzen 7, an RTX 3050 Laptop GPU and 16 GB RAM, under WSL2. `RUNBOOK.md` is the step-by-step run on it. |
 | BEN-5 (weeks 3–4 exit) | ⏳ `bench/collect.py`, then `eval/crossover.py` |
 | EVL-1 to EVL-7 | ✅ scripts: `eval/rq1.py`, `rq2.py`, `rq3.py`, `overhead.py`, `hybrid_gain.py`, `crossover.py` · ⏳ numbers. "Replace every mock-up number in the deck" ❌ (team, after the runs). |
 | DEM-1 (week-7 exit) | ✅ `demo/app.py`; `demo/pipeline.py` adds exactly one line (tested) |
-| CO-1 to CO-4 | ❌ week 9, after submission. CO-3 needs the M.Tech run-log format (Q10). |
+| CO-1 | 🟡/⏳ `CARRYOVER.md` drafted on 2026-10-25: the §13 inferences mapped to the M.Tech review deck, with every measured cell pending the fixed-machine runs. |
+| CO-2 to CO-4 | ❌ week 9, after submission. CO-3 needs the M.Tech run-log format (Q10). |
 | CO-5 | ✅ All four references in DESIGN.md now carry full citations. Qilin, Grewe et al. (doi:10.1109/CGO.2013.6494993) and StarPU (CCPE 23(2), 2011, pp. 187–198, doi:10.1002/cpe.1631) were checked against their Crossref records on 2026-10-25. The ONNX Runtime page was checked live on 2026-10-21. |
 
-**Open questions:** Q1, Q2, Q3, Q4, Q5, Q8, Q9 and Q11 are settled in code (see "Adopted" above). Q6 is settled as "train on calibration", but see finding 3 below. Q7 is settled (2026-10-25): see Q7 above. Q10 and Q12 are still open.
+**Open questions:** Q1, Q2, Q3, Q4, Q5, Q8, Q9 and Q11 are settled in code (see "Adopted" above). Q6 is settled as "train on calibration", but see finding 3 below. Q7 is settled (2026-10-25): see Q7 above. Q12 is settled (2026-10-25): see BEN-4. Q10 is still open.
 
 **Findings from the dry runs (Apple GPU standing in), to settle on the fixed machine:**
 1. **Hybrid rounds are costly on short calls.** Each 25% round waits for its GPU piece, so a matmul 2048 under GPU stress took 366 ms with AutoHetero against 22 ms on the CPU. Recommendation: give Hybrid rounds the same ≥ 5 ms minimum as chunks before the final runs. *Done 2026-10-25: a round is at least 5 ms of predicted work with both devices busy, so a short call runs in one round. The GPU piece is still slow under stress, because the forest doesn't know about load (finding 3).*

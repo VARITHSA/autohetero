@@ -57,6 +57,11 @@ def rq2(write, conditions, reps=5, workloads=WORKLOADS):
     for condition in conditions:
         with _condition(condition):
             for name, size in workloads:
+                # checked under the condition, since a GPU stress job holds memory too; a run that didn't fit would
+                # fall back to the CPU and record CPU time as GPU-only
+                if not calibrate.fits("blur" if name == "enhance" else name, size, devices.GPU):
+                    print(f"{'rq2':11s} {condition:7s} {name:12s} {str(size):22s} skipped: too big for free GPU memory", flush=True)
+                    continue
                 fn = enhance if name == "enhance" else getattr(ops, name)
                 splittable = name == "enhance" or name in ops.SPLITTABLE
                 strategies = ["cpu", "gpu", *(["hybrid"] if splittable else []), "autohetero"]

@@ -1,6 +1,6 @@
 import pytest
 
-from autohetero import dispatch, predictor
+from autohetero import calibrate, dispatch, predictor
 from bench import experiments
 
 
@@ -25,6 +25,13 @@ def test_rq2_runs_every_strategy_alternately_with_a_warm_up(runs):
     assert {r[7] for r in auto} == {"gpu"} and {r[7] for r in runs if r[4] == "cpu"} == {"cpu"}
     assert {r[12] for r in runs if r[4] == "cpu"} == {0.0} and {r[12] for r in runs if r[4] == "gpu"} == {1.0}
 
+
+
+def test_rq2_skips_workloads_too_big_for_gpu_memory(runs, monkeypatch, capsys):
+    monkeypatch.setattr(calibrate, "fits", lambda op, size, device: size != 128)
+    experiments.rq2(runs.append, ["idle"], reps=0, workloads=[("matmul", 64), ("matmul", 128)])
+    assert {r[3] for r in runs} == {64}  # never run, so a CPU fallback can't pass for a GPU time
+    assert "skipped: too big for free GPU memory" in capsys.readouterr().out
 
 def test_hybrid_gain_compares_gpu_and_hybrid_until_runs_get_slow(runs):
     experiments.hybrid_gain(runs.append, reps=1, max_seconds=60, sizes={"matmul": [64, 128]})
