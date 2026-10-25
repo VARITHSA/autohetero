@@ -120,7 +120,7 @@ python bench/experiments.py hybrid-gain
 
 ## 10. Check fallbacks
 
-The memory check estimates; it can't see every intermediate a workload allocates. `fallback` is the only true/false column in the results, so this counts runs where the GPU failed anyway and the CPU stood in:
+The memory check estimates; it can't see every intermediate a workload allocates. `fallback` is the only true/false column in the results, so this counts runs where the GPU failed anyway and the CPU stood in. After one failure, every later forced CPU / GPU run of that workload size in the same experiment run goes straight to the CPU, and each of those counts too:
 ```bash
 grep -c ",True," bench/results/*.csv
 ```
