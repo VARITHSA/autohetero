@@ -1,0 +1,41 @@
+...................................F........                             [100%]
+================================== FAILURES ===================================
+_ test_exit_check_long_task_switches_to_hybrid_within_two_chunks_under_gpu_stress _
+
+calibrated = None
+
+    @pytest.mark.gpu
+    def test_exit_check_long_task_switches_to_hybrid_within_two_chunks_under_gpu_stress(calibrated):
+        x = torch.rand(256, 3, 224, 224, generator=torch.Generator().manual_seed(0))
+        ops.resnet18(x)  # idle: decides, and copies the model to the GPU
+        with stress.gpu():
+            ops.resnet18(x)
+        history.flush()
+        record = json.loads((calibrate.folder() / "history.jsonl").read_text().splitlines()[-1])
+>       assert record["mode"] == "gpu", f"idle decision was {record['mode']}: the check needs a GPU-chosen task"
+E       AssertionError: idle decision was hybrid: the check needs a GPU-chosen task
+E       assert 'hybrid' == 'gpu'
+E         
+E         - gpu
+E         + hybrid
+
+tests\test_week6.py:40: AssertionError
+---------------------------- Captured stderr setup ----------------------------
+[AutoHetero] Calibrating this machine once (~30 s): AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD + NVIDIA GeForce RTX 3050 Laptop GPU
+[AutoHetero]   blur         cpu 6 sizes, gpu 6 sizes  (3.8 s)
+[AutoHetero]   resize       cpu 6 sizes, gpu 6 sizes  (3.0 s)
+[AutoHetero]   sobel        cpu 6 sizes, gpu 6 sizes  (9.3 s)
+[AutoHetero]   resnet18     cpu 4 sizes, gpu 4 sizes  (3.0 s)
+[AutoHetero]   mobilenetv2  cpu 4 sizes, gpu 5 sizes  (3.0 s)
+[AutoHetero]   filter       cpu 6 sizes, gpu 6 sizes  (0.8 s)
+[AutoHetero]   sort         cpu 5 sizes, gpu 6 sizes  (2.0 s)
+[AutoHetero]   groupby      cpu 6 sizes, gpu 6 sizes  (3.0 s)
+[AutoHetero]   matmul       cpu 5 sizes, gpu 6 sizes  (3.5 s)
+[AutoHetero]   fft          cpu 6 sizes, gpu 6 sizes  (2.6 s)
+[AutoHetero] Calibration done in 34.3 s, cached in C:\Users\Srivathsa\AppData\Local\Temp\pytest-of-Srivathsa\pytest-26\week6-cache\5d0247aeb84a
+---------------------------- Captured stderr call -----------------------------
+[AutoHetero] resnet18: batch 256, HYBRID
+[AutoHetero] resnet18: batch 256, HYBRID
+=========================== short test summary info ===========================
+FAILED tests/test_week6.py::test_exit_check_long_task_switches_to_hybrid_within_two_chunks_under_gpu_stress
+1 failed, 43 passed, 1 skipped, 109 deselected in 93.01s (0:01:33)

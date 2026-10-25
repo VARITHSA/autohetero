@@ -1,0 +1,9 @@
+metric,value,unit
+"dispatch overhead: direct call, no AutoHetero (baseline)",0.14,us/call
+dispatch overhead: @auto function,96.77,us/call
+"dispatch overhead: @auto function, numpy input",136.3,us/call
+dispatch overhead: @auto function inside force('cpu'),74.41,us/call
+"dispatch overhead: built-in op, cached decision",157.9,us/call
+dispatch overhead: decision miss (the forests run),2.692e+04,us/call
+"calibration, once per machine",32.6,s
+lines added to the demo app,1,lines

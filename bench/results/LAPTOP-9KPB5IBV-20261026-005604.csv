@@ -1,0 +1,769 @@
+experiment,condition,workload,size,strategy,rep,seconds,mode,slowdown,chunks_before_switch,detect_seconds,fallback,gpu_share
+hybrid_gain,idle,blur,"(1, 3, 256, 256)",gpu,0,0.3155802000001131,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(1, 3, 256, 256)",hybrid,0,0.3830878999979177,cpu,,,,False,0.0
+hybrid_gain,idle,blur,"(1, 3, 256, 256)",gpu,1,0.0019685000006575137,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(1, 3, 256, 256)",hybrid,1,0.0017344000007142313,cpu,,,,False,0.0
+hybrid_gain,idle,blur,"(1, 3, 256, 256)",gpu,2,0.0018071000013151206,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(1, 3, 256, 256)",hybrid,2,0.0017036999997799285,cpu,,,,False,0.0
+hybrid_gain,idle,blur,"(1, 3, 256, 256)",gpu,3,0.0017080999969039112,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(1, 3, 256, 256)",hybrid,3,0.0017398000018147286,cpu,,,,False,0.0
+hybrid_gain,idle,blur,"(1, 3, 256, 256)",gpu,4,0.0016246999985014554,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(1, 3, 256, 256)",hybrid,4,0.0016930999991018325,cpu,,,,False,0.0
+hybrid_gain,idle,blur,"(1, 3, 256, 256)",gpu,5,0.0017004999972414225,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(1, 3, 256, 256)",hybrid,5,0.0016156000019691419,cpu,,,,False,0.0
+hybrid_gain,idle,blur,"(4, 3, 256, 256)",gpu,0,0.005373200001486111,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(4, 3, 256, 256)",hybrid,0,0.04088590000174008,hybrid,,,,False,0.75
+hybrid_gain,idle,blur,"(4, 3, 256, 256)",gpu,1,0.0028419999980542343,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(4, 3, 256, 256)",hybrid,1,0.004473000000871252,hybrid,,,,False,0.75
+hybrid_gain,idle,blur,"(4, 3, 256, 256)",gpu,2,0.002714800000831019,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(4, 3, 256, 256)",hybrid,2,0.0038882000008015893,hybrid,,,,False,0.75
+hybrid_gain,idle,blur,"(4, 3, 256, 256)",gpu,3,0.0031101999993552454,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(4, 3, 256, 256)",hybrid,3,0.004157100000156788,hybrid,,,,False,0.75
+hybrid_gain,idle,blur,"(4, 3, 256, 256)",gpu,4,0.0029178999975556508,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(4, 3, 256, 256)",hybrid,4,0.0037370000027294736,hybrid,,,,False,0.75
+hybrid_gain,idle,blur,"(4, 3, 256, 256)",gpu,5,0.003909499999281252,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(4, 3, 256, 256)",hybrid,5,0.0037164999994274694,hybrid,,,,False,0.75
+hybrid_gain,idle,blur,"(16, 3, 256, 256)",gpu,0,0.011614900002314243,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(16, 3, 256, 256)",hybrid,0,0.04018269999869517,hybrid,,,,False,0.75
+hybrid_gain,idle,blur,"(16, 3, 256, 256)",gpu,1,0.007330500000534812,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(16, 3, 256, 256)",hybrid,1,0.00941939999756869,hybrid,,,,False,0.75
+hybrid_gain,idle,blur,"(16, 3, 256, 256)",gpu,2,0.007064199999149423,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(16, 3, 256, 256)",hybrid,2,0.009520900002826238,hybrid,,,,False,0.75
+hybrid_gain,idle,blur,"(16, 3, 256, 256)",gpu,3,0.007227000001876149,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(16, 3, 256, 256)",hybrid,3,0.009418800000275951,hybrid,,,,False,0.75
+hybrid_gain,idle,blur,"(16, 3, 256, 256)",gpu,4,0.007336599999689497,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(16, 3, 256, 256)",hybrid,4,0.00904909999735537,hybrid,,,,False,0.75
+hybrid_gain,idle,blur,"(16, 3, 256, 256)",gpu,5,0.007121900001948234,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(16, 3, 256, 256)",hybrid,5,0.00952550000147312,hybrid,,,,False,0.75
+hybrid_gain,idle,blur,"(64, 3, 256, 256)",gpu,0,0.03624889999991865,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(64, 3, 256, 256)",hybrid,0,0.0648581000023114,hybrid,,,,False,0.6875
+hybrid_gain,idle,blur,"(64, 3, 256, 256)",gpu,1,0.024689300000318326,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(64, 3, 256, 256)",hybrid,1,0.040672800001630094,hybrid,,,,False,0.609375
+hybrid_gain,idle,blur,"(64, 3, 256, 256)",gpu,2,0.02427009999883012,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(64, 3, 256, 256)",hybrid,2,0.0350808999974106,hybrid,,,,False,0.6875
+hybrid_gain,idle,blur,"(64, 3, 256, 256)",gpu,3,0.023274300001503434,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(64, 3, 256, 256)",hybrid,3,0.03263090000109514,hybrid,,,,False,0.640625
+hybrid_gain,idle,blur,"(64, 3, 256, 256)",gpu,4,0.023078300000634044,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(64, 3, 256, 256)",hybrid,4,0.035001799999008654,hybrid,,,,False,0.609375
+hybrid_gain,idle,blur,"(64, 3, 256, 256)",gpu,5,0.023389900001347996,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(64, 3, 256, 256)",hybrid,5,0.03357930000129272,hybrid,,,,False,0.671875
+hybrid_gain,idle,blur,"(256, 3, 256, 256)",gpu,0,0.13197220000074594,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(256, 3, 256, 256)",hybrid,0,0.1722899000014877,hybrid,,,,False,0.61328125
+hybrid_gain,idle,blur,"(256, 3, 256, 256)",gpu,1,0.11845590000302764,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(256, 3, 256, 256)",hybrid,1,0.14211539999814704,hybrid,,,,False,0.59765625
+hybrid_gain,idle,blur,"(256, 3, 256, 256)",gpu,2,0.11624019999726443,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(256, 3, 256, 256)",hybrid,2,0.14782239999840385,hybrid,,,,False,0.60546875
+hybrid_gain,idle,blur,"(256, 3, 256, 256)",gpu,3,0.12362250000296626,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(256, 3, 256, 256)",hybrid,3,0.12950190000265138,hybrid,,,,False,0.61328125
+hybrid_gain,idle,blur,"(256, 3, 256, 256)",gpu,4,0.08671189999950002,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(256, 3, 256, 256)",hybrid,4,0.19359289999920293,hybrid,,,,False,0.6171875
+hybrid_gain,idle,blur,"(256, 3, 256, 256)",gpu,5,0.0867298999983177,gpu,,,,False,1.0
+hybrid_gain,idle,blur,"(256, 3, 256, 256)",hybrid,5,0.13252180000199587,hybrid,,,,False,0.63671875
+hybrid_gain,idle,fft,"(1, 16384)",gpu,0,0.09290160000091419,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(1, 16384)",hybrid,0,0.03220829999918351,cpu,,,,False,0.0
+hybrid_gain,idle,fft,"(1, 16384)",gpu,1,0.0008185999977285974,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(1, 16384)",hybrid,1,0.0003760999970836565,cpu,,,,False,0.0
+hybrid_gain,idle,fft,"(1, 16384)",gpu,2,0.0006147000021883287,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(1, 16384)",hybrid,2,0.0003692999998747837,cpu,,,,False,0.0
+hybrid_gain,idle,fft,"(1, 16384)",gpu,3,0.0005504000000655651,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(1, 16384)",hybrid,3,0.0003409000019019004,cpu,,,,False,0.0
+hybrid_gain,idle,fft,"(1, 16384)",gpu,4,0.0005538000004889909,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(1, 16384)",hybrid,4,0.00041509999937261455,cpu,,,,False,0.0
+hybrid_gain,idle,fft,"(1, 16384)",gpu,5,0.0005541000027733389,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(1, 16384)",hybrid,5,0.000415000002249144,cpu,,,,False,0.0
+hybrid_gain,idle,fft,"(2, 16384)",gpu,0,0.00986420000117505,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(2, 16384)",hybrid,0,0.027936200000112876,hybrid,,,,False,0.5
+hybrid_gain,idle,fft,"(2, 16384)",gpu,1,0.0007925000027171336,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(2, 16384)",hybrid,1,0.000975899998593377,hybrid,,,,False,0.5
+hybrid_gain,idle,fft,"(2, 16384)",gpu,2,0.0006601999994018115,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(2, 16384)",hybrid,2,0.0009356000009574927,hybrid,,,,False,0.5
+hybrid_gain,idle,fft,"(2, 16384)",gpu,3,0.0006844999988970812,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(2, 16384)",hybrid,3,0.0010008999997808132,hybrid,,,,False,0.5
+hybrid_gain,idle,fft,"(2, 16384)",gpu,4,0.0007093999993230682,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(2, 16384)",hybrid,4,0.0012110999996366445,hybrid,,,,False,0.5
+hybrid_gain,idle,fft,"(2, 16384)",gpu,5,0.0006899999971210491,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(2, 16384)",hybrid,5,0.0010732999980973545,hybrid,,,,False,0.5
+hybrid_gain,idle,fft,"(4, 16384)",gpu,0,0.010049900000012713,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(4, 16384)",hybrid,0,0.03156999999919208,hybrid,,,,False,0.5
+hybrid_gain,idle,fft,"(4, 16384)",gpu,1,0.0007822000006854068,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(4, 16384)",hybrid,1,0.0012605999982042704,hybrid,,,,False,0.5
+hybrid_gain,idle,fft,"(4, 16384)",gpu,2,0.0010354000005463604,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(4, 16384)",hybrid,2,0.0010700000020733569,hybrid,,,,False,0.5
+hybrid_gain,idle,fft,"(4, 16384)",gpu,3,0.0007467000032193027,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(4, 16384)",hybrid,3,0.0010903000002144836,hybrid,,,,False,0.5
+hybrid_gain,idle,fft,"(4, 16384)",gpu,4,0.000825700000859797,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(4, 16384)",hybrid,4,0.0011180000001331791,hybrid,,,,False,0.5
+hybrid_gain,idle,fft,"(4, 16384)",gpu,5,0.0008822000017971732,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(4, 16384)",hybrid,5,0.001149499999883119,hybrid,,,,False,0.5
+hybrid_gain,idle,fft,"(8, 16384)",gpu,0,0.011533000000781612,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(8, 16384)",hybrid,0,0.03918830000111484,hybrid,,,,False,0.375
+hybrid_gain,idle,fft,"(8, 16384)",gpu,1,0.0011373999986972194,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(8, 16384)",hybrid,1,0.0013523999987228308,hybrid,,,,False,0.375
+hybrid_gain,idle,fft,"(8, 16384)",gpu,2,0.0009735000021464657,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(8, 16384)",hybrid,2,0.0015628000001015607,hybrid,,,,False,0.375
+hybrid_gain,idle,fft,"(8, 16384)",gpu,3,0.0009786999980860855,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(8, 16384)",hybrid,3,0.001210399997944478,hybrid,,,,False,0.375
+hybrid_gain,idle,fft,"(8, 16384)",gpu,4,0.0009031999979924876,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(8, 16384)",hybrid,4,0.0014679000014439225,hybrid,,,,False,0.375
+hybrid_gain,idle,fft,"(8, 16384)",gpu,5,0.0008845000011206139,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(8, 16384)",hybrid,5,0.0013284999986353796,hybrid,,,,False,0.375
+hybrid_gain,idle,fft,"(16, 16384)",gpu,0,0.012514199999714037,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(16, 16384)",hybrid,0,0.038194799999473616,hybrid,,,,False,0.3125
+hybrid_gain,idle,fft,"(16, 16384)",gpu,1,0.001310600000579143,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(16, 16384)",hybrid,1,0.002003800000238698,hybrid,,,,False,0.3125
+hybrid_gain,idle,fft,"(16, 16384)",gpu,2,0.001280399999814108,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(16, 16384)",hybrid,2,0.001509900001110509,hybrid,,,,False,0.3125
+hybrid_gain,idle,fft,"(16, 16384)",gpu,3,0.001206699998874683,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(16, 16384)",hybrid,3,0.0014417999991565011,hybrid,,,,False,0.3125
+hybrid_gain,idle,fft,"(16, 16384)",gpu,4,0.0012884999996458646,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(16, 16384)",hybrid,4,0.001480200000514742,hybrid,,,,False,0.3125
+hybrid_gain,idle,fft,"(16, 16384)",gpu,5,0.0012888000019302126,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(16, 16384)",hybrid,5,0.0014941000008548144,hybrid,,,,False,0.3125
+hybrid_gain,idle,fft,"(32, 16384)",gpu,0,0.012887099997897167,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(32, 16384)",hybrid,0,0.04405200000110199,hybrid,,,,False,0.59375
+hybrid_gain,idle,fft,"(32, 16384)",gpu,1,0.001824899998609908,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(32, 16384)",hybrid,1,0.0024790999996184837,hybrid,,,,False,0.59375
+hybrid_gain,idle,fft,"(32, 16384)",gpu,2,0.0017455999986850657,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(32, 16384)",hybrid,2,0.002499599999282509,hybrid,,,,False,0.59375
+hybrid_gain,idle,fft,"(32, 16384)",gpu,3,0.0017138000002887566,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(32, 16384)",hybrid,3,0.002566099999967264,hybrid,,,,False,0.59375
+hybrid_gain,idle,fft,"(32, 16384)",gpu,4,0.0016709999981685542,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(32, 16384)",hybrid,4,0.002574900001491187,hybrid,,,,False,0.59375
+hybrid_gain,idle,fft,"(32, 16384)",gpu,5,0.0016919000008783769,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(32, 16384)",hybrid,5,0.002349599999433849,hybrid,,,,False,0.59375
+hybrid_gain,idle,fft,"(64, 16384)",gpu,0,0.014697500002512243,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(64, 16384)",hybrid,0,0.04325020000032964,hybrid,,,,False,0.71875
+hybrid_gain,idle,fft,"(64, 16384)",gpu,1,0.0029575999978987966,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(64, 16384)",hybrid,1,0.004219800001010299,hybrid,,,,False,0.71875
+hybrid_gain,idle,fft,"(64, 16384)",gpu,2,0.0028566000000864733,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(64, 16384)",hybrid,2,0.0034028000009129755,hybrid,,,,False,0.71875
+hybrid_gain,idle,fft,"(64, 16384)",gpu,3,0.0028530000017781276,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(64, 16384)",hybrid,3,0.003303499997855397,hybrid,,,,False,0.71875
+hybrid_gain,idle,fft,"(64, 16384)",gpu,4,0.0028101999996579252,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(64, 16384)",hybrid,4,0.003961599999456666,hybrid,,,,False,0.71875
+hybrid_gain,idle,fft,"(64, 16384)",gpu,5,0.002732999997533625,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(64, 16384)",hybrid,5,0.004155399998126086,hybrid,,,,False,0.71875
+hybrid_gain,idle,fft,"(128, 16384)",gpu,0,0.015776200001710095,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(128, 16384)",hybrid,0,0.045826900000975,hybrid,,,,False,0.7734375
+hybrid_gain,idle,fft,"(128, 16384)",gpu,1,0.005017300001782132,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(128, 16384)",hybrid,1,0.006397799999831477,hybrid,,,,False,0.7734375
+hybrid_gain,idle,fft,"(128, 16384)",gpu,2,0.0049254000005021226,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(128, 16384)",hybrid,2,0.006730100001732353,hybrid,,,,False,0.7734375
+hybrid_gain,idle,fft,"(128, 16384)",gpu,3,0.0048945000016829,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(128, 16384)",hybrid,3,0.006908500003191875,hybrid,,,,False,0.7734375
+hybrid_gain,idle,fft,"(128, 16384)",gpu,4,0.005074400000012247,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(128, 16384)",hybrid,4,0.006096200002502883,hybrid,,,,False,0.7734375
+hybrid_gain,idle,fft,"(128, 16384)",gpu,5,0.005110899997816887,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(128, 16384)",hybrid,5,0.006129400000645546,hybrid,,,,False,0.7734375
+hybrid_gain,idle,fft,"(256, 16384)",gpu,0,0.0221068999999261,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(256, 16384)",hybrid,0,0.06254249999983585,hybrid,,,,False,0.703125
+hybrid_gain,idle,fft,"(256, 16384)",gpu,1,0.009188899999571731,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(256, 16384)",hybrid,1,0.022130000001197914,hybrid,,,,False,0.73828125
+hybrid_gain,idle,fft,"(256, 16384)",gpu,2,0.009253399999579415,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(256, 16384)",hybrid,2,0.012402500000462169,hybrid,,,,False,0.73046875
+hybrid_gain,idle,fft,"(256, 16384)",gpu,3,0.009250899998733075,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(256, 16384)",hybrid,3,0.024073100001260173,hybrid,,,,False,0.7265625
+hybrid_gain,idle,fft,"(256, 16384)",gpu,4,0.009206799997627968,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(256, 16384)",hybrid,4,0.021109299999807263,hybrid,,,,False,0.74609375
+hybrid_gain,idle,fft,"(256, 16384)",gpu,5,0.00921310000194353,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(256, 16384)",hybrid,5,0.023153400001319824,hybrid,,,,False,0.72265625
+hybrid_gain,idle,fft,"(512, 16384)",gpu,0,0.03198049999991781,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(512, 16384)",hybrid,0,0.07299629999761237,hybrid,,,,False,0.51953125
+hybrid_gain,idle,fft,"(512, 16384)",gpu,1,0.017551400000229478,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(512, 16384)",hybrid,1,0.034696899998380104,hybrid,,,,False,0.537109375
+hybrid_gain,idle,fft,"(512, 16384)",gpu,2,0.01755050000065239,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(512, 16384)",hybrid,2,0.03629749999890919,hybrid,,,,False,0.576171875
+hybrid_gain,idle,fft,"(512, 16384)",gpu,3,0.01753929999904358,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(512, 16384)",hybrid,3,0.03587549999792827,hybrid,,,,False,0.498046875
+hybrid_gain,idle,fft,"(512, 16384)",gpu,4,0.01753660000031232,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(512, 16384)",hybrid,4,0.04836749999958556,hybrid,,,,False,0.630859375
+hybrid_gain,idle,fft,"(512, 16384)",gpu,5,0.017552199999045115,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(512, 16384)",hybrid,5,0.029093000001012115,hybrid,,,,False,0.5
+hybrid_gain,idle,fft,"(1024, 16384)",gpu,0,0.05752530000245315,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(1024, 16384)",hybrid,0,0.09593870000026072,hybrid,,,,False,0.2666015625
+hybrid_gain,idle,fft,"(1024, 16384)",gpu,1,0.03448300000309246,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(1024, 16384)",hybrid,1,0.06285619999835035,hybrid,,,,False,0.32421875
+hybrid_gain,idle,fft,"(1024, 16384)",gpu,2,0.034780999998474726,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(1024, 16384)",hybrid,2,0.05779120000079274,hybrid,,,,False,0.306640625
+hybrid_gain,idle,fft,"(1024, 16384)",gpu,3,0.034255999999004416,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(1024, 16384)",hybrid,3,0.060144999999465654,hybrid,,,,False,0.3486328125
+hybrid_gain,idle,fft,"(1024, 16384)",gpu,4,0.0342897999980778,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(1024, 16384)",hybrid,4,0.05737819999922067,hybrid,,,,False,0.3193359375
+hybrid_gain,idle,fft,"(1024, 16384)",gpu,5,0.034275499998329906,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(1024, 16384)",hybrid,5,0.05601870000100462,hybrid,,,,False,0.3525390625
+hybrid_gain,idle,fft,"(2048, 16384)",gpu,0,0.1133843000025081,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(2048, 16384)",hybrid,0,0.130953200001386,hybrid,,,,False,0.29296875
+hybrid_gain,idle,fft,"(2048, 16384)",gpu,1,0.06761310000001686,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(2048, 16384)",hybrid,1,0.09449390000008862,hybrid,,,,False,0.34521484375
+hybrid_gain,idle,fft,"(2048, 16384)",gpu,2,0.0675641000016185,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(2048, 16384)",hybrid,2,0.09298209999906248,hybrid,,,,False,0.34814453125
+hybrid_gain,idle,fft,"(2048, 16384)",gpu,3,0.06780640000215499,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(2048, 16384)",hybrid,3,0.09648750000269501,hybrid,,,,False,0.34033203125
+hybrid_gain,idle,fft,"(2048, 16384)",gpu,4,0.06763689999934286,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(2048, 16384)",hybrid,4,0.10010750000219559,hybrid,,,,False,0.38134765625
+hybrid_gain,idle,fft,"(2048, 16384)",gpu,5,0.06758859999899869,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(2048, 16384)",hybrid,5,0.15939240000079735,hybrid,,,,False,0.3857421875
+hybrid_gain,idle,fft,"(4096, 16384)",gpu,0,0.21188860000256682,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(4096, 16384)",hybrid,0,0.23286299999745097,hybrid,,,,False,0.40625
+hybrid_gain,idle,fft,"(4096, 16384)",gpu,1,0.1340496999982861,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(4096, 16384)",hybrid,1,0.23318169999765814,hybrid,,,,False,0.32763671875
+hybrid_gain,idle,fft,"(4096, 16384)",gpu,2,0.13404350000200793,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(4096, 16384)",hybrid,2,0.21219139999811887,hybrid,,,,False,0.3291015625
+hybrid_gain,idle,fft,"(4096, 16384)",gpu,3,0.13442429999849992,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(4096, 16384)",hybrid,3,0.1694567000013194,hybrid,,,,False,0.355224609375
+hybrid_gain,idle,fft,"(4096, 16384)",gpu,4,0.1340935999978683,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(4096, 16384)",hybrid,4,0.2892705999984173,hybrid,,,,False,0.263427734375
+hybrid_gain,idle,fft,"(4096, 16384)",gpu,5,0.14293610000095214,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(4096, 16384)",hybrid,5,0.18302000000039698,hybrid,,,,False,0.340087890625
+hybrid_gain,idle,fft,"(8192, 16384)",gpu,0,0.602018899997347,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(8192, 16384)",hybrid,0,0.36637229999905685,hybrid,,,,False,0.3056640625
+hybrid_gain,idle,fft,"(8192, 16384)",gpu,1,0.26681729999836534,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(8192, 16384)",hybrid,1,0.3658035000007658,hybrid,,,,False,0.3411865234375
+hybrid_gain,idle,fft,"(8192, 16384)",gpu,2,0.26696889999948326,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(8192, 16384)",hybrid,2,0.2893599000017275,hybrid,,,,False,0.32470703125
+hybrid_gain,idle,fft,"(8192, 16384)",gpu,3,0.2673099000021466,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(8192, 16384)",hybrid,3,0.29358549999960815,hybrid,,,,False,0.3079833984375
+hybrid_gain,idle,fft,"(8192, 16384)",gpu,4,0.26714990000255057,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(8192, 16384)",hybrid,4,0.2910728000024392,hybrid,,,,False,0.3065185546875
+hybrid_gain,idle,fft,"(8192, 16384)",gpu,5,0.2667126000014832,gpu,,,,False,1.0
+hybrid_gain,idle,fft,"(8192, 16384)",hybrid,5,0.33895029999985127,hybrid,,,,False,0.4375
+hybrid_gain,idle,filter,1000,gpu,0,0.03835410000101547,gpu,,,,False,1.0
+hybrid_gain,idle,filter,1000,hybrid,0,0.03061630000229343,hybrid,,,,False,0.146
+hybrid_gain,idle,filter,1000,gpu,1,0.000861699998495169,gpu,,,,False,1.0
+hybrid_gain,idle,filter,1000,hybrid,1,0.001269999997020932,hybrid,,,,False,0.146
+hybrid_gain,idle,filter,1000,gpu,2,0.0007068999984767288,gpu,,,,False,1.0
+hybrid_gain,idle,filter,1000,hybrid,2,0.0010855000000447035,hybrid,,,,False,0.146
+hybrid_gain,idle,filter,1000,gpu,3,0.0007487000002583954,gpu,,,,False,1.0
+hybrid_gain,idle,filter,1000,hybrid,3,0.0011321999991196208,hybrid,,,,False,0.146
+hybrid_gain,idle,filter,1000,gpu,4,0.0007245000015245751,gpu,,,,False,1.0
+hybrid_gain,idle,filter,1000,hybrid,4,0.0014834999965387397,hybrid,,,,False,0.146
+hybrid_gain,idle,filter,1000,gpu,5,0.0007977000022947323,gpu,,,,False,1.0
+hybrid_gain,idle,filter,1000,hybrid,5,0.001157200000307057,hybrid,,,,False,0.146
+hybrid_gain,idle,filter,3162,gpu,0,0.0015027000008558389,gpu,,,,False,1.0
+hybrid_gain,idle,filter,3162,hybrid,0,0.028147300003183773,hybrid,,,,False,0.28241619228336495
+hybrid_gain,idle,filter,3162,gpu,1,0.0007622000011906493,gpu,,,,False,1.0
+hybrid_gain,idle,filter,3162,hybrid,1,0.0012277999994694255,hybrid,,,,False,0.28241619228336495
+hybrid_gain,idle,filter,3162,gpu,2,0.0007225999979709741,gpu,,,,False,1.0
+hybrid_gain,idle,filter,3162,hybrid,2,0.0011578999983612448,hybrid,,,,False,0.28241619228336495
+hybrid_gain,idle,filter,3162,gpu,3,0.0007922999975562561,gpu,,,,False,1.0
+hybrid_gain,idle,filter,3162,hybrid,3,0.0011374000023351982,hybrid,,,,False,0.28241619228336495
+hybrid_gain,idle,filter,3162,gpu,4,0.0014330000012705568,gpu,,,,False,1.0
+hybrid_gain,idle,filter,3162,hybrid,4,0.0010949999996228144,hybrid,,,,False,0.28241619228336495
+hybrid_gain,idle,filter,3162,gpu,5,0.00073319999864907,gpu,,,,False,1.0
+hybrid_gain,idle,filter,3162,hybrid,5,0.001087500000721775,hybrid,,,,False,0.28241619228336495
+hybrid_gain,idle,filter,10000,gpu,0,0.0016682000023138244,gpu,,,,False,1.0
+hybrid_gain,idle,filter,10000,hybrid,0,0.03153139999994892,hybrid,,,,False,0.4064
+hybrid_gain,idle,filter,10000,gpu,1,0.0008627000024716835,gpu,,,,False,1.0
+hybrid_gain,idle,filter,10000,hybrid,1,0.0016969999996945262,hybrid,,,,False,0.4064
+hybrid_gain,idle,filter,10000,gpu,2,0.0007719999994151294,gpu,,,,False,1.0
+hybrid_gain,idle,filter,10000,hybrid,2,0.0011598999990383163,hybrid,,,,False,0.4064
+hybrid_gain,idle,filter,10000,gpu,3,0.0009286999993491918,gpu,,,,False,1.0
+hybrid_gain,idle,filter,10000,hybrid,3,0.0013189000019337982,hybrid,,,,False,0.4064
+hybrid_gain,idle,filter,10000,gpu,4,0.0007878000033088028,gpu,,,,False,1.0
+hybrid_gain,idle,filter,10000,hybrid,4,0.0018959000008180737,hybrid,,,,False,0.4064
+hybrid_gain,idle,filter,10000,gpu,5,0.0008857000029820483,gpu,,,,False,1.0
+hybrid_gain,idle,filter,10000,hybrid,5,0.0012813000030291732,hybrid,,,,False,0.4064
+hybrid_gain,idle,filter,31623,gpu,0,0.001447900001949165,gpu,,,,False,1.0
+hybrid_gain,idle,filter,31623,hybrid,0,0.03258310000092024,hybrid,,,,False,0.5867564747177687
+hybrid_gain,idle,filter,31623,gpu,1,0.001038200000039069,gpu,,,,False,1.0
+hybrid_gain,idle,filter,31623,hybrid,1,0.0013355999981286004,hybrid,,,,False,0.5867564747177687
+hybrid_gain,idle,filter,31623,gpu,2,0.0010694000011426397,gpu,,,,False,1.0
+hybrid_gain,idle,filter,31623,hybrid,2,0.0013614000017696526,hybrid,,,,False,0.5867564747177687
+hybrid_gain,idle,filter,31623,gpu,3,0.0010772999994514976,gpu,,,,False,1.0
+hybrid_gain,idle,filter,31623,hybrid,3,0.0019036999983654823,hybrid,,,,False,0.5867564747177687
+hybrid_gain,idle,filter,31623,gpu,4,0.0009191999997710809,gpu,,,,False,1.0
+hybrid_gain,idle,filter,31623,hybrid,4,0.002057599998806836,hybrid,,,,False,0.5867564747177687
+hybrid_gain,idle,filter,31623,gpu,5,0.0009959000017261133,gpu,,,,False,1.0
+hybrid_gain,idle,filter,31623,hybrid,5,0.0013023000028624665,hybrid,,,,False,0.5867564747177687
+hybrid_gain,idle,filter,100000,gpu,0,0.0035341999973752536,gpu,,,,False,1.0
+hybrid_gain,idle,filter,100000,hybrid,0,0.028710399998089997,hybrid,,,,False,0.75799
+hybrid_gain,idle,filter,100000,gpu,1,0.0015858000006119255,gpu,,,,False,1.0
+hybrid_gain,idle,filter,100000,hybrid,1,0.0019853999983752146,hybrid,,,,False,0.75799
+hybrid_gain,idle,filter,100000,gpu,2,0.0014994000011938624,gpu,,,,False,1.0
+hybrid_gain,idle,filter,100000,hybrid,2,0.001842699999542674,hybrid,,,,False,0.75799
+hybrid_gain,idle,filter,100000,gpu,3,0.001865000001998851,gpu,,,,False,1.0
+hybrid_gain,idle,filter,100000,hybrid,3,0.0018041000002995133,hybrid,,,,False,0.75799
+hybrid_gain,idle,filter,100000,gpu,4,0.001828399999794783,gpu,,,,False,1.0
+hybrid_gain,idle,filter,100000,hybrid,4,0.0016448999995191116,hybrid,,,,False,0.75799
+hybrid_gain,idle,filter,100000,gpu,5,0.0014037000000826083,gpu,,,,False,1.0
+hybrid_gain,idle,filter,100000,hybrid,5,0.0018555999995442107,hybrid,,,,False,0.75799
+hybrid_gain,idle,filter,316228,gpu,0,0.005079800001112744,gpu,,,,False,1.0
+hybrid_gain,idle,filter,316228,hybrid,0,0.03321890000006533,hybrid,,,,False,0.823383761083775
+hybrid_gain,idle,filter,316228,gpu,1,0.002617499998450512,gpu,,,,False,1.0
+hybrid_gain,idle,filter,316228,hybrid,1,0.0030346999992616475,hybrid,,,,False,0.823383761083775
+hybrid_gain,idle,filter,316228,gpu,2,0.0026794000004883856,gpu,,,,False,1.0
+hybrid_gain,idle,filter,316228,hybrid,2,0.002989500000694534,hybrid,,,,False,0.823383761083775
+hybrid_gain,idle,filter,316228,gpu,3,0.0027635999977064785,gpu,,,,False,1.0
+hybrid_gain,idle,filter,316228,hybrid,3,0.0028861000027973205,hybrid,,,,False,0.823383761083775
+hybrid_gain,idle,filter,316228,gpu,4,0.002575599999545375,gpu,,,,False,1.0
+hybrid_gain,idle,filter,316228,hybrid,4,0.0029310999998415355,hybrid,,,,False,0.823383761083775
+hybrid_gain,idle,filter,316228,gpu,5,0.002697300002182601,gpu,,,,False,1.0
+hybrid_gain,idle,filter,316228,hybrid,5,0.0031314000007114373,hybrid,,,,False,0.823383761083775
+hybrid_gain,idle,filter,1000000,gpu,0,0.010262899999361252,gpu,,,,False,1.0
+hybrid_gain,idle,filter,1000000,hybrid,0,0.040161900000384776,hybrid,,,,False,0.83903
+hybrid_gain,idle,filter,1000000,gpu,1,0.006338400002277922,gpu,,,,False,1.0
+hybrid_gain,idle,filter,1000000,hybrid,1,0.007949399998324225,hybrid,,,,False,0.77886
+hybrid_gain,idle,filter,1000000,gpu,2,0.006376699999236735,gpu,,,,False,1.0
+hybrid_gain,idle,filter,1000000,hybrid,2,0.0077369000027829316,hybrid,,,,False,0.777396
+hybrid_gain,idle,filter,1000000,gpu,3,0.006217099999048514,gpu,,,,False,1.0
+hybrid_gain,idle,filter,1000000,hybrid,3,0.007629399999132147,hybrid,,,,False,0.781363
+hybrid_gain,idle,filter,1000000,gpu,4,0.006321900000330061,gpu,,,,False,1.0
+hybrid_gain,idle,filter,1000000,hybrid,4,0.007378199999948265,hybrid,,,,False,0.781715
+hybrid_gain,idle,filter,1000000,gpu,5,0.006460799999331357,gpu,,,,False,1.0
+hybrid_gain,idle,filter,1000000,hybrid,5,0.0077435000021068845,hybrid,,,,False,0.770154
+hybrid_gain,idle,filter,3162278,gpu,0,0.02661670000088634,gpu,,,,False,1.0
+hybrid_gain,idle,filter,3162278,hybrid,0,0.05085190000318107,hybrid,,,,False,0.643815945340669
+hybrid_gain,idle,filter,3162278,gpu,1,0.01809549999961746,gpu,,,,False,1.0
+hybrid_gain,idle,filter,3162278,hybrid,1,0.018312000000150874,hybrid,,,,False,0.6097465181745565
+hybrid_gain,idle,filter,3162278,gpu,2,0.018139599997084588,gpu,,,,False,1.0
+hybrid_gain,idle,filter,3162278,hybrid,2,0.02033790000132285,hybrid,,,,False,0.5681730069272847
+hybrid_gain,idle,filter,3162278,gpu,3,0.018183100000896957,gpu,,,,False,1.0
+hybrid_gain,idle,filter,3162278,hybrid,3,0.018943899998703273,hybrid,,,,False,0.5868781935048089
+hybrid_gain,idle,filter,3162278,gpu,4,0.018377899999904912,gpu,,,,False,1.0
+hybrid_gain,idle,filter,3162278,hybrid,4,0.019069300000410294,hybrid,,,,False,0.5798522457544846
+hybrid_gain,idle,filter,3162278,gpu,5,0.018147400001907954,gpu,,,,False,1.0
+hybrid_gain,idle,filter,3162278,hybrid,5,0.01798840000265045,hybrid,,,,False,0.6060940878695674
+hybrid_gain,idle,filter,10000000,gpu,0,0.08900200000061886,gpu,,,,False,1.0
+hybrid_gain,idle,filter,10000000,hybrid,0,0.10475359999691136,hybrid,,,,False,0.5901943
+hybrid_gain,idle,filter,10000000,gpu,1,0.055424400001356844,gpu,,,,False,1.0
+hybrid_gain,idle,filter,10000000,hybrid,1,0.10358309999719495,hybrid,,,,False,0.5020035
+hybrid_gain,idle,filter,10000000,gpu,2,0.05542639999839594,gpu,,,,False,1.0
+hybrid_gain,idle,filter,10000000,hybrid,2,0.054502099999808706,hybrid,,,,False,0.4474752
+hybrid_gain,idle,filter,10000000,gpu,3,0.05546469999899273,gpu,,,,False,1.0
+hybrid_gain,idle,filter,10000000,hybrid,3,0.048231100001430605,hybrid,,,,False,0.4773756
+hybrid_gain,idle,filter,10000000,gpu,4,0.05565980000028503,gpu,,,,False,1.0
+hybrid_gain,idle,filter,10000000,hybrid,4,0.05519090000234428,hybrid,,,,False,0.4871391
+hybrid_gain,idle,filter,10000000,gpu,5,0.05544900000313646,gpu,,,,False,1.0
+hybrid_gain,idle,filter,10000000,hybrid,5,0.05488799999875482,hybrid,,,,False,0.4720369
+hybrid_gain,idle,matmul,64,gpu,0,0.1887151000009908,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,64,hybrid,0,0.04140610000104061,hybrid,,,,False,0.140625
+hybrid_gain,idle,matmul,64,gpu,1,0.0006891000011819415,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,64,hybrid,1,0.001095399999030633,hybrid,,,,False,0.140625
+hybrid_gain,idle,matmul,64,gpu,2,0.0006132999988039955,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,64,hybrid,2,0.0012782000012521166,hybrid,,,,False,0.140625
+hybrid_gain,idle,matmul,64,gpu,3,0.000593299999309238,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,64,hybrid,3,0.001058900001225993,hybrid,,,,False,0.140625
+hybrid_gain,idle,matmul,64,gpu,4,0.0008008000004338101,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,64,hybrid,4,0.0010700000020733569,hybrid,,,,False,0.140625
+hybrid_gain,idle,matmul,64,gpu,5,0.0006162999998196028,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,64,hybrid,5,0.001299499999731779,hybrid,,,,False,0.140625
+hybrid_gain,idle,matmul,128,gpu,0,0.0012601999987964518,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,128,hybrid,0,0.028846899997006403,hybrid,,,,False,0.1953125
+hybrid_gain,idle,matmul,128,gpu,1,0.0007522999985667411,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,128,hybrid,1,0.0011166000003868248,hybrid,,,,False,0.1953125
+hybrid_gain,idle,matmul,128,gpu,2,0.000592199998209253,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,128,hybrid,2,0.0009816000019782223,hybrid,,,,False,0.1953125
+hybrid_gain,idle,matmul,128,gpu,3,0.0005661000031977892,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,128,hybrid,3,0.0012284000004001427,hybrid,,,,False,0.1953125
+hybrid_gain,idle,matmul,128,gpu,4,0.0005564999992202502,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,128,hybrid,4,0.0009200000022246968,hybrid,,,,False,0.1953125
+hybrid_gain,idle,matmul,128,gpu,5,0.0005535999989660922,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,128,hybrid,5,0.0013222000015957747,hybrid,,,,False,0.1953125
+hybrid_gain,idle,matmul,256,gpu,0,0.0019750999999814667,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,256,hybrid,0,0.028167399999802,hybrid,,,,False,0.26171875
+hybrid_gain,idle,matmul,256,gpu,1,0.0007831000002624933,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,256,hybrid,1,0.001680800000031013,hybrid,,,,False,0.26171875
+hybrid_gain,idle,matmul,256,gpu,2,0.000995800000964664,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,256,hybrid,2,0.0013991999985591974,hybrid,,,,False,0.26171875
+hybrid_gain,idle,matmul,256,gpu,3,0.0008551000028091948,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,256,hybrid,3,0.0011733999999705702,hybrid,,,,False,0.26171875
+hybrid_gain,idle,matmul,256,gpu,4,0.0008263999989139847,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,256,hybrid,4,0.0018208000001322944,hybrid,,,,False,0.26171875
+hybrid_gain,idle,matmul,256,gpu,5,0.0007578999975521583,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,256,hybrid,5,0.0011217999999644235,hybrid,,,,False,0.26171875
+hybrid_gain,idle,matmul,512,gpu,0,0.0028359999996609986,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,512,hybrid,0,0.028854299998783972,hybrid,,,,False,0.484375
+hybrid_gain,idle,matmul,512,gpu,1,0.0014046999967831653,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,512,hybrid,1,0.0020011999986309092,hybrid,,,,False,0.484375
+hybrid_gain,idle,matmul,512,gpu,2,0.001557600000523962,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,512,hybrid,2,0.002197800000431016,hybrid,,,,False,0.484375
+hybrid_gain,idle,matmul,512,gpu,3,0.0014246999999159016,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,512,hybrid,3,0.0015985999998520128,hybrid,,,,False,0.484375
+hybrid_gain,idle,matmul,512,gpu,4,0.0013116000009176787,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,512,hybrid,4,0.0016595000015513506,hybrid,,,,False,0.484375
+hybrid_gain,idle,matmul,512,gpu,5,0.0014217999996617436,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,512,hybrid,5,0.001648699999350356,hybrid,,,,False,0.484375
+hybrid_gain,idle,matmul,1024,gpu,0,0.00547990000268328,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,1024,hybrid,0,0.039489899998443434,hybrid,,,,False,0.6982421875
+hybrid_gain,idle,matmul,1024,gpu,1,0.0034760999988066033,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,1024,hybrid,1,0.004406200001540128,hybrid,,,,False,0.6982421875
+hybrid_gain,idle,matmul,1024,gpu,2,0.0033593000007385854,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,1024,hybrid,2,0.004932499999995343,hybrid,,,,False,0.6982421875
+hybrid_gain,idle,matmul,1024,gpu,3,0.0034777000000758562,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,1024,hybrid,3,0.004687299999204697,hybrid,,,,False,0.6982421875
+hybrid_gain,idle,matmul,1024,gpu,4,0.0033318000023427885,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,1024,hybrid,4,0.004856800002016826,hybrid,,,,False,0.6982421875
+hybrid_gain,idle,matmul,1024,gpu,5,0.003366400000231806,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,1024,hybrid,5,0.005182499997317791,hybrid,,,,False,0.6982421875
+hybrid_gain,idle,matmul,2048,gpu,0,0.021454300000186777,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,2048,hybrid,0,0.08852480000132346,hybrid,,,,False,0.7412109375
+hybrid_gain,idle,matmul,2048,gpu,1,0.012251999996806262,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,2048,hybrid,1,0.02571449999959441,hybrid,,,,False,0.74755859375
+hybrid_gain,idle,matmul,2048,gpu,2,0.012212500001623994,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,2048,hybrid,2,0.026659200000722194,hybrid,,,,False,0.7353515625
+hybrid_gain,idle,matmul,2048,gpu,3,0.012245599999005208,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,2048,hybrid,3,0.026098000002093613,hybrid,,,,False,0.75537109375
+hybrid_gain,idle,matmul,2048,gpu,4,0.012270899998839013,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,2048,hybrid,4,0.026756499999464722,hybrid,,,,False,0.736328125
+hybrid_gain,idle,matmul,2048,gpu,5,0.012228899999172427,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,2048,hybrid,5,0.02550580000024638,hybrid,,,,False,0.75048828125
+hybrid_gain,idle,matmul,4096,gpu,0,0.076571800000238,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,4096,hybrid,0,0.20118970000112313,hybrid,,,,False,0.791259765625
+hybrid_gain,idle,matmul,4096,gpu,1,0.061013399998046225,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,4096,hybrid,1,0.18766360000154236,hybrid,,,,False,0.8388671875
+hybrid_gain,idle,matmul,4096,gpu,2,0.06077819999700296,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,4096,hybrid,2,0.13096829999994952,hybrid,,,,False,0.836669921875
+hybrid_gain,idle,matmul,4096,gpu,3,0.06092989999888232,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,4096,hybrid,3,0.1694121999971685,hybrid,,,,False,0.875
+hybrid_gain,idle,matmul,4096,gpu,4,0.061634600002435036,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,4096,hybrid,4,0.11407350000081351,hybrid,,,,False,0.87841796875
+hybrid_gain,idle,matmul,4096,gpu,5,0.06061499999850639,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,4096,hybrid,5,0.11353460000100313,hybrid,,,,False,0.87841796875
+hybrid_gain,idle,matmul,8192,gpu,0,0.42256560000168975,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,8192,hybrid,0,0.8701579999979003,hybrid,,,,False,0.849365234375
+hybrid_gain,idle,matmul,8192,gpu,1,0.3979676999988442,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,8192,hybrid,1,0.8076160999989952,hybrid,,,,False,0.8480224609375
+hybrid_gain,idle,matmul,8192,gpu,2,0.39956879999954253,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,8192,hybrid,2,0.7644435000001977,hybrid,,,,False,0.87890625
+hybrid_gain,idle,matmul,8192,gpu,3,0.39811460000055376,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,8192,hybrid,3,0.71569559999989,hybrid,,,,False,0.89013671875
+hybrid_gain,idle,matmul,8192,gpu,4,0.3990386000004946,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,8192,hybrid,4,0.7517915999997058,hybrid,,,,False,0.890380859375
+hybrid_gain,idle,matmul,8192,gpu,5,0.39981299999999464,gpu,,,,False,1.0
+hybrid_gain,idle,matmul,8192,hybrid,5,0.7630779999999504,hybrid,,,,False,0.89599609375
+hybrid_gain,idle,mobilenetv2,"(1, 3, 224, 224)",gpu,0,5.8380087000005005,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(1, 3, 224, 224)",hybrid,0,0.07054380000045057,cpu,,,,False,0.0
+hybrid_gain,idle,mobilenetv2,"(1, 3, 224, 224)",gpu,1,0.01974109999719076,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(1, 3, 224, 224)",hybrid,1,0.025981700000556884,cpu,,,,False,0.0
+hybrid_gain,idle,mobilenetv2,"(1, 3, 224, 224)",gpu,2,0.019708699997863732,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(1, 3, 224, 224)",hybrid,2,0.025413499999558553,cpu,,,,False,0.0
+hybrid_gain,idle,mobilenetv2,"(1, 3, 224, 224)",gpu,3,0.019727000002603745,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(1, 3, 224, 224)",hybrid,3,0.0227746999989904,cpu,,,,False,0.0
+hybrid_gain,idle,mobilenetv2,"(1, 3, 224, 224)",gpu,4,0.01950349999970058,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(1, 3, 224, 224)",hybrid,4,0.02441680000265478,cpu,,,,False,0.0
+hybrid_gain,idle,mobilenetv2,"(1, 3, 224, 224)",gpu,5,0.019634799999039387,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(1, 3, 224, 224)",hybrid,5,0.02367420000155107,cpu,,,,False,0.0
+hybrid_gain,idle,mobilenetv2,"(2, 3, 224, 224)",gpu,0,0.09078070000032312,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(2, 3, 224, 224)",hybrid,0,0.11573150000185706,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(2, 3, 224, 224)",gpu,1,0.03594819999852916,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(2, 3, 224, 224)",hybrid,1,0.02847280000059982,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(2, 3, 224, 224)",gpu,2,0.036029700000653975,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(2, 3, 224, 224)",hybrid,2,0.02840499999729218,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(2, 3, 224, 224)",gpu,3,0.03618749999805004,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(2, 3, 224, 224)",hybrid,3,0.02973560000100406,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(2, 3, 224, 224)",gpu,4,0.033675499998935265,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(2, 3, 224, 224)",hybrid,4,0.030506300001434283,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(2, 3, 224, 224)",gpu,5,0.03355089999968186,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(2, 3, 224, 224)",hybrid,5,0.0289584999991348,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(4, 3, 224, 224)",gpu,0,0.12977740000133053,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(4, 3, 224, 224)",hybrid,0,0.12146070000017062,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(4, 3, 224, 224)",gpu,1,0.03395959999761544,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(4, 3, 224, 224)",hybrid,1,0.06266260000120383,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(4, 3, 224, 224)",gpu,2,0.03403679999973974,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(4, 3, 224, 224)",hybrid,2,0.06063189999986207,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(4, 3, 224, 224)",gpu,3,0.03329759999905946,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(4, 3, 224, 224)",hybrid,3,0.062900199998694,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(4, 3, 224, 224)",gpu,4,0.0332842999996501,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(4, 3, 224, 224)",hybrid,4,0.0636819999999716,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(4, 3, 224, 224)",gpu,5,0.018771499999274965,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(4, 3, 224, 224)",hybrid,5,0.06685569999899599,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(8, 3, 224, 224)",gpu,0,0.08084650000091642,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(8, 3, 224, 224)",hybrid,0,0.1854724000004353,hybrid,,,,False,0.375
+hybrid_gain,idle,mobilenetv2,"(8, 3, 224, 224)",gpu,1,0.019093599999905564,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(8, 3, 224, 224)",hybrid,1,0.0774758000006841,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(8, 3, 224, 224)",gpu,2,0.018154599998524645,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(8, 3, 224, 224)",hybrid,2,0.07591019999745185,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(8, 3, 224, 224)",gpu,3,0.017730499999743188,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(8, 3, 224, 224)",hybrid,3,0.07722479999938514,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(8, 3, 224, 224)",gpu,4,0.01725859999714885,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(8, 3, 224, 224)",hybrid,4,0.07635909999953583,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(8, 3, 224, 224)",gpu,5,0.017613200001505902,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(8, 3, 224, 224)",hybrid,5,0.07567670000207727,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(16, 3, 224, 224)",gpu,0,0.08251000000018394,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(16, 3, 224, 224)",hybrid,0,0.2459831000014674,hybrid,,,,False,0.5
+hybrid_gain,idle,mobilenetv2,"(16, 3, 224, 224)",gpu,1,0.027272899998934008,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(16, 3, 224, 224)",hybrid,1,0.1392626000015298,hybrid,,,,False,0.5625
+hybrid_gain,idle,mobilenetv2,"(16, 3, 224, 224)",gpu,2,0.02717309999934514,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(16, 3, 224, 224)",hybrid,2,0.14208869999856688,hybrid,,,,False,0.5625
+hybrid_gain,idle,mobilenetv2,"(16, 3, 224, 224)",gpu,3,0.027179900000191992,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(16, 3, 224, 224)",hybrid,3,0.1462814000005892,hybrid,,,,False,0.5625
+hybrid_gain,idle,mobilenetv2,"(16, 3, 224, 224)",gpu,4,0.02722399999765912,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(16, 3, 224, 224)",hybrid,4,0.14441830000214395,hybrid,,,,False,0.5625
+hybrid_gain,idle,mobilenetv2,"(16, 3, 224, 224)",gpu,5,0.03140239999993355,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(16, 3, 224, 224)",hybrid,5,0.14277260000017122,hybrid,,,,False,0.5625
+hybrid_gain,idle,mobilenetv2,"(32, 3, 224, 224)",gpu,0,0.12412389999735751,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(32, 3, 224, 224)",hybrid,0,0.3860396000018227,hybrid,,,,False,0.59375
+hybrid_gain,idle,mobilenetv2,"(32, 3, 224, 224)",gpu,1,0.06204500000239932,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(32, 3, 224, 224)",hybrid,1,0.20530320000034408,hybrid,,,,False,0.8125
+hybrid_gain,idle,mobilenetv2,"(32, 3, 224, 224)",gpu,2,0.057742200002394384,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(32, 3, 224, 224)",hybrid,2,0.13629109999965294,hybrid,,,,False,0.84375
+hybrid_gain,idle,mobilenetv2,"(32, 3, 224, 224)",gpu,3,0.0488206000009086,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(32, 3, 224, 224)",hybrid,3,0.13914680000016233,hybrid,,,,False,0.84375
+hybrid_gain,idle,mobilenetv2,"(32, 3, 224, 224)",gpu,4,0.04524830000082147,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(32, 3, 224, 224)",hybrid,4,0.1299308999987261,hybrid,,,,False,0.84375
+hybrid_gain,idle,mobilenetv2,"(32, 3, 224, 224)",gpu,5,0.04341320000094129,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(32, 3, 224, 224)",hybrid,5,0.13578440000128467,hybrid,,,,False,0.84375
+hybrid_gain,idle,mobilenetv2,"(64, 3, 224, 224)",gpu,0,0.10195739999835496,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(64, 3, 224, 224)",hybrid,0,0.49491629999829456,hybrid,,,,False,0.6875
+hybrid_gain,idle,mobilenetv2,"(64, 3, 224, 224)",gpu,1,0.07765940000172122,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(64, 3, 224, 224)",hybrid,1,0.35025020000102813,hybrid,,,,False,0.78125
+hybrid_gain,idle,mobilenetv2,"(64, 3, 224, 224)",gpu,2,0.07751230000212672,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(64, 3, 224, 224)",hybrid,2,0.3893698000028962,hybrid,,,,False,0.671875
+hybrid_gain,idle,mobilenetv2,"(64, 3, 224, 224)",gpu,3,0.07803960000092047,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(64, 3, 224, 224)",hybrid,3,0.25657460000002175,hybrid,,,,False,0.734375
+hybrid_gain,idle,mobilenetv2,"(64, 3, 224, 224)",gpu,4,0.07767880000028526,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(64, 3, 224, 224)",hybrid,4,0.24031900000045425,hybrid,,,,False,0.75
+hybrid_gain,idle,mobilenetv2,"(64, 3, 224, 224)",gpu,5,0.07734930000151508,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(64, 3, 224, 224)",hybrid,5,0.24362529999780236,hybrid,,,,False,0.75
+hybrid_gain,idle,mobilenetv2,"(128, 3, 224, 224)",gpu,0,0.35454740000204765,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(128, 3, 224, 224)",hybrid,0,0.5319009999984701,hybrid,,,,False,0.796875
+hybrid_gain,idle,mobilenetv2,"(128, 3, 224, 224)",gpu,1,0.15271650000067893,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(128, 3, 224, 224)",hybrid,1,0.3946817999967607,hybrid,,,,False,0.84375
+hybrid_gain,idle,mobilenetv2,"(128, 3, 224, 224)",gpu,2,0.15210429999933694,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(128, 3, 224, 224)",hybrid,2,0.30583210000258987,hybrid,,,,False,0.8671875
+hybrid_gain,idle,mobilenetv2,"(128, 3, 224, 224)",gpu,3,0.15217540000230656,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(128, 3, 224, 224)",hybrid,3,0.25524470000164,hybrid,,,,False,0.90625
+hybrid_gain,idle,mobilenetv2,"(128, 3, 224, 224)",gpu,4,0.153897500000312,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(128, 3, 224, 224)",hybrid,4,0.20031359999848064,hybrid,,,,False,0.90625
+hybrid_gain,idle,mobilenetv2,"(128, 3, 224, 224)",gpu,5,0.15310110000064014,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(128, 3, 224, 224)",hybrid,5,0.2625750000006519,hybrid,,,,False,0.8671875
+hybrid_gain,idle,mobilenetv2,"(256, 3, 224, 224)",gpu,0,0.5361535999982152,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(256, 3, 224, 224)",hybrid,0,1.1909735000008368,hybrid,,,,False,0.71484375
+hybrid_gain,idle,mobilenetv2,"(256, 3, 224, 224)",gpu,1,0.30286310000155936,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(256, 3, 224, 224)",hybrid,1,1.0182289999975183,hybrid,,,,False,0.77734375
+hybrid_gain,idle,mobilenetv2,"(256, 3, 224, 224)",gpu,2,0.30286989999876823,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(256, 3, 224, 224)",hybrid,2,0.6383014000020921,hybrid,,,,False,0.84765625
+hybrid_gain,idle,mobilenetv2,"(256, 3, 224, 224)",gpu,3,0.3029440999998769,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(256, 3, 224, 224)",hybrid,3,0.5284176000022853,hybrid,,,,False,0.86328125
+hybrid_gain,idle,mobilenetv2,"(256, 3, 224, 224)",gpu,4,0.3027986000015517,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(256, 3, 224, 224)",hybrid,4,0.5678613999989466,hybrid,,,,False,0.8671875
+hybrid_gain,idle,mobilenetv2,"(256, 3, 224, 224)",gpu,5,0.3040413000016997,gpu,,,,False,1.0
+hybrid_gain,idle,mobilenetv2,"(256, 3, 224, 224)",hybrid,5,0.6063365000009071,hybrid,,,,False,0.84765625
+hybrid_gain,idle,resize,"(1, 3, 256, 256)",gpu,0,0.008186600000044564,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(1, 3, 256, 256)",hybrid,0,0.032008800000767224,cpu,,,,False,0.0
+hybrid_gain,idle,resize,"(1, 3, 256, 256)",gpu,1,0.0010024000002886169,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(1, 3, 256, 256)",hybrid,1,0.000772700001107296,cpu,,,,False,0.0
+hybrid_gain,idle,resize,"(1, 3, 256, 256)",gpu,2,0.0008374000026378781,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(1, 3, 256, 256)",hybrid,2,0.0007098000023688655,cpu,,,,False,0.0
+hybrid_gain,idle,resize,"(1, 3, 256, 256)",gpu,3,0.000821699999505654,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(1, 3, 256, 256)",hybrid,3,0.0007138999972085003,cpu,,,,False,0.0
+hybrid_gain,idle,resize,"(1, 3, 256, 256)",gpu,4,0.0006926999994902872,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(1, 3, 256, 256)",hybrid,4,0.0006894999969517812,cpu,,,,False,0.0
+hybrid_gain,idle,resize,"(1, 3, 256, 256)",gpu,5,0.0006952000003366265,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(1, 3, 256, 256)",hybrid,5,0.0007088999991538003,cpu,,,,False,0.0
+hybrid_gain,idle,resize,"(4, 3, 256, 256)",gpu,0,0.0015644000013708137,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(4, 3, 256, 256)",hybrid,0,0.03212859999985085,hybrid,,,,False,1.0
+hybrid_gain,idle,resize,"(4, 3, 256, 256)",gpu,1,0.001440699998056516,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(4, 3, 256, 256)",hybrid,1,0.0017966999985219445,hybrid,,,,False,1.0
+hybrid_gain,idle,resize,"(4, 3, 256, 256)",gpu,2,0.0016851000000315253,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(4, 3, 256, 256)",hybrid,2,0.0020153000004938804,hybrid,,,,False,1.0
+hybrid_gain,idle,resize,"(4, 3, 256, 256)",gpu,3,0.0013968999992357567,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(4, 3, 256, 256)",hybrid,3,0.001755799999955343,hybrid,,,,False,1.0
+hybrid_gain,idle,resize,"(4, 3, 256, 256)",gpu,4,0.001328599999396829,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(4, 3, 256, 256)",hybrid,4,0.0016786999985924922,hybrid,,,,False,1.0
+hybrid_gain,idle,resize,"(4, 3, 256, 256)",gpu,5,0.0012409000009938609,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(4, 3, 256, 256)",hybrid,5,0.0016476999990118202,hybrid,,,,False,1.0
+hybrid_gain,idle,resize,"(16, 3, 256, 256)",gpu,0,0.0036547999989124946,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(16, 3, 256, 256)",hybrid,0,0.03211080000255606,hybrid,,,,False,0.875
+hybrid_gain,idle,resize,"(16, 3, 256, 256)",gpu,1,0.0034021999999822583,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(16, 3, 256, 256)",hybrid,1,0.004718500000308268,hybrid,,,,False,0.875
+hybrid_gain,idle,resize,"(16, 3, 256, 256)",gpu,2,0.0036027999994985294,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(16, 3, 256, 256)",hybrid,2,0.004024400001071626,hybrid,,,,False,0.875
+hybrid_gain,idle,resize,"(16, 3, 256, 256)",gpu,3,0.0033353999970131554,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(16, 3, 256, 256)",hybrid,3,0.004033500001241919,hybrid,,,,False,0.875
+hybrid_gain,idle,resize,"(16, 3, 256, 256)",gpu,4,0.0033426000009058043,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(16, 3, 256, 256)",hybrid,4,0.003948300000047311,hybrid,,,,False,0.875
+hybrid_gain,idle,resize,"(16, 3, 256, 256)",gpu,5,0.0033117000020865817,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(16, 3, 256, 256)",hybrid,5,0.004092600000149105,hybrid,,,,False,0.875
+hybrid_gain,idle,resize,"(64, 3, 256, 256)",gpu,0,0.01361190000170609,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(64, 3, 256, 256)",hybrid,0,0.06780029999936232,hybrid,,,,False,0.71875
+hybrid_gain,idle,resize,"(64, 3, 256, 256)",gpu,1,0.011181399997440167,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(64, 3, 256, 256)",hybrid,1,0.012186199997813674,hybrid,,,,False,0.671875
+hybrid_gain,idle,resize,"(64, 3, 256, 256)",gpu,2,0.011075700000219513,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(64, 3, 256, 256)",hybrid,2,0.012402800002746517,hybrid,,,,False,0.671875
+hybrid_gain,idle,resize,"(64, 3, 256, 256)",gpu,3,0.011051999998016981,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(64, 3, 256, 256)",hybrid,3,0.012795900001947302,hybrid,,,,False,0.671875
+hybrid_gain,idle,resize,"(64, 3, 256, 256)",gpu,4,0.01107380000030389,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(64, 3, 256, 256)",hybrid,4,0.011378699997294461,hybrid,,,,False,0.6875
+hybrid_gain,idle,resize,"(64, 3, 256, 256)",gpu,5,0.011045600000215927,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(64, 3, 256, 256)",hybrid,5,0.011317799999233102,hybrid,,,,False,0.671875
+hybrid_gain,idle,resize,"(256, 3, 256, 256)",gpu,0,0.051027999998041196,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(256, 3, 256, 256)",hybrid,0,0.06886640000084299,hybrid,,,,False,0.58984375
+hybrid_gain,idle,resize,"(256, 3, 256, 256)",gpu,1,0.04459320000023581,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(256, 3, 256, 256)",hybrid,1,0.03998460000002524,hybrid,,,,False,0.59765625
+hybrid_gain,idle,resize,"(256, 3, 256, 256)",gpu,2,0.04485289999865927,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(256, 3, 256, 256)",hybrid,2,0.039753499997459585,hybrid,,,,False,0.59375
+hybrid_gain,idle,resize,"(256, 3, 256, 256)",gpu,3,0.04487589999916963,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(256, 3, 256, 256)",hybrid,3,0.040619600000354694,hybrid,,,,False,0.6171875
+hybrid_gain,idle,resize,"(256, 3, 256, 256)",gpu,4,0.04441529999894556,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(256, 3, 256, 256)",hybrid,4,0.03846709999925224,hybrid,,,,False,0.6015625
+hybrid_gain,idle,resize,"(256, 3, 256, 256)",gpu,5,0.04467230000227573,gpu,,,,False,1.0
+hybrid_gain,idle,resize,"(256, 3, 256, 256)",hybrid,5,0.03977099999974598,hybrid,,,,False,0.60546875
+hybrid_gain,idle,resnet18,"(1, 3, 224, 224)",gpu,0,0.31066590000045835,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(1, 3, 224, 224)",hybrid,0,0.06903719999900204,cpu,,,,False,0.0
+hybrid_gain,idle,resnet18,"(1, 3, 224, 224)",gpu,1,0.009292000002460554,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(1, 3, 224, 224)",hybrid,1,0.03320940000048722,cpu,,,,False,0.0
+hybrid_gain,idle,resnet18,"(1, 3, 224, 224)",gpu,2,0.010596699998131953,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(1, 3, 224, 224)",hybrid,2,0.03289049999875715,cpu,,,,False,0.0
+hybrid_gain,idle,resnet18,"(1, 3, 224, 224)",gpu,3,0.009359100000438048,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(1, 3, 224, 224)",hybrid,3,0.03150950000053854,cpu,,,,False,0.0
+hybrid_gain,idle,resnet18,"(1, 3, 224, 224)",gpu,4,0.00993430000016815,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(1, 3, 224, 224)",hybrid,4,0.03188930000032997,cpu,,,,False,0.0
+hybrid_gain,idle,resnet18,"(1, 3, 224, 224)",gpu,5,0.009691200000816025,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(1, 3, 224, 224)",hybrid,5,0.03329059999668971,cpu,,,,False,0.0
+hybrid_gain,idle,resnet18,"(2, 3, 224, 224)",gpu,0,0.054156599999259925,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(2, 3, 224, 224)",hybrid,0,0.07299959999727434,hybrid,,,,False,0.5
+hybrid_gain,idle,resnet18,"(2, 3, 224, 224)",gpu,1,0.00937770000018645,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(2, 3, 224, 224)",hybrid,1,0.032543299999815645,hybrid,,,,False,0.5
+hybrid_gain,idle,resnet18,"(2, 3, 224, 224)",gpu,2,0.009654900000896305,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(2, 3, 224, 224)",hybrid,2,0.03323160000218195,hybrid,,,,False,0.5
+hybrid_gain,idle,resnet18,"(2, 3, 224, 224)",gpu,3,0.009325999999418855,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(2, 3, 224, 224)",hybrid,3,0.034834300000511575,hybrid,,,,False,0.5
+hybrid_gain,idle,resnet18,"(2, 3, 224, 224)",gpu,4,0.009613799997168826,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(2, 3, 224, 224)",hybrid,4,0.0651077999973495,hybrid,,,,False,0.5
+hybrid_gain,idle,resnet18,"(2, 3, 224, 224)",gpu,5,0.00981129999854602,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(2, 3, 224, 224)",hybrid,5,0.03321969999888097,hybrid,,,,False,0.5
+hybrid_gain,idle,resnet18,"(4, 3, 224, 224)",gpu,0,0.046159800000168616,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(4, 3, 224, 224)",hybrid,0,0.08180889999857754,hybrid,,,,False,0.75
+hybrid_gain,idle,resnet18,"(4, 3, 224, 224)",gpu,1,0.010282199997163843,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(4, 3, 224, 224)",hybrid,1,0.03503410000121221,hybrid,,,,False,0.75
+hybrid_gain,idle,resnet18,"(4, 3, 224, 224)",gpu,2,0.011261200001172256,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(4, 3, 224, 224)",hybrid,2,0.03343309999763733,hybrid,,,,False,0.75
+hybrid_gain,idle,resnet18,"(4, 3, 224, 224)",gpu,3,0.010740899997472297,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(4, 3, 224, 224)",hybrid,3,0.03408109999872977,hybrid,,,,False,0.75
+hybrid_gain,idle,resnet18,"(4, 3, 224, 224)",gpu,4,0.011802099998021731,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(4, 3, 224, 224)",hybrid,4,0.034156300000177,hybrid,,,,False,0.75
+hybrid_gain,idle,resnet18,"(4, 3, 224, 224)",gpu,5,0.009862200000497978,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(4, 3, 224, 224)",hybrid,5,0.033481500002380926,hybrid,,,,False,0.75
+hybrid_gain,idle,resnet18,"(8, 3, 224, 224)",gpu,0,0.049574100001336774,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(8, 3, 224, 224)",hybrid,0,0.09479320000173175,hybrid,,,,False,0.75
+hybrid_gain,idle,resnet18,"(8, 3, 224, 224)",gpu,1,0.010896200001297984,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(8, 3, 224, 224)",hybrid,1,0.05451410000023316,hybrid,,,,False,0.75
+hybrid_gain,idle,resnet18,"(8, 3, 224, 224)",gpu,2,0.010866299999179319,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(8, 3, 224, 224)",hybrid,2,0.05528580000100192,hybrid,,,,False,0.75
+hybrid_gain,idle,resnet18,"(8, 3, 224, 224)",gpu,3,0.010806999998749234,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(8, 3, 224, 224)",hybrid,3,0.05589949999921373,hybrid,,,,False,0.75
+hybrid_gain,idle,resnet18,"(8, 3, 224, 224)",gpu,4,0.010834700002305908,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(8, 3, 224, 224)",hybrid,4,0.051847999999154126,hybrid,,,,False,0.75
+hybrid_gain,idle,resnet18,"(8, 3, 224, 224)",gpu,5,0.010794199999509146,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(8, 3, 224, 224)",hybrid,5,0.053815399998711655,hybrid,,,,False,0.75
+hybrid_gain,idle,resnet18,"(16, 3, 224, 224)",gpu,0,0.04635730000154581,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(16, 3, 224, 224)",hybrid,0,0.11881050000010873,hybrid,,,,False,0.8125
+hybrid_gain,idle,resnet18,"(16, 3, 224, 224)",gpu,1,0.02260979999846313,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(16, 3, 224, 224)",hybrid,1,0.0810910000000149,hybrid,,,,False,0.8125
+hybrid_gain,idle,resnet18,"(16, 3, 224, 224)",gpu,2,0.022889099996973528,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(16, 3, 224, 224)",hybrid,2,0.0843347999980324,hybrid,,,,False,0.8125
+hybrid_gain,idle,resnet18,"(16, 3, 224, 224)",gpu,3,0.022971200000029057,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(16, 3, 224, 224)",hybrid,3,0.07696959999884712,hybrid,,,,False,0.8125
+hybrid_gain,idle,resnet18,"(16, 3, 224, 224)",gpu,4,0.022932200001378078,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(16, 3, 224, 224)",hybrid,4,0.10275230000115698,hybrid,,,,False,0.8125
+hybrid_gain,idle,resnet18,"(16, 3, 224, 224)",gpu,5,0.022950000002310844,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(16, 3, 224, 224)",hybrid,5,0.077620999996725,hybrid,,,,False,0.8125
+hybrid_gain,idle,resnet18,"(32, 3, 224, 224)",gpu,0,0.049743100000341656,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(32, 3, 224, 224)",hybrid,0,0.18700170000010985,hybrid,,,,False,0.84375
+hybrid_gain,idle,resnet18,"(32, 3, 224, 224)",gpu,1,0.04309550000107265,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(32, 3, 224, 224)",hybrid,1,0.13600439999936498,hybrid,,,,False,0.84375
+hybrid_gain,idle,resnet18,"(32, 3, 224, 224)",gpu,2,0.042658899998059496,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(32, 3, 224, 224)",hybrid,2,0.1330923999994411,hybrid,,,,False,0.84375
+hybrid_gain,idle,resnet18,"(32, 3, 224, 224)",gpu,3,0.03834330000245245,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(32, 3, 224, 224)",hybrid,3,0.13932959999874583,hybrid,,,,False,0.84375
+hybrid_gain,idle,resnet18,"(32, 3, 224, 224)",gpu,4,0.03841109999848413,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(32, 3, 224, 224)",hybrid,4,0.19561539999995148,hybrid,,,,False,0.84375
+hybrid_gain,idle,resnet18,"(32, 3, 224, 224)",gpu,5,0.03824299999905634,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(32, 3, 224, 224)",hybrid,5,0.1359119999979157,hybrid,,,,False,0.84375
+hybrid_gain,idle,resnet18,"(64, 3, 224, 224)",gpu,0,0.08369020000100136,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(64, 3, 224, 224)",hybrid,0,0.27547409999897354,hybrid,,,,False,0.890625
+hybrid_gain,idle,resnet18,"(64, 3, 224, 224)",gpu,1,0.07009439999819733,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(64, 3, 224, 224)",hybrid,1,0.192783700000291,hybrid,,,,False,0.9375
+hybrid_gain,idle,resnet18,"(64, 3, 224, 224)",gpu,2,0.06980820000171661,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(64, 3, 224, 224)",hybrid,2,0.13774849999754224,hybrid,,,,False,0.9375
+hybrid_gain,idle,resnet18,"(64, 3, 224, 224)",gpu,3,0.0695266000002448,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(64, 3, 224, 224)",hybrid,3,0.1352697000002081,hybrid,,,,False,0.9375
+hybrid_gain,idle,resnet18,"(64, 3, 224, 224)",gpu,4,0.06950100000176462,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(64, 3, 224, 224)",hybrid,4,0.13484629999948083,hybrid,,,,False,0.9375
+hybrid_gain,idle,resnet18,"(64, 3, 224, 224)",gpu,5,0.06980249999833177,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(64, 3, 224, 224)",hybrid,5,0.13528319999750238,hybrid,,,,False,0.9375
+hybrid_gain,idle,resnet18,"(128, 3, 224, 224)",gpu,0,0.15631159999975353,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(128, 3, 224, 224)",hybrid,0,0.3527783999998064,hybrid,,,,False,0.921875
+hybrid_gain,idle,resnet18,"(128, 3, 224, 224)",gpu,1,0.13700749999770778,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(128, 3, 224, 224)",hybrid,1,0.39464139999836334,hybrid,,,,False,0.8984375
+hybrid_gain,idle,resnet18,"(128, 3, 224, 224)",gpu,2,0.13834470000074361,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(128, 3, 224, 224)",hybrid,2,0.31981939999968745,hybrid,,,,False,0.9140625
+hybrid_gain,idle,resnet18,"(128, 3, 224, 224)",gpu,3,0.1383583999995608,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(128, 3, 224, 224)",hybrid,3,0.27260150000074646,hybrid,,,,False,0.921875
+hybrid_gain,idle,resnet18,"(128, 3, 224, 224)",gpu,4,0.13810060000105295,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(128, 3, 224, 224)",hybrid,4,0.2870763999999326,hybrid,,,,False,0.9140625
+hybrid_gain,idle,resnet18,"(128, 3, 224, 224)",gpu,5,0.13959780000004685,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(128, 3, 224, 224)",hybrid,5,0.2725509999982023,hybrid,,,,False,0.921875
+hybrid_gain,idle,resnet18,"(256, 3, 224, 224)",gpu,0,0.3034961999983352,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(256, 3, 224, 224)",hybrid,0,0.5391502999991644,hybrid,,,,False,0.921875
+hybrid_gain,idle,resnet18,"(256, 3, 224, 224)",gpu,1,0.27157330000045476,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(256, 3, 224, 224)",hybrid,1,0.4834246999998868,hybrid,,,,False,0.93359375
+hybrid_gain,idle,resnet18,"(256, 3, 224, 224)",gpu,2,0.27174290000039036,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(256, 3, 224, 224)",hybrid,2,0.41718390000096406,hybrid,,,,False,0.93359375
+hybrid_gain,idle,resnet18,"(256, 3, 224, 224)",gpu,3,0.27265900000202237,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(256, 3, 224, 224)",hybrid,3,0.44778430000224034,hybrid,,,,False,0.9375
+hybrid_gain,idle,resnet18,"(256, 3, 224, 224)",gpu,4,0.2724037000007229,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(256, 3, 224, 224)",hybrid,4,0.49647750000076485,hybrid,,,,False,0.921875
+hybrid_gain,idle,resnet18,"(256, 3, 224, 224)",gpu,5,0.2723326999985147,gpu,,,,False,1.0
+hybrid_gain,idle,resnet18,"(256, 3, 224, 224)",hybrid,5,0.4247471000016958,hybrid,,,,False,0.93359375
+hybrid_gain,idle,sobel,"(1, 3, 256, 256)",gpu,0,0.053048300000227755,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(1, 3, 256, 256)",hybrid,0,0.02991169999950216,cpu,,,,False,0.0
+hybrid_gain,idle,sobel,"(1, 3, 256, 256)",gpu,1,0.0017454000008001458,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(1, 3, 256, 256)",hybrid,1,0.0015210000019578729,cpu,,,,False,0.0
+hybrid_gain,idle,sobel,"(1, 3, 256, 256)",gpu,2,0.0015195000014500692,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(1, 3, 256, 256)",hybrid,2,0.001460600000427803,cpu,,,,False,0.0
+hybrid_gain,idle,sobel,"(1, 3, 256, 256)",gpu,3,0.0015253000019583851,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(1, 3, 256, 256)",hybrid,3,0.0013457000022754073,cpu,,,,False,0.0
+hybrid_gain,idle,sobel,"(1, 3, 256, 256)",gpu,4,0.001450499999918975,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(1, 3, 256, 256)",hybrid,4,0.0013709000013477635,cpu,,,,False,0.0
+hybrid_gain,idle,sobel,"(1, 3, 256, 256)",gpu,5,0.0014964000001782551,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(1, 3, 256, 256)",hybrid,5,0.0013160000016796403,cpu,,,,False,0.0
+hybrid_gain,idle,sobel,"(4, 3, 256, 256)",gpu,0,0.004679400000895839,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(4, 3, 256, 256)",hybrid,0,0.035306300000229385,hybrid,,,,False,1.0
+hybrid_gain,idle,sobel,"(4, 3, 256, 256)",gpu,1,0.002169899998989422,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(4, 3, 256, 256)",hybrid,1,0.002412699999695178,hybrid,,,,False,1.0
+hybrid_gain,idle,sobel,"(4, 3, 256, 256)",gpu,2,0.002151700002286816,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(4, 3, 256, 256)",hybrid,2,0.002386399999522837,hybrid,,,,False,1.0
+hybrid_gain,idle,sobel,"(4, 3, 256, 256)",gpu,3,0.0021654999982274603,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(4, 3, 256, 256)",hybrid,3,0.0023825999996915925,hybrid,,,,False,1.0
+hybrid_gain,idle,sobel,"(4, 3, 256, 256)",gpu,4,0.0021593000019493047,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(4, 3, 256, 256)",hybrid,4,0.002338199999940116,hybrid,,,,False,1.0
+hybrid_gain,idle,sobel,"(4, 3, 256, 256)",gpu,5,0.002009899999393383,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(4, 3, 256, 256)",hybrid,5,0.0022945999990042765,hybrid,,,,False,1.0
+hybrid_gain,idle,sobel,"(16, 3, 256, 256)",gpu,0,0.008907999999792082,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(16, 3, 256, 256)",hybrid,0,0.04517660000055912,hybrid,,,,False,0.875
+hybrid_gain,idle,sobel,"(16, 3, 256, 256)",gpu,1,0.005682999999407912,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(16, 3, 256, 256)",hybrid,1,0.009257699999579927,hybrid,,,,False,0.875
+hybrid_gain,idle,sobel,"(16, 3, 256, 256)",gpu,2,0.005656000001181383,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(16, 3, 256, 256)",hybrid,2,0.009262599996873178,hybrid,,,,False,0.875
+hybrid_gain,idle,sobel,"(16, 3, 256, 256)",gpu,3,0.005761500000517117,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(16, 3, 256, 256)",hybrid,3,0.013125000001309672,hybrid,,,,False,0.8125
+hybrid_gain,idle,sobel,"(16, 3, 256, 256)",gpu,4,0.00574140000026091,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(16, 3, 256, 256)",hybrid,4,0.010133399999176618,hybrid,,,,False,0.875
+hybrid_gain,idle,sobel,"(16, 3, 256, 256)",gpu,5,0.005859100001543993,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(16, 3, 256, 256)",hybrid,5,0.010807399998157052,hybrid,,,,False,0.8125
+hybrid_gain,idle,sobel,"(64, 3, 256, 256)",gpu,0,0.026563800001895288,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(64, 3, 256, 256)",hybrid,0,0.10260800000105519,hybrid,,,,False,0.6875
+hybrid_gain,idle,sobel,"(64, 3, 256, 256)",gpu,1,0.019763699998293305,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(64, 3, 256, 256)",hybrid,1,0.03934379999918747,hybrid,,,,False,0.71875
+hybrid_gain,idle,sobel,"(64, 3, 256, 256)",gpu,2,0.019836200001009274,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(64, 3, 256, 256)",hybrid,2,0.03613709999990533,hybrid,,,,False,0.75
+hybrid_gain,idle,sobel,"(64, 3, 256, 256)",gpu,3,0.019901899999240413,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(64, 3, 256, 256)",hybrid,3,0.03627509999932954,hybrid,,,,False,0.734375
+hybrid_gain,idle,sobel,"(64, 3, 256, 256)",gpu,4,0.019867300001351396,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(64, 3, 256, 256)",hybrid,4,0.035405200000241166,hybrid,,,,False,0.734375
+hybrid_gain,idle,sobel,"(64, 3, 256, 256)",gpu,5,0.019953800001530908,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(64, 3, 256, 256)",hybrid,5,0.03838299999915762,hybrid,,,,False,0.75
+hybrid_gain,idle,sobel,"(256, 3, 256, 256)",gpu,0,0.09750739999799407,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(256, 3, 256, 256)",hybrid,0,0.19243550000101095,hybrid,,,,False,0.6953125
+hybrid_gain,idle,sobel,"(256, 3, 256, 256)",gpu,1,0.07609550000051968,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(256, 3, 256, 256)",hybrid,1,0.21480460000020685,hybrid,,,,False,0.74609375
+hybrid_gain,idle,sobel,"(256, 3, 256, 256)",gpu,2,0.07604069999797503,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(256, 3, 256, 256)",hybrid,2,0.16118890000143438,hybrid,,,,False,0.734375
+hybrid_gain,idle,sobel,"(256, 3, 256, 256)",gpu,3,0.07605930000136141,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(256, 3, 256, 256)",hybrid,3,0.1701500000017404,hybrid,,,,False,0.72265625
+hybrid_gain,idle,sobel,"(256, 3, 256, 256)",gpu,4,0.07601879999856465,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(256, 3, 256, 256)",hybrid,4,0.16567550000036135,hybrid,,,,False,0.73046875
+hybrid_gain,idle,sobel,"(256, 3, 256, 256)",gpu,5,0.07610840000052121,gpu,,,,False,1.0
+hybrid_gain,idle,sobel,"(256, 3, 256, 256)",hybrid,5,0.16475029999855906,hybrid,,,,False,0.7109375

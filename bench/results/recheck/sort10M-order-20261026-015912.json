@@ -1,0 +1,24 @@
+{
+  "cpu": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "driver": "617.14",
+  "torch": "2.11.0+cu128",
+  "reps": 10,
+  "orders": {
+    "A": [
+      "cpu",
+      "gpu",
+      "autohetero"
+    ],
+    "B": [
+      "cpu",
+      "autohetero",
+      "gpu"
+    ],
+    "C": [
+      "gpu"
+    ]
+  },
+  "power": "plugged in, Energy saver off",
+  "host": "LAPTOP-9KPB5IBV"
+}

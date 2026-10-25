@@ -1,0 +1,7 @@
+case,microseconds_per_call
+"direct call, no AutoHetero (baseline)",0.14
+@auto function,96.77
+"@auto function, numpy input",136.26
+@auto function inside force('cpu'),74.41
+"built-in op, cached decision",157.90
+decision miss (the forests run),26915.20
