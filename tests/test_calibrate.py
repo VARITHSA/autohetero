@@ -75,3 +75,10 @@ def test_next_run_time_scales_with_the_measured_growth_rate():
     assert calibrate._predicted([(1e3, 1.0), (1e4, 10.0)], 1e5) == pytest.approx(100)  # measured: linear
     assert calibrate._predicted([(1e3, 1.0), (1e4, 0.5)], 1e5) == pytest.approx(5)  # noise can't predict a speed-up
     assert calibrate._predicted([(1e3, 1.0), (1e4, 1e3)], 1e5) == pytest.approx(1e5)  # capped at quadratic
+
+
+def test_an_op_with_no_size_that_fits_is_skipped_not_a_crash(monkeypatch):
+    monkeypatch.setattr(calibrate, "fits", lambda op, size, device: False)
+    rows = []
+    assert calibrate._sweep("matmul", {"cpu": devices.CPU}, time.perf_counter() + 1, rows) == {"cpu": 0}
+    assert rows == []

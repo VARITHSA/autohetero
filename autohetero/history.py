@@ -49,10 +49,13 @@ def record(entry):
         t[f"mode_{entry['mode']}"] += 1
         t["fallbacks"] += entry["fallback"]
         t["switches"] += entry["slowdown"] is not None
-        t["predicted_calls"] += "gpu" in entry["predicted"]
-        if "gpu" in entry["predicted"]:  # estimated saving vs always-GPU, from predicted times (§9)
-            t["saved_vs_gpu_estimate"] += entry["predicted"]["gpu"] - entry["seconds"]
         _load_fits()
+        # a user function with no fit yet was predicted by forests that never saw it: a guess, not an estimate
+        guessed = entry["op"] == "user" and not any((entry["name"], d) in _fits for d in ("cpu", "gpu"))
+        estimated = "gpu" in entry["predicted"] and not guessed
+        t["predicted_calls"] += estimated
+        if estimated:  # estimated saving vs always-GPU, from predicted times (§9)
+            t["saved_vs_gpu_estimate"] += entry["predicted"]["gpu"] - entry["seconds"]
         for device, elements, seconds in entry["pieces"]:
             s = _fits.setdefault((entry["name"], device), [0.0] * 5)
             x, y = math.log(max(elements, 1)), math.log(max(seconds, 1e-9))

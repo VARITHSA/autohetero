@@ -193,6 +193,8 @@ def _spread(op, on):
         (s for series in inputs.sizes(op) for s in series if all(fits(op, s, d) for d in on)),
         key=lambda s: _elements(op, s),
     )
+    if not every:  # memory nearly full: nothing to time for this op, rather than crash enable()
+        return []
     picks = {round(i * (len(every) - 1) / (SIZES_PER_OP - 1)) for i in range(SIZES_PER_OP)}
     return [every[i] for i in sorted(picks)]
 

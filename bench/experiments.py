@@ -99,8 +99,10 @@ def _alternate(write, experiment, condition, name, size, fn, strategies, reps):
             chunks = r["chunks_before_switch"]
             detect = sum(p[2] for p in r["pieces"][:chunks]) if chunks else None
             share = sum(e for d, e, _ in r["pieces"] if d == "gpu") / sum(e for _, e, _ in r["pieces"])  # work on the GPU
+            # after a GPU failure at this size, later forced runs go straight to the CPU: not that strategy's time either
+            fallback = r["fallback"] or (strategy in ("cpu", "gpu") and r["mode"] != strategy)
             write([experiment, condition, name, size, strategy, rep, seconds,
-                   r["mode"], r["slowdown"], chunks, detect, r["fallback"], share])
+                   r["mode"], r["slowdown"], chunks, detect, fallback, share])
             slowest = max(slowest, seconds)
     print(f"{experiment:11s} {condition:7s} {name:12s} {str(size):22s} slowest run {slowest:8.3f} s", flush=True)
     return slowest

@@ -20,13 +20,20 @@ def log_lines():
 
 
 def test_totals_and_the_log_keep_predicted_next_to_measured():
-    history.record(entry(seconds=1.0, predicted={"cpu": 3.0, "gpu": 1.5}))
+    history.record(entry(op="sort", seconds=1.0, predicted={"cpu": 3.0, "gpu": 1.5}))  # a built-in op's prediction always counts
     history.record(entry(mode="cpu", seconds=2.0, fallback=True, slowdown=2.5))
     t = history.totals()["f"]
     assert (t["calls"], t["seconds"], t["mode_gpu"], t["mode_cpu"], t["fallbacks"], t["switches"]) == (2, 3.0, 1, 1, 1, 1)
     assert t["saved_vs_gpu_estimate"] == 0.5  # only the call with a prediction counts: 1.5 predicted - 1.0 measured
     first = log_lines()[0]
     assert first["predicted"] == {"cpu": 3.0, "gpu": 1.5} and first["seconds"] == 1.0 and "time" in first
+
+
+def test_a_user_functions_first_call_is_a_guess_left_out_of_the_estimate():
+    history.record(entry(seconds=1.0, predicted={"cpu": 3.0, "gpu": 9.0}, pieces=[["gpu", 100, 1.0]]))  # nothing measured yet
+    history.record(entry(seconds=1.0, predicted={"cpu": 3.0, "gpu": 1.5}, pieces=[["gpu", 100, 1.0]]))  # from its own fit
+    t = history.totals()["f"]
+    assert (t["predicted_calls"], t["saved_vs_gpu_estimate"]) == (1, 0.5)
 
 
 def test_fit_learns_a_power_law_and_follows_change():

@@ -9,12 +9,12 @@ def record(name, mode, seconds, predicted_gpu=None, fallback=False, slowdown=Non
     history.record({"name": name, "op": "user", "elements": 10, "bytes": 40, "batch": 10, "dtype": "float32",
                     "cpu_load": None, "gpu_load": None, "mode": mode, "forced": predicted_gpu is None,
                     "predicted": {} if predicted_gpu is None else {"cpu": 1.0, "gpu": predicted_gpu},
-                    "seconds": seconds, "pieces": [], "fallback": fallback, "slowdown": slowdown,
+                    "seconds": seconds, "pieces": [["gpu", 10, seconds]], "fallback": fallback, "slowdown": slowdown,
                     "chunks_before_switch": None})
 
 
 def test_rows_totals_and_the_estimate_label(capsys):
-    record("__main__.enhance", "gpu", 0.5, predicted_gpu=0.6)
+    record("__main__.enhance", "gpu", 0.5, predicted_gpu=0.6)  # first call, nothing measured yet: left out of the estimate
     record("__main__.enhance", "hybrid", 0.4, predicted_gpu=0.6, slowdown=2.0)
     record("__main__.enhance", "gpu", 0.3, fallback=True)  # forced: no prediction, so no estimate
     record("blur", "cpu", 0.002)
@@ -22,7 +22,7 @@ def test_rows_totals_and_the_estimate_label(capsys):
     out = capsys.readouterr().out
     blur, enhance = rows
     assert enhance == {"function": "enhance", "calls": 3, "modes": "GPU 2, HYBRID 1", "seconds": pytest.approx(1.2),
-                       "saved_vs_gpu_estimate": pytest.approx(0.3), "fallbacks": 1, "switches": 1}
+                       "saved_vs_gpu_estimate": pytest.approx(0.2), "fallbacks": 1, "switches": 1}
     assert blur["saved_vs_gpu_estimate"] is None
     assert "saved vs GPU (est.)" in out and "ESTIMATE" in out and "n/a" in out and "total" in out
 

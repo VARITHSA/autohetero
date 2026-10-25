@@ -2,7 +2,7 @@
 from . import history
 
 NOTE = ("saved vs GPU is an ESTIMATE: predicted always-GPU time minus measured time, summed over calls that had "
-        "a prediction (forced calls and first measurements have none)")
+        "a prediction (forced CPU / GPU calls have none; a function's first calls, before it was measured, are left out)")
 
 
 def report():

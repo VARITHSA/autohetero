@@ -1,6 +1,7 @@
 import pytest
 
-from autohetero import calibrate, dispatch, predictor
+import autohetero
+from autohetero import calibrate, devices, dispatch, executor, predictor
 from bench import experiments
 
 
@@ -32,6 +33,19 @@ def test_rq2_skips_workloads_too_big_for_gpu_memory(runs, monkeypatch, capsys):
     experiments.rq2(runs.append, ["idle"], reps=0, workloads=[("matmul", 64), ("matmul", 128)])
     assert {r[3] for r in runs} == {64}  # never run, so a CPU fallback can't pass for a GPU time
     assert "skipped: too big for free GPU memory" in capsys.readouterr().out
+
+
+def test_forced_gpu_runs_that_ran_on_the_cpu_are_all_flagged(runs):
+    @autohetero.auto
+    def fragile(table):
+        if executor.running_on.get() == devices.GPU:
+            raise RuntimeError("CUDA error: out of memory")
+        return table
+
+    experiments._alternate(runs.append, "rq2", "idle", "sort", 1000, fragile, ["gpu"], reps=2)
+    # rep 0 failed on the GPU and reran on the CPU; reps 1-2 went straight to the CPU, with no GPU error of their own
+    assert [(r[7], r[11]) for r in runs] == [("gpu", True), ("cpu", True), ("cpu", True)]
+
 
 def test_hybrid_gain_compares_gpu_and_hybrid_until_runs_get_slow(runs):
     experiments.hybrid_gain(runs.append, reps=1, max_seconds=60, sizes={"matmul": [64, 128]})
