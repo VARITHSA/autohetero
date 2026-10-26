@@ -22,6 +22,16 @@ A GPU isn't always the faster choice. For small inputs, moving data to the GPU c
 
 ## Installation
 
+AutoHetero isn't on PyPI yet, so install it from GitHub.
+
+**To use it in your own project**, install it into that project's environment:
+
+```bash
+pip install git+https://github.com/VARITHSA/autohetero.git
+```
+
+**To run the demos, tests and benchmarks**, clone the repository:
+
 ```bash
 git clone https://github.com/VARITHSA/autohetero.git
 cd autohetero
@@ -36,7 +46,36 @@ python -c "import torch; print(torch.cuda.is_available())"
 
 If it prints `False`, install the CUDA build of PyTorch for your driver from [pytorch.org](https://pytorch.org/get-started/locally/).
 
-## Quick start
+## Try it
+
+From the cloned repository:
+
+1. **With and without, side by side.** This runs the same image pipeline as plain PyTorch on the CPU, by hand on the GPU, and with AutoHetero, checks that all three give the same answer, and prints their times:
+
+   ```bash
+   python demo/compare.py
+   ```
+
+2. **The demo app.** Install the demo extra, then start the app; it opens in your browser:
+
+   ```bash
+   pip install -e ".[demo]"
+   ```
+
+   ```bash
+   streamlit run demo/app.py
+   ```
+
+   Pick a batch size and resolution and click **Run**. Turn on **GPU stress** to watch AutoHetero move work to the CPU. The **playground** page in the sidebar runs any built-in op at any size.
+
+3. **The measured results.** Open `demo/showcase.ipynb` in Jupyter (`pip install jupyter` first). It reads the results from my RTX 3050 runs, so it works on a machine without a GPU.
+
+## Using it in your code
+
+1. Import AutoHetero and call `autohetero.enable()` once, at the start of your program.
+2. Use the built-in ops (`autohetero.ops.*`), or put `@autohetero.auto` on your own functions.
+3. Keep your data on the CPU, as usual. Don't call `.to("cuda")`; AutoHetero moves the data and brings the result back.
+4. Call `autohetero.report()` at the end to see where each call ran.
 
 **Built-in ops** — one line:
 
@@ -169,19 +208,6 @@ python eval/rq3.py
 ```
 
 [REQUIREMENTS.md](https://github.com/VARITHSA/autohetero/blob/main/REQUIREMENTS.md) lists every requirement and its current status.
-
-## Demo
-
-```bash
-pip install -e ".[demo]"
-streamlit run demo/app.py
-```
-
-The demo runs a small image pipeline three ways: with AutoHetero, CPU-only and GPU-only, side by side. A switch adds GPU load, so you can watch AutoHetero rebalance.
-
-The **playground** page (in the sidebar) runs any built-in op at any size that fits in memory: it shows where AutoHetero ran it, what it predicted, what each option really took, and the code to make the same call yourself.
-
-For a step-by-step walk-through in Jupyter (live runs, then the measured results), open `demo/showcase.ipynb` (`pip install jupyter` first).
 
 ## Project structure
 
