@@ -201,43 +201,43 @@ DESIGN.md leaves these open or contradicts itself. Each has my recommendation.
 
 ---
 
-## Status after the week-8 code (2026-10-21, updated 2026-10-25)
+## Status after the week-8 code (2026-10-21, updated 2026-10-26 with the fixed-machine runs)
 
-✅ built and tested on a CPU-only machine (GPU code paths through a fake device) · 🟡 built, and its `gpu`-marked test waits for a real NVIDIA GPU (Colab) · ⏳ built, waits for data from the fixed machine · ❌ not done (team action, or week 9)
+✅ built and tested (CPU-only on the dev Mac through a fake GPU; `gpu`-marked tests on the fixed machine) · ⚠️ ran on the fixed machine, with a caveat · ❌ not done (team action, or week 9)
 
-Tests: 107 pass on the dev Mac; 44 `gpu`-marked tests are skipped there and must pass on Colab (`pytest -m gpu`).
+Tests: 113 pass on the dev Mac, with the 44 `gpu`-marked tests skipped there. On the fixed machine (2026-10-26, `pytest -m gpu`, log in `gpu-tests.txt`): 43 passed, 1 skipped, 1 failed (EXE-7).
 
 | Area | Status |
 |------|--------|
 | C-1 to C-5 | ✅ Python ≥ 3.11 (dev Mac 3.14), dependencies and extras in `pyproject.toml`, seeds fixed (inputs, model weights, forests, splits), CPU-only pytest with a fake GPU, 7 `shortcut:` comments |
 | C-6 | ✅ `calibrate`, `features`, `predictor`, `monitor`, `history`, `bench/collect`, `bench/stress` hold no dispatch code. `bench/experiments.py` calls the public API, because measuring AutoHetero requires it. |
-| API-1 to API-9 | ✅ `enable`, `auto`, `force`, `report`, `retrain` (Q1); tests in `test_dispatch`, `test_executor`, `test_trials`, `test_report`. API-6 also 🟡 (a real GPU model copy). |
-| DSP-1 to DSP-4, DEV-1 to DEV-3 | ✅ including TST-2 and TST-7. Since step 24, a GPU failure during calibration (for example, GPU memory full) also falls back to the CPU instead of crashing the caller. DSP-2 also 🟡 (a real CUDA out-of-memory error). |
+| API-1 to API-9 | ✅ `enable`, `auto`, `force`, `report`, `retrain` (Q1); tests in `test_dispatch`, `test_executor`, `test_trials`, `test_report`. API-6's real GPU model copy passed on the RTX 3050. |
+| DSP-1 to DSP-4, DEV-1 to DEV-3 | ✅ including TST-2 and TST-7. Since step 24, a GPU failure during calibration (for example, GPU memory full) also falls back to the CPU instead of crashing the caller. DSP-2's real CUDA out-of-memory test passed on the RTX 3050. |
 | OPS-1, OPS-3 | ✅ 10 ops, models in eval mode with no grad and fixed-seed weights |
-| OPS-2 / TST-6 (weeks 1–2 exit) | 🟡 `tests/test_ops_parity.py`, 30 cases. A dry run on the Apple GPU passed all 30. |
-| CAL-1 to CAL-5 | ✅ about 27 s on the dev Mac with the Apple GPU standing in; cached per machine key; skipped with no GPU. CAL-1 also 🟡 (real time on CUDA). |
+| OPS-2 / TST-6 (weeks 1–2 exit) | ✅ `tests/test_ops_parity.py`, 30 cases, all passed on the RTX 3050 (and earlier on the Apple GPU). |
+| CAL-1 to CAL-5 | ✅ about 27 s on the dev Mac with the Apple GPU standing in; cached per machine key; skipped with no GPU. On the RTX 3050: 32.6 s, committed in `bench/calibration/` (host→GPU 6.4 GB/s, GPU→host 3.4 GB/s, launch 65 µs). |
 | FEA-1, PRD-1 to PRD-8 | ✅ PRD-1 learns log(seconds per element), which is log(time) minus a known offset: beyond the largest size measured on a device, predictions grow instead of staying flat. PRD-6: user-function decisions come from fits and aren't cached, so they can't go stale. |
-| EXE-1 to EXE-5 | ✅ TST-1, TST-5, trials, slowdown switch after 2 chunks (TST-1 also 🟡 on real CUDA). Since 2026-10-25, Hybrid rounds also take ≥ 5 ms (finding 1). |
-| EXE-6 | 🟡/⏳ The constants sit together at the top of `executor.py`, with `HYBRID_MARGIN` in `predictor.py` and the sample period in `monitor.py`. All are untuned and wait for the fixed-machine data. |
-| EXE-7 (week-6 exit) | 🟡 `tests/test_week6.py`. In the Apple-GPU dry run it switched after 2 chunks. |
-| MON-1, MON-2 | ✅ CPU load from other processes only, median of about 1 s. Real NVML reading 🟡. |
+| EXE-1 to EXE-5 | ✅ TST-1, TST-5, trials, slowdown switch after 2 chunks (TST-1 also passed on the RTX 3050). Since 2026-10-25, Hybrid rounds also take ≥ 5 ms (finding 1). |
+| EXE-6 | ⚠️ The constants sit together at the top of `executor.py`, with `HYBRID_MARGIN` in `predictor.py` and the sample period in `monitor.py`. The fixed-machine runs used the untuned first guesses; the data to tune them is now in `bench/results/`, but I haven't tuned them. |
+| EXE-7 (week-6 exit) | ⚠️ `tests/test_week6.py`. In the Apple-GPU dry run it switched after 2 chunks. On the RTX 3050 it failed its precondition: at idle the predictor chose Hybrid, not GPU, for resnet18 at batch 256, so there was no GPU task to switch. The switch itself isn't disproved; the check passes only when the idle pick is GPU. |
+| MON-1, MON-2 | ✅ CPU load from other processes only, median of about 1 s. Real NVML reading passed on the RTX 3050. |
 | HIS-1 to HIS-3 | ✅ predicted next to actual for every call, online fits (saved to `fits.json` at exit and read back by the next session, since 2026-10-25), `retrain()`, log rotation at 50 MB. Retraining automatically when idle isn't built. |
 | REP-1 | ✅ |
-| BEN-1 to BEN-3 | ✅ code (`bench/collect.py`, `bench/stress.py`, `bench/experiments.py`) · ⏳ runs. `stress-ng` isn't on the dev Mac; the runner falls back to busy Python processes and records which tool it used. Since 2026-10-25, RQ2 skips a workload that doesn't fit in free GPU memory under its condition, as `collect.py` and Hybrid gain already did: on a small GPU, its forced GPU-only runs would fall back to the CPU and record CPU time as GPU-only. |
-| BEN-4 | ⏳ Fixed machine named on 2026-10-25: a laptop with a Ryzen 7, an RTX 3050 Laptop GPU and 16 GB RAM, under WSL2. `RUNBOOK.md` is the step-by-step run on it. |
-| BEN-5 (weeks 3–4 exit) | ⏳ `bench/collect.py`, then `eval/crossover.py` |
-| EVL-1 to EVL-7 | ✅ scripts: `eval/rq1.py`, `rq2.py`, `rq3.py`, `overhead.py`, `hybrid_gain.py`, `crossover.py` · ⏳ numbers. "Replace every mock-up number in the deck" ❌ (team, after the runs). |
+| BEN-1 to BEN-3 | ✅ code (`bench/collect.py`, `bench/stress.py`, `bench/experiments.py`) and runs (2026-10-26, `bench/results/`). RQ2 ran under idle, GPU stress, CPU stress and battery. `stress-ng` isn't on Windows, so CPU stress used busy Python processes, as recorded. Since 2026-10-25, RQ2 skips a workload that doesn't fit in free GPU memory under its condition, as `collect.py` and Hybrid gain already did: on a small GPU, its forced GPU-only runs would fall back to the CPU and record CPU time as GPU-only. |
+| BEN-4 | ✅ Ran on 2026-10-26: Ryzen 7 5800H (8 cores, 16 threads), RTX 3050 Laptop GPU (4 GB, 60 W), 16 GB RAM, PyTorch 2.11 + CUDA 12.8. It ran on Windows itself, not under WSL2 as `RUNBOOK.md` planned. The 4 GB card skipped the 64 × 3 × 1080 × 1920 image workloads everywhere, and matmul 8192 outside idle. |
+| BEN-5 (weeks 3–4 exit) | ✅ `eval/out/crossover.csv`: the CPU wins below a crossover size for 7 of 10 ops; the GPU wins at every size for resnet18 and mobilenetv2; the CPU wins at every size for fft. |
+| EVL-1 to EVL-7 | ✅ scripts: `eval/rq1.py`, `rq2.py`, `rq3.py`, `overhead.py`, `hybrid_gain.py`, `crossover.py` · ✅ numbers in `eval/out/` and `eval/results.ipynb`, all from the fixed machine (EVL-7). `CARRYOVER.md` §1 has the headline figures. "Replace every mock-up number in the deck" ❌ (team, after the runs). |
 | DEM-1 (week-7 exit) | ✅ `demo/app.py`; `demo/pipeline.py` adds exactly one line (tested) |
-| CO-1 | 🟡/⏳ `CARRYOVER.md` drafted on 2026-10-25: the §13 inferences mapped to the M.Tech review deck, with every measured cell pending the fixed-machine runs. |
-| CO-2 to CO-4 | ❌ week 9, after submission. CO-3 needs the M.Tech run-log format (Q10). |
+| CO-1 | ✅ `CARRYOVER.md`: the §13 inferences mapped to the M.Tech review deck, every measured cell filled from `eval/out/` on 2026-10-26. Row 5 (confidence from tree spread) is still not computed. |
+| CO-2 to CO-4 | ❌ week 9, after submission: the `autohetero-v1` tag isn't made yet. CO-3 needs the M.Tech run-log format (Q10). |
 | CO-5 | ✅ All four references in DESIGN.md now carry full citations. Qilin, Grewe et al. (doi:10.1109/CGO.2013.6494993) and StarPU (CCPE 23(2), 2011, pp. 187–198, doi:10.1002/cpe.1631) were checked against their Crossref records on 2026-10-25. The ONNX Runtime page was checked live on 2026-10-21. |
 
 **Open questions:** Q1, Q2, Q3, Q4, Q5, Q8, Q9 and Q11 are settled in code (see "Adopted" above). Q6 is settled as "train on calibration", but see finding 3 below. Q7 is settled (2026-10-25): see Q7 above. Q12 is settled (2026-10-25): see BEN-4. Q10 is still open.
 
-**Findings from the dry runs (Apple GPU standing in), to settle on the fixed machine:**
+**Findings from the dry runs (Apple GPU standing in), with what the fixed machine showed:**
 1. **Hybrid rounds are costly on short calls.** Each 25% round waits for its GPU piece, so a matmul 2048 under GPU stress took 366 ms with AutoHetero against 22 ms on the CPU. Recommendation: give Hybrid rounds the same ≥ 5 ms minimum as chunks before the final runs. *Done 2026-10-25: a round is at least 5 ms of predicted work with both devices busy, so a short call runs in one round. The GPU piece is still slow under stress, because the forest doesn't know about load (finding 3).*
-2. **False slowdown switches at idle.** The forest predicts in steps between the ~6 calibrated sizes, so a chunk can look 1.8–1.9× slow on an idle machine. Tune `SLOWDOWN` on the real data; how often switches fire is a §13 measurement anyway.
-3. **Built-in op decisions ignore load.** The forest trains on idle calibration, so its load features are constant. Under sustained contention, short built-in calls stay on a slowed GPU; only long splittable calls are rescued, by the per-call switch. User functions adapt through their fits. Options: let built-ins use their fits too once measured, or calibrate under load as well.
+2. **False slowdown switches at idle.** The forest predicts in steps between the ~6 calibrated sizes, so a chunk can look 1.8–1.9× slow on an idle machine. Tune `SLOWDOWN` on the real data; how often switches fire is a §13 measurement anyway. *Fixed machine: switches still fired in 10% of idle runs (fft 4096: 80%), and AutoHetero ran at 0.70× always-GPU at idle. `SLOWDOWN` is still untuned (EXE-6).*
+3. **Built-in op decisions ignore load.** The forest trains on idle calibration, so its load features are constant. Under sustained contention, short built-in calls stay on a slowed GPU; only long splittable calls are rescued, by the per-call switch. User functions adapt through their fits. Options: let built-ins use their fits too once measured, or calibrate under load as well. *Fixed machine: confirmed, and worse than expected under CPU stress (0.21× always-GPU): GPU chunks looked slow, so the switch moved the rest of the call onto the loaded CPU (resnet18 batch 128: 8.97 s against 0.37 s GPU-only). Not fixed.*
 4. Per-function fits live only in memory, so every new session repeats each user function's trial. *Done 2026-10-25: fits are saved to `fits.json` in the machine cache at exit, so a trial runs once per machine. `bench/experiments.py` deletes the file at the start of each run so the trial still shows up in rep 0.*
 
 **End-to-end rehearsal (2026-10-21, dev Mac, Apple GPU standing in):** the whole runbook ran: calibration (20.3 s), the dataset (1155 runs), RQ2 under idle, GPU stress and CPU stress (378 runs), Hybrid gain (384 runs), and the overhead measurement. Every `eval/` script produced its figures and tables (12 files). The rehearsal found three problems in the results, now fixed and tested:

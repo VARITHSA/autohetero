@@ -181,6 +181,8 @@ The demo runs a small image pipeline three ways: with AutoHetero, CPU-only and G
 
 The **playground** page (in the sidebar) runs any built-in op at any size that fits in memory: it shows where AutoHetero ran it, what it predicted, what each option really took, and the code to make the same call yourself.
 
+For a step-by-step walk-through in Jupyter (live runs, then the measured results), open `demo/showcase.ipynb` (`pip install jupyter` first).
+
 ## Project structure
 
 ```
