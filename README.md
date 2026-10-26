@@ -22,12 +22,10 @@ A GPU isn't always the faster choice. For small inputs, moving data to the GPU c
 
 ## Installation
 
-AutoHetero isn't on PyPI yet, so install it from GitHub.
-
-**To use it in your own project**, install it into that project's environment:
+**To use it in your own project**, install it from PyPI into that project's environment:
 
 ```bash
-pip install git+https://github.com/VARITHSA/autohetero.git
+pip install autohetero
 ```
 
 **To run the demos, tests and benchmarks**, clone the repository:
