@@ -110,7 +110,7 @@ The first call on a new machine runs a one-time calibration (about 30 seconds).
 3. **Run.** Long calls run in chunks. If a chunk takes more than 1.5× longer than expected, the rest of the call is split between the CPU and GPU by their measured speeds.
 4. **Learn.** Every call is logged with its predicted and actual time, so predictions improve over time. Call `autohetero.retrain()` to update the model.
 
-The full design is in [DESIGN.md](DESIGN.md).
+The full design is in [DESIGN.md](https://github.com/VARITHSA/autohetero/blob/main/DESIGN.md).
 
 ## API
 
@@ -168,7 +168,7 @@ python eval/hybrid_gain.py
 python eval/rq3.py
 ```
 
-[REQUIREMENTS.md](REQUIREMENTS.md) lists every requirement and its current status.
+[REQUIREMENTS.md](https://github.com/VARITHSA/autohetero/blob/main/REQUIREMENTS.md) lists every requirement and its current status.
 
 ## Demo
 
@@ -178,6 +178,8 @@ streamlit run demo/app.py
 ```
 
 The demo runs a small image pipeline three ways: with AutoHetero, CPU-only and GPU-only, side by side. A switch adds GPU load, so you can watch AutoHetero rebalance.
+
+The **playground** page (in the sidebar) runs any built-in op at any size that fits in memory: it shows where AutoHetero ran it, what it predicted, what each option really took, and the code to make the same call yourself.
 
 ## Project structure
 
@@ -198,4 +200,4 @@ tests/        test suite
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](https://github.com/VARITHSA/autohetero/blob/main/LICENSE).
