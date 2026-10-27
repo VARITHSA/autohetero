@@ -1,15 +1,16 @@
-
-
-
-
-https://github.com/user-attachments/assets/a0081573-8cec-446f-b969-67b730c641b1
-
+<div align="center">
 
 # AutoHetero
 
-![Python](https://img.shields.io/badge/python-3.11%2B-blue) ![PyTorch](https://img.shields.io/badge/pytorch-2.x-orange) ![License](https://img.shields.io/badge/license-MIT-green)
+**Run each PyTorch call on the CPU, the GPU, or both — whichever is fastest.**
 
-**AutoHetero runs each PyTorch call on the CPU, the GPU, or both — whichever is fastest.**
+[![PyPI](https://img.shields.io/pypi/v/autohetero)](https://pypi.org/project/autohetero/) ![Python](https://img.shields.io/badge/python-3.11%2B-blue) ![PyTorch](https://img.shields.io/badge/pytorch-2.x-orange) ![License](https://img.shields.io/badge/license-MIT-green)
+
+[Installation](#installation) · [Try it](#try-it) · [Usage](#using-it-in-your-code) · [How it works](#how-it-works) · [API](#api)
+
+https://github.com/user-attachments/assets/a0081573-8cec-446f-b969-67b730c641b1
+
+</div>
 
 A GPU isn't always the faster choice. For small inputs, moving data to the GPU costs more than the work itself, and a GPU that's busy with another job can end up slower than the CPU. I built AutoHetero to make that decision automatically: it benchmarks your machine once, predicts the fastest device for every call, and shifts work to the CPU when the GPU falls behind.
 
